@@ -1,9 +1,12 @@
-Instance: ISiK-capabilityStatement-dokumentenaustausch-server
+Instance: ISiKCapabilityStatementDokumentenaustauschServer
 InstanceOf: CapabilityStatement
 Usage: #definition
+* insert Meta-Inst
 * insert Meta-CapabilityStatement
 * name = "ISiKCapabilityStatementDokumentenaustauschServer"
 * title = "ISiK CapabilityStatement Dokumentenaustausch Server"
+* contact.telecom.system = #url
+* contact.telecom.value = "https://www.gematik.de"
 * description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes System unterstützen muss um das Bestätigungsverfahren des Moduls &quot;Dokumentenaustausch&quot; zu bestehen."
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
 * kind = #requirements
