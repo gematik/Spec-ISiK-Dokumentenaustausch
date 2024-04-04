@@ -8,6 +8,6 @@ Das ISiK-Modul "Dokumentenaustausch" möchte diese technologische Lücke schlie�
 
 Bei der Festlegung dieser Spezifikation findet das IHE-MHD-Profil eine besondere Beachtung, um alle im ISiK-Kontext kommunizierten Dokumente mit möglichst wenig zusätzlichem Aufwand auch in einer IHE-XDS/MHD Kommunikation austauschen zu können.
 
-Der Fokus dieser Spezifikation liegt zunächst auf den Festlegungen zum Datenaustausch *innerhalb* einer Einrichtung, soll künftig jedoch auch Best Practice-Empfehlungen zur Einstellung von Dokumenten in die EPA eines Patienten, der Weiterleitung an andere Leistungserbringer via KIM oder dem einrichtungsübergreifenden Dokumentenaustausch via MHD/XDS enthalten.
+Der Fokus dieser Spezifikation liegt zunächst auf den Festlegungen zum Datenaustausch *innerhalb* einer Einrichtung, soll künftig jedoch auch Best Practice-Empfehlungen zur Einstellung von Dokumenten in die ePA eines Patienten, der Weiterleitung an andere Leistungserbringer via KIM oder dem einrichtungsübergreifenden Dokumentenaustausch via MHD/XDS enthalten.
 
 {{render:Material-Images-isikkontextunderwscope}}

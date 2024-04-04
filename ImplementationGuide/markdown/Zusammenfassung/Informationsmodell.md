@@ -1,12 +1,11 @@
-# Übersicht
-Im Folgenden wird ein grafischer Überblick über alle in diesem Modul profilierten Ressourcen und deren Zusammenhänge gegeben.
+## Ressourcen Diagramm (WIP)
 
-## Ressourcen Diagramm
-
+Im Folgenden wird ein grafischer Überblick über alle in diesem Modul profilierten Ressourcen gegeben.
 Da es sich um eine Zusammenfassung handelt, werden nur folgende Profile und Felder dargestellt:
-* Profile und Extenstion, die im Modul Dokumentenaustausch enstanden sind.
-* Profile und Extenstion, die im Modul Dokumentenaustausch zwingend benötigt werden. In vereinfachter Form, mit Verweis auf den Ursprung.
+* Profile und Extenstion, die im Modul Medikation enstanden sind.
+* Profile und Extenstion, die im Modul Medikation zwingend benötigt werden. In vereinfachter Form, mit Verweis auf den Ursprung.
 * Felder, die unterstüzt werden MÜSSEN (Must Support).
+* * Datentypen, die im ISiK-Kontext enstanden, festgelegt oder eingeschränkt wurden, sind als **Fett** gekennzeichnet.
 * Die Elemente (Unterfelder) haben, die unterstüzt werden MÜSSEN (Must Support).
 * Nur Unter-Elemente (MS) bis zu zweiten oder dritten Tiefe, abhängig von Umfang und Systematik. D.h. Keine bedingten Wiederholungen (repeat) oder Rekursionen (part-of).
 
