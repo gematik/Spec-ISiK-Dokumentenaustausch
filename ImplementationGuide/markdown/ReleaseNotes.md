@@ -13,8 +13,10 @@ Version: 4.0.0-rc
 Datum: 03.04.2024
 
 * Dependency hinzugefügt zu IHE-Package zwecks Auflösung von ValueSets https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/181
-* Erweiterungen um Use Case Diagramm, Resourcen Diagramm und Informationsmodell
+* Erweiterung um Use Case Diagramm, Resourcen Diagramm und Informationsmodell
 * Erweiterung um Use Case Zusammenhänge von verketteten Suchparametern
+
+**Full Changelog**: https://github.com/gematik/spec-ISiK-Dokumentenaustausch/compare/v.3.0.2...rc/main-stufe-4
 
 ----
 
