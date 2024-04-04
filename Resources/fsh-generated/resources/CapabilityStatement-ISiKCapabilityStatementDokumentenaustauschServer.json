@@ -4,7 +4,7 @@
   "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementDokumentenaustauschServer",
   "status": "draft",
   "publisher": "gematik GmbH",
-  "date": "2024-03-28",
+  "date": "2024-04-01",
   "experimental": false,
   "version": "4.0.0-rc",
   "implementationGuide": [

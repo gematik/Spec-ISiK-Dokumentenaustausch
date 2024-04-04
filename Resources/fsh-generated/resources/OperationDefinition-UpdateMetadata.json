@@ -3,7 +3,7 @@
   "id": "UpdateMetadata",
   "status": "draft",
   "publisher": "gematik GmbH",
-  "date": "2024-03-28",
+  "date": "2024-04-01",
   "url": "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/OperationDefinition/UpdateMetadata",
   "title": "Update document metadata",
   "kind": "operation",
