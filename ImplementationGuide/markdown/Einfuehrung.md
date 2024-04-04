@@ -5,7 +5,7 @@ Version: 4.0.0-rc
 
 Datum: 28.03.2024
 
-Status: Aktiv
+Status: Draft (Kommentierung)
 
 Realm: Deutschland
 
