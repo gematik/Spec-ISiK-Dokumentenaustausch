@@ -37,7 +37,7 @@ FTB 2.A:
 
 ## weitere potentielle Features 
 ### genannt von Teilnehmern der Auftaktveranstaltung am 16.07.
-* Bildübertragung (ImagingStudy) -> sollte aufgrund der geringen Überlappung zum Dokumentenaustausch (ImagingStudy vs. DocumentReference) in separatem Modul behandelt werden (Stufe 3?). Die Kommunikation von Nicht-DICOM-Objekten (JPEG, PNG etc.) fällt jedoch in den Scope des Dokumenten-Moduls. 
+* Bildübertragung (ImagingStudy) -> sollte aufgrund der geringen Überlappung zum Dokumentenaustausch (ImagingStudy vs. DocumentReference) in separatem Modul behandelt werden (Stufe 4?). Die Kommunikation von Nicht-DICOM-Objekten (JPEG, PNG etc.) fällt jedoch in den Scope des Dokumenten-Moduls. 
 * Signaldatenübertragung (EKG/EEG) -> sollte im Modul "Vitalparameter" behandelt werden, da ess ich um eine Serie von Messwerten (Observation mit SampledData) handelt, es sei denn, die Übertragung erfolgt in unstrukturierter Form (PDF o.ä.).
 ### Dokumentenaustausch via KIM
 Gemeinsam mit dem KIM-Team der Gematik sollen BestPractice-Empfehlungen für die Kommunikation von FHIR-basierten Dokumenten via KIM erarbeitet werden, u.a.

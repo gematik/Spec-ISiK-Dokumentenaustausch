@@ -10,9 +10,11 @@ Offene Punkte und bekannte Probleme siehe [GitHub Issues](https://github.com/gem
 
 Version: 4.0.0-rc
 
-Datum: tbd
+Datum: 03.04.2024
 
 * Dependency hinzugefügt zu IHE-Package zwecks Auflösung von ValueSets https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/181
+* Erweiterungen um Use Case Diagramm, Resourcen Diagramm und Informationsmodell
+* Erweiterung um Use Case Zusammenhänge von verketteten Suchparametern
 
 ----
 
