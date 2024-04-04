@@ -6,7 +6,7 @@
   ],
   "dependencies": {
     "ihe.iti.mhd": "4.2.0",
-    "de.gematik.isik-basismodul": "4.0.0-rc",
+    "de.gematik.isik-basismodul": "4.0.0-rc2",
     "de.ihe-d.terminology": "3.0.0",
     "dvmd.kdl.r4.2022": "2022.1.2"
   }

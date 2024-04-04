@@ -16,7 +16,7 @@ Die Vereinbarungen gelten uneingeschränkt.
 ##### [2:3.106.4.1.2 Message Semantics](https://profiles.ihe.net/ITI/MHD/ITI-106.html#23106412-message-semantics)
 Die Vereinbarungen gelten uneingeschränkt.
 ##### [2:3.106.4.1.3 Expected Actions](https://profiles.ihe.net/ITI/MHD/ITI-106.html#23106413-expected-actions)
-Der Fokus für die Implementierung der Operation ISiK-Kontext sollte auf dem Persistieren und Erzeugen von Metadaten für ISiK-konforme Bundles gemäß [Interaktion ISiK Modul Basis Stufe 3: Bericht aus Subsystem](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-BerichtSubsystem?version=current) liegen. Für die Implementierung kann das unten angegeben ISiK-Spezifische Mapping Composition -> DocumentReference als Anhaltspunkt verwendet werden.
+Der Fokus für die Implementierung der Operation ISiK-Kontext sollte auf dem Persistieren und Erzeugen von Metadaten für ISiK-konforme Bundles gemäß [Interaktion ISiK Modul Basis Stufe 3: Bericht aus Subsystem](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-BerichtSubsystem?version=current) liegen. Für die Implementierung kann das unten angegeben ISiK-Spezifische Mapping Composition -> DocumentReference als Anhaltspunkt verwendet werden.
 
 Die Unterstützung weiterer Input-Formate (z.B. CDA oder andere FHIR-Dokumente, wie MIOs, eRezept, eAU etc.) ist optional.
 
@@ -76,7 +76,7 @@ Der Sender eines Subsystem-Berichtes gem. Modul "Basis" möchte parallel zur Üb
 Empfohlenes Vorgehen:
 1. Erzeugen einer DocumentReference-Ressource (siehe dazu $generate-metadata) 
 2. Übermittlung der DocumentReference sowie des Base64-codierten Bundles gemäß {{pagelink:ImplementationGuide/markdown/AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung.md, text:Interaktion ISiK Modul Dokumentenaustausch Stufe 2: Dokumentenbereitstellung}}
-3. Übermittlung des Dokumentes zur Verarbeitung gemäß [Interaktion ISiK Modul Basis Stufe 3: Bericht aus Subsystem](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-BerichtSubsystem?version=current)
+3. Übermittlung des Dokumentes zur Verarbeitung gemäß [Interaktion ISiK Modul Basis Stufe 3: Bericht aus Subsystem](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-BerichtSubsystem?version=current)
 
 
 Der Empfänger eines Dokumentes gem. Modul "Dokumentenaustausch" möchte neben der Archivierung des Dokumentes auch dessen Inhalte weiterverarbeiten.
