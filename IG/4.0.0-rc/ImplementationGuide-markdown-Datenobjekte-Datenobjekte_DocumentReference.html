@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Implementierungsleitfaden ISiK-Dokumentenaustausch</title>
+
+    <link rel="icon" href="static/styles/common/favicon.ico" />
+
+    <script src="static/styles/common/jquery/jquery.min.js"></script>
+    <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/common/main.min.css" />
+    <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+    <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+    <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/twolevelmenu/style.css?v=1da869d89c18300" />
+
+</head>
+
+<body>
+
+    <div id="ig-viewer">
+
+        <div class="ig-view-content">
+
+            <div id="ig-view-twolevelmenu">
+
+                <div class="header" role="banner" aria-label="Header">
+                    
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a class="navbar-brand" href="ImplementationGuide-markdown-Einfuehrung.html">
+                    Implementierungsleitfaden ISiK-Dokumentenaustausch
+                </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                    <li>
+                        <a href="ImplementationGuide-markdown-Einfuehrung.html">
+                            Einf&#xFC;hrung
+                        </a>
+                    </li>
+
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseNotes.html">
+                                Release Notes
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Zusammenfassung <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Zusammenfassung.html">
+                                            Zusammenfassung
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Zusammenfassung-UseCases.html">
+                                            Anwendungsf&#xE4;lle (Use Cases)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Zusammenfassung-Informationsmodell.html">
+                                            Informationsmodell
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Zusammenfassung-InteraktionenUndSearchTypes.html">
+                                            Interaktionen Und SearchTypes
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Festlegungen <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen.html">
+                                            &#xDC;bergreifende Festlegungen
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-BestaetigungsrelevanteSysteme.html">
+                                            Best&#xE4;tigungsrelevante Systeme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-Kompatibilitaet.html">
+                                            Kompatibilit&#xE4;t
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-AnmerkungenzuMust-Support-Feldern.html">
+                                            Anmerkungen zu Must-Support Feldern
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-AkteureUndInteraktionen.html">
+                                            Akteure und Interaktionen
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Datenobjekte <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte.html">
+                                            Datenobjekte
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-CapabilityStatement.html">
+                                            CapabilityStatement
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_DocumentReference.html">
+                                            Dokumentenmetadaten (DocumentReference)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Bundle.html">
+                                            Aggregation (Bundle)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_ISiKBinary.html">
+                                            ISiKBinary
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                </div>
+
+                <div class="content container" role="main" aria-label="Main content">
+                    
+
+
+<div class="row">
+
+        <div class="col-md-6">
+            <ul class="nav nav-pills nav-stacked affix-top">
+                    <li>
+                        <a title="Motivation" href="#markdown-Datenobjekte-DocumentReference-DocumentReference_Motivation">Motivation</a>
+                    </li>
+                    <li>
+                        <a title="Kompatibilit&#xE4;t" href="#markdown-Datenobjekte-DocumentReference-DocumentReference_Kompatibilitaet">Kompatibilit&#xE4;t</a>
+                    </li>
+                    <li>
+                        <a title="Profil" href="#markdown-Datenobjekte-DocumentReference-DocumentReference_Profil">Profil</a>
+                    </li>
+                    <li>
+                        <a title="Anmerkungen zu den Must-Support Feldern" href="#DocumentReference-DocumentReference_AnmerkungenZuDenMustSupportFeldern">Anmerkungen zu den Must-Support Feldern</a>
+                    </li>
+                    <li>
+                        <a title="Interaktionen" href="#markdown-Datenobjekte-DocumentReference-DocumentReference_Interaktionen">Interaktionen</a>
+                    </li>
+                    <li>
+                        <a title="Beispiele" href="#markdown-Datenobjekte-DocumentReference-DocumentReference_Beispiele">Beispiele</a>
+                    </li>
+            </ul>
+        </div>
+
+    <div class="col-md-18">
+
+        <div id="preview-content">
+
+            <h2 id="dokumentenmetadaten-documentreference">Dokumentenmetadaten <a href="https://hl7.org/fhir/R4/documentreference.html">(DocumentReference)</a></h2>
+<p>Die nachfolgenden Festlegungen spezifizieren die Minimalanforderungen für die Bereitstellung von Dokumentenmetadaten im Rahmen des Bestätigungsverfahrens der gematik.</p>
+
+
+                    <div id="markdown-Datenobjekte-DocumentReference-DocumentReference_Motivation">
+                        <h3 id="motivation">Motivation</h3>
+<p>Die Ressource <a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a> enthält die Metadaten, die für die Verwaltung von und die Suche nach Dokumenten benötigt werden. Der Inhalt des Dokumentes wird über <code>DocumentReference.content</code> beschrieben und über <code>DocumentReference.content.attachment</code> referenziert. Die Trennung von Dokument und Metadaten ermöglicht Clients die effiziente Suche und Auflistung von verfügbaren Dokumenten, ohne dass diese vollständig vom Server geladen werden müssen. Servern ermöglicht dieser Ansatz die Trennung zwischen den Metadaten in einer Datenbank und der Dokumentenablage in z.B. einem Dateisystem.</p>
+
+                    </div>
+                    <div id="markdown-Datenobjekte-DocumentReference-DocumentReference_Kompatibilitaet">
+                        <h3 id="kompatibilitat">Kompatibilität</h3>
+<p>Dieses Profil basiert auf dem <a href="https://profiles.ihe.net/ITI/MHD/StructureDefinition-IHE.MHD.UnContained.Comprehensive.DocumentReference.html">Profil &quot;MHD DocumentReference Comprehensive UnContained References Option&quot; (Version 4.2.0) von IHE International</a>.</p>
+<h3 id="abweichungen-vom-ihe-profil">Abweichungen vom IHE-Profil</h3>
+<ul>
+<li>Die Verwendung von <code>DocumentReference.docStatus</code> ist im ISiK-Kontext gestattet.</li>
+<li><code>DocumentReference.category</code> muss vom Client bei Vorhandensein eines KDL-Codes in <code>DocumentReference.type</code> nicht gefüllt werden. Bei der Verarbeitung auf dem Server im Rahmen der Interaktion &quot;Dokumentenbereitstellung&quot; wird <code>DocumentReference.category</code> anhand der <a href="https://simplifier.net/kdl/%7Eresources?category=ConceptMap&amp;sortBy=RankScore_desc">KDL-Mappings</a> ergänzt und damit die IHE-Kompatibilität hergestellt.</li>
+<li><code>DocumentReference.sourcePatientInfo</code> muss im Rahmen von ISiK nicht gefüllt werden</li>
+</ul>
+<h3 id="einschrankungen-des-ihe-profils">Einschränkungen des IHE-Profils</h3>
+<p>Elemente mit ValueSet-Bindings ohne verbindliche Vorgabe seitens IHE wurden auf die in Deutschland gebräuchlichen Terminologien (gemäß der Festlegungen von IHE Deutschland e.V.) eingeschränkt.</p>
+
+                    </div>
+                    <div id="markdown-Datenobjekte-DocumentReference-DocumentReference_Profil">
+                        <h3 id="fhir-profil">FHIR-Profil</h3>
+<h4 id="documentreference">DocumentReference</h4>
+<p><strong>Canonical URL</strong>: <a href="https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten">https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten</a></p>
+<p><div class='error'>Command 'tree' could not render: File was not found for 'https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten'</div></p>
+<p><a href="https://simplifier.net/spec-isik-dokumentenaustausch/isikdokumentenmetadaten">Link Simplifier Profil Übersicht</a></p>
+<!--
+Folgende FHIRPath-Constraints sind im Profil zu beachten:
+
+
+-->
+
+                    </div>
+                    <div id="DocumentReference-DocumentReference_AnmerkungenZuDenMustSupportFeldern">
+                        <h3 id="anmerkungen-zu-must-support-feldern">Anmerkungen zu Must-Support-Feldern</h3>
+
+                    </div>
+                    <div id="markdown-Datenobjekte-DocumentReference-DocumentReference_Interaktionen">
+                        <h3 id="interaktionen">Interaktionen</h3>
+<p>Für die Ressource DocumentReference MUSS die REST-Interaktion &quot;CREATE&quot; implementiert werden, siehe <div class='error'>Command 'pagelink' could not render: Page not found.</div>.
+Für die Ressource DocumentReference MUSS die REST-Interaktion &quot;READ&quot; implementiert werden, siehe <div class='error'>Command 'pagelink' could not render: Page not found.</div>.</p>
+<p>Folgende Suchparameter sind für das Bestätigungsverfahren relevant, auch in Kombination:</p>
+<p>Die in IHE-MHD geltende Einschränkung, dass Clients bei allen Suchen mindestens die Parameter <code>patient</code> oder <code>patient.identifier</code> sowie <code>status</code> verwenden müssen, gilt nicht. Siehe dazu Kapitel <div class='error'>Command 'pagelink' could not render: Page not found.</div></p>
+<ol>
+<li><p>Der Suchparameter &quot;_id&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/DocumentReference?_id=103270</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;_id&quot; finden sich in der <a href="https://hl7.org/fhir/R4/search.html#all">FHIR-Basisspezifikation - Abschnitt &quot;Parameters for all resources&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;status&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/DocumentReference?status=final</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach Token-type Parametern finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Clients und Server verpflichend.</p>
+</li>
+<li><p>Der Suchparameter &quot;patient&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/DocumentReference?patient=Patient/123</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach Reference-type Parametern finden sich in der <a href="https://www.hl7.org/fhir/R4/search.html#reference">FHIR-Basisspezifikation - Abschnitt &quot;Reference Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Clients und Server verpflichend.</p>
+</li>
+<li><p>Der verkettete Suchparameter &quot;patient.identifier&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/DocumentReference?patient.identifier=http://mein-krankenhaus.example/fhir/sid/patienten|1032702</code></p>
+<p><code>GET [base]/DocumentReference?patient.identifier=1032702</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach Token-type Parametern finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Client und Server verpflichtend.</p>
+<p>Weitere Informationen zur Suche nach verketteten Parametern finden sich in der <a href="https://hl7.org/fhir/R4/search.html#chaining">FHIR-Basisspezifikation - Abschnitt &quot;Chained Parameters&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;type&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/DocumentReference?type=http://dvmd.de/fhir/CodeSystem/kdl|AD010101</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach Token-type Parametern finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Server verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;category&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/DocumentReference?category=http://ihe-d.de/CodeSystem/IHEXDSclassCode|BEF</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach Token-type Parametern finden sich in der <a href="https://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Server verpflichtend.</p>
+</li>
+<li><p>Der custom Suchparameter &quot;creation&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/DocumentReference?creation=2021-11-05</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach Date-type Parametern finden sich in der <a href="https://hl7.org/fhir/R4/search.html#date">FHIR-Basisspezifikation - Abschnitt &quot;Date Search&quot;</a>.</p>
+<p>Dieser Suchparameter ist nicht Bestandteil der FHIR-Kernspezifikation und wurde <a href="https://profiles.ihe.net/ITI/MHD/SearchParameter-DocumentReference-Creation.html">von IHE im Rahmen der MHD-Spezifikation definiert</a>.</p>
+<p>Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Server verpflichtend.</p>
+</li>
+<li><p>Der Suchparameter &quot;encounter&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/DocumentReference?encounter=Encounter/123</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach Reference-type Parametern finden sich in der <a href="https://www.hl7.org/fhir/R4/search.html#reference">FHIR-Basisspezifikation - Abschnitt &quot;Reference Search&quot;</a>.</p>
+</li>
+</ol>
+
+                    </div>
+                    <div id="markdown-Datenobjekte-DocumentReference-DocumentReference_Beispiele">
+                        <h2 id="beispiele">Beispiele</h2>
+<h3 id="serverseitiges-dokument-vollstandig-annotiert">Serverseitiges Dokument (vollständig annotiert)</h3>
+<h4 id="in-xml">in XML</h4>
+<p><pre class="resource-validation-xml"><span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference" >DocumentReference</a></span> <span class="attr">xmlns</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://hl7.org/fhir</span><span class="symbol">&quot;</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.id" >id</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">dok-beispiel-server</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.meta" >meta</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.meta.profile" >profile</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.meta.security" >security</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.meta.security.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/v3-ActReason</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.meta.security.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">HTEST</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">security</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">meta</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.masterIdentifier" >masterIdentifier</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.masterIdentifier.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">urn:ietf:rfc:3986</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.masterIdentifier.value" >value</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.46340</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">masterIdentifier</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.status" >status</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">current</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type" >type</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding" >coding</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://dvmd.de/fhir/CodeSystem/kdl</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">PT130102</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Molekularpathologiebefund</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding" >coding</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://ihe-d.de/CodeSystem/IHEXDStypeCode</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">PATH</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Pathologiebefundberichte</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">type</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.category" >category</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.category.coding" >coding</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.category.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://ihe-d.de/CodeSystems/IHEXDSclassCode</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.category.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">BEF</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.category.coding.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Befundbericht</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">category</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.subject" >subject</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.subject.reference" >reference</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Patient/PatientinMusterfrau</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">subject</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.description" >description</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Molekularpathologiebefund vom 31.12.21</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.securityLabel" >securityLabel</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.securityLabel.coding" >coding</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.securityLabel.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/v3-Confidentiality</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.securityLabel.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">N</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">securityLabel</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content" >content</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.attachment" >attachment</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.attachment.contentType" >contentType</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">application/pdf</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.attachment.language" >language</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">de</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.attachment.url" >url</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">https://mein-Dokumentenserver/dokumente/1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.46340.pdf</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.attachment.creation" >creation</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">2020-12-31T23:50:50-05:00</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">attachment</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.format" >format</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.format.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.format.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">urn:ihe:iti:xds:2017:mimeTypeSufficient</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.format.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">mimeType Sufficient</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">format</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">content</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context" >context</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.encounter" >encounter</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.encounter.reference" >reference</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Encounter/BeispielBesuch</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">encounter</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.facilityType" >facilityType</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.facilityType.coding" >coding</a></span><span class="brace">&gt;</span>
+                <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.facilityType.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+                <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.facilityType.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">KHS</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+                <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.facilityType.coding.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Krankenhaus</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">facilityType</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.practiceSetting" >practiceSetting</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.practiceSetting.coding" >coding</a></span><span class="brace">&gt;</span>
+                <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.practiceSetting.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+                <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.practiceSetting.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">ALLG</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">practiceSetting</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">context</span><span class="brace">&gt;</span>
+<span class="brace">&lt;/</span><span class="element">DocumentReference</span><span class="brace">&gt;</span>
+</pre></p>
+<h4 id="in-json">in JSON</h4>
+<p><pre class="resource-validation-xml"><pre><span class="brace">{</span>
+    <span class="element">&quot;</span><span class="element">resourceType</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">DocumentReference</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">id</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">dok-beispiel-server</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">meta</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">security</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">HTEST</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/v3-ActReason</span><span class="string">&quot;</span>
+            <span class="brace">}</span>
+        <span class="brace">]</span><span class="symbol">,</span>
+        <span class="element">&quot;</span><span class="element">profile</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="string">&quot;</span><span class="string">https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten</span><span class="string">&quot;</span>
+        <span class="brace">]</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">masterIdentifier</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">urn:ietf:rfc:3986</span><span class="string">&quot;</span><span class="symbol">,</span>
+        <span class="element">&quot;</span><span class="element">value</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.46340</span><span class="string">&quot;</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">type</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://dvmd.de/fhir/CodeSystem/kdl</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">PT130102</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">display</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Molekularpathologiebefund</span><span class="string">&quot;</span>
+            <span class="brace">}</span><span class="symbol">,</span>
+            <span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">PATH</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://ihe-d.de/CodeSystem/IHEXDStypeCode</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">display</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Pathologiebefundberichte</span><span class="string">&quot;</span>
+            <span class="brace">}</span>
+        <span class="brace">]</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">status</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">current</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">category</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">BEF</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://ihe-d.de/CodeSystems/IHEXDSclassCode</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">display</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Befundbericht</span><span class="string">&quot;</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">description</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Molekularpathologiebefund vom 31.12.21</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">subject</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">reference</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Patient/PatientinMusterfrau</span><span class="string">&quot;</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">securityLabel</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">N</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/v3-Confidentiality</span><span class="string">&quot;</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">content</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">attachment</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">contentType</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">application/pdf</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">url</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">https://mein-Dokumentenserver/dokumente/1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.46340.pdf</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">language</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">de</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">creation</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">2020-12-31T23:50:50-05:00</span><span class="string">&quot;</span>
+            <span class="brace">}</span><span class="symbol">,</span>
+            <span class="element">&quot;</span><span class="element">format</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">urn:ihe:iti:xds:2017:mimeTypeSufficient</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">display</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">mimeType Sufficient</span><span class="string">&quot;</span>
+            <span class="brace">}</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">context</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">facilityType</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">KHS</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">display</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Krankenhaus</span><span class="string">&quot;</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span>
+        <span class="brace">}</span><span class="symbol">,</span>
+        <span class="element">&quot;</span><span class="element">practiceSetting</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">ALLG</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen</span><span class="string">&quot;</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span>
+        <span class="brace">}</span><span class="symbol">,</span>
+        <span class="element">&quot;</span><span class="element">encounter</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">reference</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Encounter/BeispielBesuch</span><span class="string">&quot;</span>
+            <span class="brace">}</span>
+        <span class="brace">]</span>
+    <span class="brace">}</span>
+<span class="brace">}</span></pre></pre></p>
+<h3 id="clientseitiges-dokument-nur-mit-kdl-annotiert">Clientseitiges Dokument (nur mit KDL annotiert)</h3>
+<h4 id="in-xml-1">in XML</h4>
+<p><pre class="resource-validation-xml"><span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference" >DocumentReference</a></span> <span class="attr">xmlns</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://hl7.org/fhir</span><span class="symbol">&quot;</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.id" >id</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">dok-beispiel-client-with-binary-pdf-example-short</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.meta" >meta</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.meta.profile" >profile</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.meta.security" >security</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.meta.security.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/v3-ActReason</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.meta.security.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">HTEST</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">security</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">meta</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.masterIdentifier" >masterIdentifier</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.masterIdentifier.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">urn:ietf:rfc:3986</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.masterIdentifier.value" >value</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.46340</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">masterIdentifier</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.status" >status</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">current</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type" >type</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding" >coding</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://dvmd.de/fhir/CodeSystem/kdl</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">PT130102</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.type.coding.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Molekularpathologiebefund</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">type</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.subject" >subject</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.subject.reference" >reference</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Patient/PatientinMusterfrau</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">subject</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.description" >description</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Molekularpathologiebefund vom 31.12.21</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.securityLabel" >securityLabel</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.securityLabel.coding" >coding</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.securityLabel.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/v3-Confidentiality</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.securityLabel.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">N</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">securityLabel</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content" >content</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.attachment" >attachment</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.attachment.contentType" >contentType</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">application/pdf</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.attachment.language" >language</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">de</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.attachment.data" >data</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">JVBERi0xLjUNJeLjz9MNCjEw</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.attachment.creation" >creation</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">2020-12-31T23:50:50-05:00</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">attachment</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.format" >format</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.format.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.format.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">urn:ihe:iti:xds:2017:mimeTypeSufficient</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.content.format.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">mimeType Sufficient</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">format</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">content</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context" >context</a></span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.encounter" >encounter</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.encounter.reference" >reference</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Encounter/BeispielBesuch</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">encounter</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.facilityType" >facilityType</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.facilityType.coding" >coding</a></span><span class="brace">&gt;</span>
+                <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.facilityType.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+                <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.facilityType.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">KHS</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+                <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.facilityType.coding.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Krankenhaus</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">facilityType</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.practiceSetting" >practiceSetting</a></span><span class="brace">&gt;</span>
+            <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.practiceSetting.coding" >coding</a></span><span class="brace">&gt;</span>
+                <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.practiceSetting.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+                <span class="brace">&lt;</span><span class="element"><a title="An instance of StructureDefinition" href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKDokumentenMetadaten.json#DocumentReference.context.practiceSetting.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">ALLG</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
+            <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
+        <span class="brace">&lt;/</span><span class="element">practiceSetting</span><span class="brace">&gt;</span>
+    <span class="brace">&lt;/</span><span class="element">context</span><span class="brace">&gt;</span>
+<span class="brace">&lt;/</span><span class="element">DocumentReference</span><span class="brace">&gt;</span>
+</pre></p>
+<h4 id="in-json-1">in JSON</h4>
+<p><pre class="resource-validation-xml"><pre><span class="brace">{</span>
+    <span class="element">&quot;</span><span class="element">resourceType</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">DocumentReference</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">id</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">dok-beispiel-client-with-binary-pdf-example-short</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">meta</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">security</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">HTEST</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/v3-ActReason</span><span class="string">&quot;</span>
+            <span class="brace">}</span>
+        <span class="brace">]</span><span class="symbol">,</span>
+        <span class="element">&quot;</span><span class="element">profile</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="string">&quot;</span><span class="string">https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten</span><span class="string">&quot;</span>
+        <span class="brace">]</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">masterIdentifier</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">urn:ietf:rfc:3986</span><span class="string">&quot;</span><span class="symbol">,</span>
+        <span class="element">&quot;</span><span class="element">value</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.46340</span><span class="string">&quot;</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">type</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://dvmd.de/fhir/CodeSystem/kdl</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">PT130102</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">display</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Molekularpathologiebefund</span><span class="string">&quot;</span>
+            <span class="brace">}</span>
+        <span class="brace">]</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">status</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">current</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">description</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Molekularpathologiebefund vom 31.12.21</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">subject</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">reference</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Patient/PatientinMusterfrau</span><span class="string">&quot;</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">securityLabel</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">N</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/v3-Confidentiality</span><span class="string">&quot;</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">content</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">attachment</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">contentType</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">application/pdf</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">data</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">JVBERi0xLjUNJeLjz9MNCjEw</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">language</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">de</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">creation</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">2020-12-31T23:50:50-05:00</span><span class="string">&quot;</span>
+            <span class="brace">}</span><span class="symbol">,</span>
+            <span class="element">&quot;</span><span class="element">format</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">urn:ihe:iti:xds:2017:mimeTypeSufficient</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode</span><span class="string">&quot;</span><span class="symbol">,</span>
+                <span class="element">&quot;</span><span class="element">display</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">mimeType Sufficient</span><span class="string">&quot;</span>
+            <span class="brace">}</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">context</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">facilityType</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">KHS</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">display</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Krankenhaus</span><span class="string">&quot;</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span>
+        <span class="brace">}</span><span class="symbol">,</span>
+        <span class="element">&quot;</span><span class="element">practiceSetting</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">ALLG</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen</span><span class="string">&quot;</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span>
+        <span class="brace">}</span><span class="symbol">,</span>
+        <span class="element">&quot;</span><span class="element">encounter</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="brace">{</span>
+                <span class="element">&quot;</span><span class="element">reference</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Encounter/BeispielBesuch</span><span class="string">&quot;</span>
+            <span class="brace">}</span>
+        <span class="brace">]</span>
+    <span class="brace">}</span>
+<span class="brace">}</span></pre></pre></p>
+
+                    </div>
+
+        </div>
+
+    </div>
+</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+            
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Implementierungsleitfaden ISiK-Dokumentenaustausch</title>
+
+    <link rel="icon" href="static/styles/common/favicon.ico" />
+
+    <script src="static/styles/common/jquery/jquery.min.js"></script>
+    <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/common/main.min.css" />
+    <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+    <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+    <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/twolevelmenu/style.css?v=1da869d89c18300" />
+
+</head>
+
+<body>
+
+    <div id="ig-viewer">
+
+        <div class="ig-view-content">
+
+            <div id="ig-view-twolevelmenu">
+
+                <div class="header" role="banner" aria-label="Header">
+                    
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a class="navbar-brand" href="ImplementationGuide-markdown-Einfuehrung.html">
+                    Implementierungsleitfaden ISiK-Dokumentenaustausch
+                </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                    <li>
+                        <a href="ImplementationGuide-markdown-Einfuehrung.html">
+                            Einf&#xFC;hrung
+                        </a>
+                    </li>
+
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseNotes.html">
+                                Release Notes
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Zusammenfassung <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Zusammenfassung.html">
+                                            Zusammenfassung
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Zusammenfassung-UseCases.html">
+                                            Anwendungsf&#xE4;lle (Use Cases)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Zusammenfassung-Informationsmodell.html">
+                                            Informationsmodell
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Zusammenfassung-InteraktionenUndSearchTypes.html">
+                                            Interaktionen Und SearchTypes
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Festlegungen <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen.html">
+                                            &#xDC;bergreifende Festlegungen
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-BestaetigungsrelevanteSysteme.html">
+                                            Best&#xE4;tigungsrelevante Systeme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-Kompatibilitaet.html">
+                                            Kompatibilit&#xE4;t
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-AnmerkungenzuMust-Support-Feldern.html">
+                                            Anmerkungen zu Must-Support Feldern
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-AkteureUndInteraktionen.html">
+                                            Akteure und Interaktionen
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Datenobjekte <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte.html">
+                                            Datenobjekte
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-CapabilityStatement.html">
+                                            CapabilityStatement
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_DocumentReference.html">
+                                            Dokumentenmetadaten (DocumentReference)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Bundle.html">
+                                            Aggregation (Bundle)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Datenobjekte_ISiKBinary.html">
+                                            ISiKBinary
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                </div>
+
+                <div class="content container" role="main" aria-label="Main content">
+                    
+
+
+<div class="row">
+
+
+    <div class="col-md-24">
+
+        <div id="preview-content">
+
+            <h2 id="dokumentenabfrage-und-zugriff">Dokumentenabfrage und -zugriff</h2>
+<h3 id="dokumentenabfrage-ihe-mhd-iti-67-find-documentreferences">Dokumentenabfrage (IHE MHD ITI-67 (Find DocumentReferences))</h3>
+<p>Dokumente können anhand ihrer Metadaten gesucht werden. Im Rahmen der ISiK-Spezifikation müssen mindestens die im Kapitel <div class='error'>Command 'pagelink' could not render: Page not found.</div>
+mit <code>MUSS</code> gekennzeichneten Suchparameter unterstützt werden. Einzelnen Systemen steht es frei, darüber hinaus weitere FHIR-konforme Suchparameter zu implementieren.</p>
+<p>Die Ergebnisse einer Suchanfrage werden in Form eines Bundles zurückgegeben:
+<div class='error'>Command 'tree' could not render: File was not found for 'https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenSuchergebnisse'</div></p>
+<p>Suchergebnisse können zahlreich sein. Server MÜSSEN daher <a href="https://hl7.org/fhir/R4/http.html#paging">FHIR-konformes Paging</a> unterstützen. Server KÖNNEN im SearchSet-Bundle auch Ressourcen vom Typ <a href="https://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a> mit Informationen über die Suchergebnisse zurückgeben. Diese müssen in <code>Bundle.entry.search.mode</code> mit dem Wert <code>outcome</code> gekennzeichnet sein. Die Issues im OperationOutcome dürfen nur dem Schweregrad <code>information</code> oder <code>warning</code> entsprechen.
+Issues vom Schweregrad <code>error</code> oder <code>fatal</code> sind unzulässig.</p>
+<h3 id="hinweise-und-anmerkungen-zur-implementierung-von-ihe-mhd-iti-67-find-documentreferences">Hinweise und Anmerkungen zur Implementierung von <a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html">IHE MHD ITI-67 (Find DocumentReferences)</a></h3>
+<p>Für die Implementierung der Interaktion &quot;Dokumentenabfrage&quot; gelten die in IHE MHD festgelegten Vereinbarungen zu <a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html">ITI-67 (Find DocumentReferences)</a> gemäß der unten aufgelisteten Kapitel. Abweichungen bzw. zusätzliche Festlegungen im Kontext von ISiK sind im Folgenden zu den einzelnen Kapiteln vermerkt.</p>
+<h4 id="find-document-references-request-message"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#236741-find-document-references-request-message">2:3.67.4.1 Find Document References Request Message</a></h4>
+<h5 id="trigger-events"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#2367411-trigger-events">2:3.67.4.1.1 Trigger Events</a></h5>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<h5 id="message-semantics"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#2367412-message-semantics">2:3.67.4.1.2 Message Semantics</a></h5>
+<p>Es gelten darüber hinaus die allgemeinen Festlegungen zu Suchparametern gemäß <a href="https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen-UebergreifendeFestlegungen-Suchparameter?version=current">ISiK Basisprofil Stufe 4</a></p>
+<h5 id="query-search-parameters"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#23674121-query-search-parameters">2:3.67.4.1.2.1 Query Search Parameters</a></h5>
+<p>Im Rahmen der ISiK-Spezifikation müssen mindestens die im Kapitel <div class='error'>Command 'pagelink' could not render: Page not found.</div>
+mit <code>MUSS</code> gekennzeichneten Suchparameter unterstützt werden. Einzelnen Systemen steht es frei, darüber hinaus weitere FHIR-konforme bzw in IHE MHD geforderte Suchparameter zu implementieren.</p>
+<p>Die in IHE bestehende Verpflichtung für Clients, bei jeder Query mindestens einen der Parameter <code>patient</code> oder <code>patient.identifier</code> verwenden zu müssen, besteht im ISiK-Kontext nicht. Patientenübergreifende Suchanfragen sind zulässig.</p>
+<h5 id="populating-expected-response-format"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#23674122-populating-expected-response-format">2:3.67.4.1.2.2 Populating Expected Response Format</a></h5>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<h5 id="expected-actions"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#2367413-expected-actions">2:3.67.4.1.3 Expected Actions</a></h5>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<h5 id="xds-on-fhir-option"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#23674131-xds-on-fhir-option">2:3.67.4.1.3.1 XDS on FHIR Option</a></h5>
+<p>Die Implementierung der &quot;XDS on FHIR&quot;-Option ist im ISiK-Kontext nicht gefordert.</p>
+<h4 id="find-document-references-response-message"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#236742-find-document-references-response-message">2:3.67.4.2 Find Document References Response Message</a></h4>
+<h5 id="trigger-events-1"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#2367421-trigger-events">2:3.67.4.2.1 Trigger Events</a></h5>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<h5 id="message-semantics-1"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#2367422-message-semantics">2:3.67.4.2.2 Message Semantics</a></h5>
+<ul>
+<li>Suchergebnisse können zahlreich sein. Server MÜSSEN daher <a href="https://hl7.org/fhir/R4/http.html#paging">FHIR-konformes Paging</a> unterstützen. Server KÖNNEN im * SearchSet-Bundle auch Ressourcen vom Typ <a href="https://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a> mit Informationen über die Suchergebnisse zurückgeben. Diese müssen in <code>Bundle.entry.search.mode</code> mit dem Wert <code>outcome</code> gekennzeichnet sein. Die Issues im OperationOutcome dürfen nur dem Schweregrad <code>information</code> oder <code>warning</code> entsprechen. Issues vom Schweregrad <code>error</code> oder <code>fatal</code> sind unzulässig.</li>
+<li>Das Ergebnis-Bundle der Suche muss konform sein zum Profil &quot;ISiKDokumentenSuchergebnisse&quot;<div class='error'>Command 'tree' could not render: File was not found for 'https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenSuchergebnisse'</div></li>
+</ul>
+<h5 id="documentreference-resource-contents"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#23674221-documentreference-resource-contents">2:3.67.4.2.2.1 DocumentReference Resource Contents</a></h5>
+<ul>
+<li>Die DocumentReference-Ressoucen müssen im ISiK-Kontext auf Basis des Profils &quot;ISiKDokumentenMetadaten&quot; und den dort vereinbarten Kardinalitäten bzw. MustSupport-Flags erstellt werden.</li>
+</ul>
+<h5 id="document-location"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#236742211-document-location">2:3.67.4.2.2.1.1 Document Location</a></h5>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<p>Alle weiteren Unterkapitel von <a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#23674221-documentreference-resource-contents">2:3.67.4.2.2.1 DocumentReference Resource Contents</a> sind für den ISiK-Kontext nicht relevant.</p>
+<h4 id="expected-actions-1"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#236743-expected-actions">2:3.67.4.3 Expected Actions</a></h4>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<h4 id="capabilitystatement-resource"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#236744-capabilitystatement-resource">2:3.67.4.4 CapabilityStatement Resource</a></h4>
+<p>Es gelten die Vereinbarungen gemäß <div class='error'>Command 'pagelink' could not render: Page not found.</div></p>
+<h4 id="security-considerations"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#23675-security-considerations">2:3.67.5 Security Considerations</a></h4>
+<p>Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe <a href="https://simplifier.net/isik-sicherheit-v3">Modul ISiK-Sicherheit</a>.</p>
+<h3 id="dokumentenzugriff-ihe-mhd-iti-68-retrieve-document">Dokumentenzugriff (IHE MHD ITI-68 (Retrieve Document))</h3>
+<p>Das den Metadaten zugeordnete Dokument kann jeweils unter <code>DocumentReference.content.attachment.url</code> vom Server abgerufen werden.</p>
+<h3 id="hinweise-und-anmerkungen-zur-implementierung-von-ihe-mhd-iti-68-retrieve-document">Hinweise und Anmerkungen zur Implementierung von <a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html">IHE MHD ITI-68 (Retrieve Document)</a></h3>
+<p>Für die Implementierung der Interaktion &quot;Dokumentenzugriff&quot; gelten die in IHE MHD festgelegten Vereinbarungen zu <a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html">ITI-68 (Retrieve Document)</a> gemäß der unten aufgelisteten Kapitel. Abweichungen bzw. zusätzliche Festlegungen im Kontext von ISiK sind im Folgenden zu den einzelnen Kapiteln vermerkt.</p>
+<h4 id="retrieve-document-request-message"><a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html#236841-retrieve-document-request-message">2:3.68.4.1 Retrieve Document Request Message</a></h4>
+<h5 id="trigger-events-2"><a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html#2368411-trigger-events">2:3.68.4.1.1 Trigger Events</a></h5>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<h5 id="message-semantics-2"><a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html#2368412-message-semantics">2:3.68.4.1.2 Message Semantics</a></h5>
+<p>Der einzige MIME-Type, den alle Dokumentenserver verpflichtend zurückgeben können MÜSSEN, ist der MIME Type, der dem <code>DocumentReference.content.attachment.contentType</code> entspricht.</p>
+<p>Im ISiK-Kontext SOLLEN Dokumentenserver das Dokument darüber hinaus über einen <a href="https://hl7.org/fhir/R4/binary.html">Binary-Endpunkt</a> bereitstellen können. Dieser verfügt über folgende Besonderheit:</p>
+<ul>
+<li>Wenn der Zugriff mit dem Accept-Header <code>application/fhir+xml</code> oder <code>application/fhir+json</code> erfolgt, müssen die Daten als <a href="https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Binary?version=current">Binary-Ressource im angeforderten Format</a> zurückgegeben werden.</li>
+<li>Wenn der Zugriff mit einem <em>anderen</em> Accept-Header als <code>application/fhir+xml</code> oder <code>application/fhir+json</code> erfolgt, so soll das Dokument im angeforderten Format zurückgegeben werden,
+z.B. MUSS bei Zugriffen mit Accept-Header <code>application/pdf</code> das Dokument unmittelbar als PDF zurückgegeben werden, sofern dies dem Content-Type der Binary-Ressource entspricht.</li>
+</ul>
+<h5 id="expected-actions-2"><a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html#2368413-expected-actions">2:3.68.4.1.3 Expected Actions</a></h5>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<h4 id="retrieve-document-response-message"><a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html#236842-retrieve-document-response-message">2:3.68.4.2 Retrieve Document Response Message</a></h4>
+<p>Die Vereinbarungen dieses Kapitels und aller Unterkapitel gelten uneingeschränkt.</p>
+<h5 id="trigger-events-3"><a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html#2368421-trigger-events">2:3.68.4.2.1 Trigger Events</a></h5>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<h5 id="message-semantics-3"><a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html#2368422-message-semantics">2:3.68.4.2.2 Message Semantics</a></h5>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<h5 id="expected-actions-3"><a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html#2368423-expected-actions">2:3.68.4.3 Expected Actions</a></h5>
+<p>Die Vereinbarungen gelten uneingeschränkt.</p>
+<h5 id="capabilitystatement-resource-1"><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#236843-capabilitystatement-resource">2:3.68.4.4 CapabilityStatement Resource</a></h5>
+<p>Es gelten die Vereinbarungen gemäß <div class='error'>Command 'pagelink' could not render: Page not found.</div></p>
+<h4 id="security-considerations-1"><a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html#23685-security-considerations">2:3.68.5 Security Considerations</a></h4>
+<p>Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe <a href="https://simplifier.net/isik-sicherheit-v3">Modul ISiK-Sicherheit</a></p>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+            
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
