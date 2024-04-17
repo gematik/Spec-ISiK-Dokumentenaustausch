@@ -89,7 +89,7 @@ namespace ISiK_DokumentenAustausch {
 
    class ISiKConfidentialityCodes <ValueSet><<(V,#8DA5C4)>>{
       Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-dokumentenaustausch-v3/ISiKConfidentialityCodes/ ISiK Confidentiality Codes]]
+      [[https://simplifier.net/isik-dokumentenaustausch-v4/ISiKConfidentialityCodes/ ISiK Confidentiality Codes]]
       Includes codes from the code System
       [[http://terminology.hl7.org/CodeSystem/v3-Confidentiality V3 Confidentiality]]
       --

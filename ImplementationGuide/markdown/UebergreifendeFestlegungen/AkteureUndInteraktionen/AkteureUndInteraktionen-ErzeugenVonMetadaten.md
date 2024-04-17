@@ -35,13 +35,13 @@ Die Vereinbarungen gelten uneingeschränkt.
 Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}
 
 #### [2:3.106.5 Security Considerations](https://profiles.ihe.net/ITI/MHD/ITI-106.html#231065-security-considerations)
-Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe [Modul ISiK-Sicherheit](https://simplifier.net/isik-sicherheit-v3)
+Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe [Modul ISiK-Sicherheit](https://simplifier.net/isik-sicherheit-v4)
 
 
 ### ISiK-Spezifisches Mapping Composition -> DocumentReference
  @```
       from StructureDefinition
-      where url = 'https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten'
+      where url = 'https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten'
       for differential.element
       select
         Path: id,

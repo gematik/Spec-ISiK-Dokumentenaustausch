@@ -3,7 +3,7 @@ InstanceOf: OperationDefinition
 Usage: #example
 Title: "update-metadata"
 * insert Meta-Inst
-* url = "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/OperationDefinition/UpdateMetadata"
+* url = "https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata"
 * title = "Update document metadata"
 //* status = #draft
 * kind = #operation

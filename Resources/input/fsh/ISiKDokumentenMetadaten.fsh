@@ -83,7 +83,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe eines Identifiers gelockert, das
 * subject only Reference(Patient)
 * subject 1..1 MS
   * ^short = "Patientenbezug des Dokumentes"
-  * ^comment = "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein.
+  * ^comment = "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient) des Basismoduls sein.
   
   Für sonstige Kontexte siehe [FHIR Kernspezifikation](http://hl7.org/fhir/documentreference-definitions.html#DocumentReference.subject)"
   * reference 1..1 MS
@@ -148,7 +148,7 @@ Es ist zu beachten, dass diese base64-codierten Daten wiederum ein FHIR-Bundle (
       *  ^comment = "Um die Suche nach Dokumenten effizient zu gestalten, dürfen die Dokumente selbst nicht in die DocumentReference eingebettet werden, 
       sondern müssen als separates Datenobjekt referenziert werden. 
 
-Wird ein separates Datenobjekt im ISIK-Kontext referenziert, so MUSS dieses konform zum Profil [ISIKBinary](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKBinary) aus dem Basismodul sein.
+Wird ein separates Datenobjekt im ISIK-Kontext referenziert, so MUSS dieses konform zum Profil [ISIKBinary](https://gematik.de/fhir/isik/StructureDefinition/ISiKBinary) aus dem Basismodul sein.
       
 Update für Stufe 3:
 Die Ausnahme bildet die Interaktion &quot;Dokumentenbereitstellung&quot;, 
@@ -170,7 +170,7 @@ Ressource ausgelagert und über Attachment.url referenziert werden."
   * encounter ..1 MS
     * ^comment = "Abweichend zu MHD V4.0.1 ist die Verwendung der Encounter-Referenz im ISiK-Kontext erlaubt.
 
-    Wird ein Encounter im ISIK-Kontext referenziert, so MUSS dieser konform zum Profil [ISIKKontaktGesundheitseinrichtung](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKKontaktGesundheitseinrichtung) aus dem Basismodul sein. 
+    Wird ein Encounter im ISIK-Kontext referenziert, so MUSS dieser konform zum Profil [ISIKKontaktGesundheitseinrichtung](https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung) aus dem Basismodul sein. 
 Update für Stufe 3: 
 In MHD 4.2.0 wurde das Verbot der Angabe einer Encounter-Referenz gelockert, das ISiK-Profil ist damit in diesem Punkt wieder kompatibel zu IHE MHD.
     "
