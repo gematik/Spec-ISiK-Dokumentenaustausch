@@ -34,21 +34,6 @@ Die in IHE-MHD geltende Einschränkung, dass Clients bei allen Suchen mindestens
     Anwendungshinweise: Weitere Informationen zur Suche nach Reference-type Parametern finden sich in der [FHIR-Basisspezifikation - Abschnitt "Reference Search"](https://www.hl7.org/fhir/R4/search.html#reference).
 	
 	Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Clients und Server verpflichend.
-
-1. Der verkettete Suchparameter "patient.identifier" MUSS unterstützt werden:
-
-    Beispiele:
-
-    ```GET [base]/DocumentReference?patient.identifier=http://mein-krankenhaus.example/fhir/sid/patienten|1032702```
-
-    ```GET [base]/DocumentReference?patient.identifier=1032702```
-
-    Anwendungshinweise: Weitere Informationen zur Suche nach Token-type Parametern finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
-
-    Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Client und Server verpflichtend.
-	
-	Weitere Informationen zur Suche nach verketteten Parametern finden sich in der [FHIR-Basisspezifikation - Abschnitt "Chained Parameters"](https://hl7.org/fhir/R4/search.html#chaining).
-
 	
 1. Der Suchparameter "type" MUSS unterstützt werden:
 
@@ -93,3 +78,24 @@ Die in IHE-MHD geltende Einschränkung, dass Clients bei allen Suchen mindestens
     Anwendungshinweise: Weitere Informationen zur Suche nach Reference-type Parametern finden sich in der [FHIR-Basisspezifikation - Abschnitt "Reference Search"](https://www.hl7.org/fhir/R4/search.html#reference).
 
 
+
+### Verkettete Suchparameter (Chaining und Reverse Chaining)
+
+Auch die verketteten Suchparameter MÜSSEN unterstützt werden und sind mit entsprechenden Referenzen im CapabilityStatement unter ```CapabilityStatement.rest.resource.searchInclude``` bzw. ```CapabilityStatement.rest.resource.searchRevInclude``` angegeben. Siehe {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}
+
+Informationen und Beispiele zur Suche nach verketteten Parametern finden sich [im Basismodul](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen-UebergreifendeFestlegungen_Suchparameter) und in der FHIR-Basisspezifikation im [Abschnitt "Chained Parameters"](https://hl7.org/fhir/R4/search.html#chaining) und im [Abschnitt "Reverse Chaining"](https://hl7.org/fhir/R4/search.html#has).
+
+Die verketteten Suchparameter des Profils ```DocumentReference``` hängen wie folgt mit den festgelegten {{pagelink:ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md, text:Anwendungsfällen (Use Cases)}}  zusammen:
+
+
+1. Der verkettete Suchparameter ```Patient:identifier``` unterstützt den Anwendungsfall:
+
+    Um für behandlungsrelevante Dokumente eine {{pagelink:ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md, text:Verwechslung}} zwischen verschiedenen Patienten vermeiden.
+
+    Beispiele:
+
+    ```GET [base]/DocumentReference?patient.identifier=http://mein-krankenhaus.example/fhir/sid/patienten|1032702```
+
+    ```GET [base]/DocumentReference?patient.identifier=1032702```
+
+    Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Client und Server verpflichtend.
