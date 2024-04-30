@@ -6,6 +6,13 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Offene Punkte und bekannte Probleme siehe [GitHub Issues](https://github.com/gematik/ISiK-Dokumentenaustausch/issues?q=is%3Aissue+is%3Aopen+label%3A%22offene+Punkte+Ballot%22)
 
+Version: 3.0.3
+
+Datum: 30.04.2024
+
+* fix IHEXDStypeCode Canonical-URL https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/187/commits/33b3832adfd65ba6496d419c92870d6f30d4ffe1
+* Update Basismodul-Dependency to Patch-Wildcard 3.0.x
+
 ----
 Version: 3.0.2
 
