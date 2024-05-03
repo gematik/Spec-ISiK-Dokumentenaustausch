@@ -188,6 +188,22 @@
         "mustSupport": true
       },
       {
+        "id": "DocumentReference.type.coding:XDS.code",
+        "path": "DocumentReference.type.coding.code",
+        "short": "Code",
+        "comment": "Der KDL-Code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.type.coding:XDS.display",
+        "path": "DocumentReference.type.coding.display",
+        "short": "Anzeigetext",
+        "comment": "Der Anzeigetext zum KDL-Code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "DocumentReference.category",
         "path": "DocumentReference.category",
         "short": "Dokumentklasse/-Kategorie",
@@ -233,7 +249,7 @@
         "path": "DocumentReference.category.coding.system",
         "short": "Kodiersystem",
         "min": 1,
-        "patternUri": "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
+        "patternUri": "http://ihe-d.de/CodeSystems/IHEXDSclassCode",
         "mustSupport": true
       },
       {
