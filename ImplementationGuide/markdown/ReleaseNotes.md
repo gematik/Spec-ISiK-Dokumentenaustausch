@@ -12,6 +12,7 @@ Datum: 30.04.2024
 
 * fix IHEXDStypeCode Canonical-URL https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/187/commits/33b3832adfd65ba6496d419c92870d6f30d4ffe1
 * Add dependency to IHE package
+* Fix der XDS Slices für .type und Category https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/189
 * Update Basismodul-Dependency to Patch-Wildcard 3.0.x
 
 ----
