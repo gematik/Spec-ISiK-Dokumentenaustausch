@@ -180,6 +180,14 @@
         ]
       },
       {
+        "id": "DocumentReference.type.coding:XDS.system",
+        "path": "DocumentReference.type.coding.system",
+        "short": "Kodiersystem",
+        "min": 1,
+        "patternUri": "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
+        "mustSupport": true
+      },
+      {
         "id": "DocumentReference.category",
         "path": "DocumentReference.category",
         "short": "Dokumentklasse/-Kategorie",
@@ -225,6 +233,7 @@
         "path": "DocumentReference.category.coding.system",
         "short": "Kodiersystem",
         "min": 1,
+        "patternUri": "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
         "mustSupport": true
       },
       {
