@@ -51,10 +51,10 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe eines Identifiers gelockert, das
   [ConceptMaps](https://simplifier.net/kdl/~resources?category=ConceptMap) aus dem KDL-Code ermittelt werden"
   * code 1..1 MS
     * ^short = "Code"
-    * ^comment = "Der KDL-Code"
+    * ^comment = "Der XDS-Code"
   * display 1..1 MS
     * ^short = "Anzeigetext"
-    * ^comment = "Der Anzeigetext zum KDL-Code"
+    * ^comment = "Der Anzeigetext zum XDS-Code"
 * type.coding[KDL] from http://dvmd.de/fhir/ValueSet/kdl (required)
   * ^short = "Dokumenttyp gem. KDL-Terminologie"
   * system 1..1 MS
