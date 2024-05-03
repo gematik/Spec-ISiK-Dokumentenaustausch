@@ -49,6 +49,12 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe eines Identifiers gelockert, das
   * ^comment = "Die Übermittlung des XDS-Type-Codes ist im Rahmen der Dokumentenbereitstellung für Clients nicht verpflichtend,
   MUSS jedoch vom Server bei der Entgegennahme ggf. ergänzt und bei der Dokumentenabfrage zurückgegeben werden. Der XDS-Type-Code kann über die im Rahmen der [KDL-Spezifikation](https://simplifier.net/kdl) publizierten
   [ConceptMaps](https://simplifier.net/kdl/~resources?category=ConceptMap) aus dem KDL-Code ermittelt werden"
+  * code 1..1 MS
+    * ^short = "Code"
+    * ^comment = "Der KDL-Code"
+  * display 1..1 MS
+    * ^short = "Anzeigetext"
+    * ^comment = "Der Anzeigetext zum KDL-Code"
 * type.coding[KDL] from http://dvmd.de/fhir/ValueSet/kdl (required)
   * ^short = "Dokumenttyp gem. KDL-Terminologie"
   * system 1..1 MS
@@ -75,7 +81,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe eines Identifiers gelockert, das
 * category.coding contains XDS 1..1 MS
 * category.coding[XDS] from http://ihe-d.de/ValueSets/IHEXDSclassCode (required)
   * system 1..1 MS
-  * system = "http://ihe-d.de/CodeSystems/IHEXDStypeCode"
+  * system = "http://ihe-d.de/CodeSystems/IHEXDSclassCode"
     * ^short = "Kodiersystem"
   * code 1..1 MS
     * ^short = "Code"
