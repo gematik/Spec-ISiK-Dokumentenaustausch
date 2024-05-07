@@ -2,50 +2,15 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKDokumentenMetadaten",
   "url": "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "name": "ISiKDokumentenMetadaten",
   "title": "Erforderliche Metadaten für Dokumentenaustausch in ISiK",
   "status": "active",
   "experimental": false,
-  "date": "2024-03-27",
+  "date": "2024-05-07",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "fhircomposition",
-      "uri": "http://hl7.org/fhir/composition",
-      "name": "FHIR Composition"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "cda",
-      "uri": "http://hl7.org/v3/cda",
-      "name": "CDA (R2)"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "v2",
-      "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
-    },
-    {
-      "identity": "xds",
-      "uri": "http://ihe.net/xds",
-      "name": "XDS metadata equivalent"
-    },
     {
       "identity": "CompositionDocumentReferenceMapping",
       "name": "Metadaten eines strukturieren Dokumentes (Document-Bundle)",
@@ -156,6 +121,9 @@
         "short": "Dokumenttyp gem. KDL-Terminologie",
         "min": 1,
         "max": "1",
+        "patternCoding": {
+          "system": "http://dvmd.de/fhir/CodeSystem/kdl"
+        },
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -174,7 +142,6 @@
         "short": "Kodiersystem",
         "comment": "Fix: &quot;http://dvmd.de/fhir/CodeSystem/kdl&quot;",
         "min": 1,
-        "patternUri": "http://dvmd.de/fhir/CodeSystem/kdl",
         "mustSupport": true
       },
       {
@@ -201,6 +168,9 @@
         "comment": "Die Übermittlung des XDS-Type-Codes ist im Rahmen der Dokumentenbereitstellung für Clients nicht verpflichtend,\n  MUSS jedoch vom Server bei der Entgegennahme ggf. ergänzt und bei der Dokumentenabfrage zurückgegeben werden. Der XDS-Type-Code kann über die im Rahmen der [KDL-Spezifikation](https://simplifier.net/kdl) publizierten\n  [ConceptMaps](https://simplifier.net/kdl/~resources?category=ConceptMap) aus dem KDL-Code ermittelt werden",
         "min": 0,
         "max": "1",
+        "patternCoding": {
+          "system": "http://ihe-d.de/CodeSystems/IHEXDStypeCode"
+        },
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -213,6 +183,29 @@
             "comment": "Kann mittels Lookup in den KDL->XDS ConceptMaps anhand des KDL-Type-Codes ermittelt werden"
           }
         ]
+      },
+      {
+        "id": "DocumentReference.type.coding:XDS.system",
+        "path": "DocumentReference.type.coding.system",
+        "short": "Kodiersystem",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.type.coding:XDS.code",
+        "path": "DocumentReference.type.coding.code",
+        "short": "Code",
+        "comment": "Der XDS-Type-Code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.type.coding:XDS.display",
+        "path": "DocumentReference.type.coding.display",
+        "short": "Anzeigetext",
+        "comment": "Der Anzeigetext zum XDS-Type-Code",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "DocumentReference.category",
@@ -242,6 +235,9 @@
         "sliceName": "XDS",
         "min": 1,
         "max": "1",
+        "patternCoding": {
+          "system": "http://ihe-d.de/CodeSystems/IHEXDSclassCode"
+        },
         "mustSupport": true,
         "binding": {
           "strength": "required",

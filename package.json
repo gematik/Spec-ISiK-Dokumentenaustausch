@@ -1,12 +1,13 @@
 {
   "name": "de.gematik.isik-dokumentenaustausch",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "fhirVersions": [
     "4.0.1"
   ],
   "dependencies": {
     "ihe.iti.mhd": "4.2.0",
-    "de.gematik.isik-basismodul": "3.0.4",
+    "de.gematik.isik-basismodul": "3.0.x",
+    "de.ihe-d.terminology": "3.0.0",
     "dvmd.kdl.r4.2022": "2022.1.2"
   }
 }
