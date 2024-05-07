@@ -18,7 +18,7 @@ Die Verwendung der [CapabilityStatement-Expectation](https://hl7.org/fhir/R4/ext
 
 Canonical: https://gematik.de/fhir/isik/v3/Dokumentenaustausch/CapabilityStatement/dokumentenaustausch-server
 
-[Link Simplifier Profil Übersicht](https://simplifier.net/spec-isik-dokumentenaustausch/ISiK-capabilityStatement-dokumentenaustausch-server)
+[Link Simplifier Profil Übersicht](https://simplifier.net/isik-dokumentenaustausch-v3/isik-capabilitystatement-dokumentenaustausch-server)
 
 {{render:https://gematik.de/fhir/isik/v3/Dokumentenaustausch/CapabilityStatement/dokumentenaustausch-server}}
 
