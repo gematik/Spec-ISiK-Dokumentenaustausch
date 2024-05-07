@@ -1,0 +1,171 @@
+{
+  "resourceType": "ImplementationGuide",
+  "url": "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/ImplementationGuide/ISiK-Dokumentenaustausch",
+  "name": "Implementierungsleitfaden ISiK-Modul Dokumentenaustausch",
+  "status": "active",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "packageId": "de.gematik.isik-dokumentenaustausch",
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Patient/test"
+        }
+      }
+    ],
+    "page": {
+      "nameUrl": "ImplementationGuide/markdown/Einfuehrung.md",
+      "title": "Einführung",
+      "generation": "markdown",
+      "page": [
+        {
+          "nameUrl": "ImplementationGuide/markdown/ReleaseNotes.md",
+          "title": "Release Notes",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide/markdown/Motivation.md",
+          "title": "Motivation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen.md",
+          "title": "Übergreifende Festlegungen",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/BestaetigungsrelevanteSysteme.md",
+              "title": "Bestätigungsrelevante Systeme",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Kompatibilitaet.md",
+              "title": "Kompatibilität",
+              "generation": "markdown"
+            },           
+            {
+              "nameUrl": "ImplementationGuide/markdown/AkteureUndInteraktionen.md",
+              "title": "Akteure und Interaktionen",
+              "generation": "markdown",
+              "page": [ 
+                {
+                 "nameUrl": "ImplementationGuide/markdown/AkteureUndInteraktionen-Akteure.md",
+                 "title": "Akteure",
+                 "generation": "markdown"
+                },
+                {
+                 "nameUrl": "ImplementationGuide/markdown/AkteureUndInteraktionen-Interaktionen.md",
+                 "title": "Interaktionen",
+                 "generation": "markdown"
+                },   
+                {
+                 "nameUrl": "ImplementationGuide/markdown/AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung.md",
+                 "title": "Interaktion: Dokumentenbereitstellung",
+                 "generation": "markdown"
+                },
+                {
+                 "nameUrl": "ImplementationGuide/markdown/AkteureUndInteraktionen-Dokumentenabfrage.md",
+                 "title": "Interaktion: Dokumentenabfrage und -Zugriff",
+                 "generation": "markdown"
+                },
+                {
+                 "nameUrl": "ImplementationGuide/markdown/AkteureUndInteraktionen-Update.md",
+                 "title": "Interaktion: Update von Metadaten",
+                 "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/AkteureUndInteraktionen-ErzeugenVonMetadaten.md",
+                  "title": "Interaktion: Erzeugen von Metadaten",
+                  "generation": "markdown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "generation": "markdown",
+          "nameUrl": "ImplementationGuide/markdown/Datenobjekte.md",
+          "title": "Datenobjekte",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/CapabilityStatement.md",
+              "title": "CapabilityStatement",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte_DocumentReference.md",
+              "title": "Dokumentenmetadaten (DocumentReference)",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "ImplementationGuide/markdown/DocumentReference_Motivation.md",
+                  "title": "Motivation",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/DocumentReference_Kompatibilitaet.md",
+                  "title": "Kompatibilität",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/DocumentReference_Profil.md",
+                  "title": "Profil",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/DocumentReference_AnmerkungenZuDenMustSupportFeldern.md",
+                  "title": "Anmerkungen zu den Must-Support Feldern",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/DocumentReference_Interaktionen.md",
+                  "title": "Interaktionen",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/DocumentReference_Beispiele.md",
+                  "title": "Beispiele",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte_Bundle.md",
+              "title": "Aggregation (Bundle)",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Bundle_Profile.md",
+                  "title": "Profile",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Bundle_AnmerkungenZuDenMustSupportFeldern.md",
+                  "title": "Anmerkungen zu den Must-Support Feldern",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Bundle_Interaktionen.md",
+                  "title": "Interaktionen",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Bundle_Beispiele.md",
+                  "title": "Beispiele",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte_ISiKBinary.md",
+              "title": "ISiKBinary",
+              "generation": "markdown"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
