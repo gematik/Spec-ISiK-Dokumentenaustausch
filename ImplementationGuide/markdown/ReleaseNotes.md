@@ -8,12 +8,13 @@ Offene Punkte und bekannte Probleme siehe [GitHub Issues](https://github.com/gem
 
 Version: 3.0.3
 
-Datum: 30.04.2024
+Datum: 07.05.2024
 
 * fix IHEXDStypeCode Canonical-URL https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/187/commits/33b3832adfd65ba6496d419c92870d6f30d4ffe1
-* Add dependency to IHE package
+* add patternCoding by @f-peverali in https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/190
 * Fix der XDS Slices für .type und .category https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/189
 * Update Basismodul-Dependency to Patch-Wildcard 3.0.x
+* Add dependency to IHE package
 
 ----
 Version: 3.0.2
