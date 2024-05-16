@@ -2,7 +2,6 @@
 Alias: $v3-ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
 Alias: $loinc = http://loinc.org
 Alias: $v3-Confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidentiality
-Alias: $formatcode = http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode
 Alias: $sct = http://snomed.info/sct
 Alias: $ihe-de-class = http://ihe-d.de/CodeSystems/IHEXDSclassCode
 Alias: $ihe-de-type = http://ihe-d.de/CodeSystem/IHEXDStypeCode
