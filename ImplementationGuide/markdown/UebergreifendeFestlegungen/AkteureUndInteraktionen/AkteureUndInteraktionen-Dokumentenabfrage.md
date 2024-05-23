@@ -1,7 +1,7 @@
 ## Dokumentenabfrage und -zugriff
 
 ### Dokumentenabfrage (IHE MHD ITI-67 (Find DocumentReferences))
-Dokumente können anhand ihrer Metadaten gesucht werden. Im Rahmen der ISiK-Spezifikation müssen mindestens die im Kapitel {{pagelink:ImplementationGuide/markdown/DocumentReference_Interaktionen.md}}
+Dokumente können anhand ihrer Metadaten gesucht werden. Im Rahmen der ISiK-Spezifikation müssen mindestens die im Kapitel {{pagelink:ImplementationGuide/markdown/Datenobjekte/DocumentReference/DocumentReference_Interaktionen.md}}
 mit `MUSS` gekennzeichneten Suchparameter unterstützt werden. Einzelnen Systemen steht es frei, darüber hinaus weitere FHIR-konforme Suchparameter zu implementieren.
 
 Die Ergebnisse einer Suchanfrage werden in Form eines Bundles zurückgegeben:
@@ -23,7 +23,7 @@ Die Vereinbarungen gelten uneingeschränkt.
 Es gelten darüber hinaus die allgemeinen Festlegungen zu Suchparametern gemäß [ISiK Basisprofil Stufe 4](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen-UebergreifendeFestlegungen-Suchparameter?version=current)
 
 ##### [2:3.67.4.1.2.1 Query Search Parameters](https://profiles.ihe.net/ITI/MHD/ITI-67.html#23674121-query-search-parameters)
-Im Rahmen der ISiK-Spezifikation müssen mindestens die im Kapitel {{pagelink:ImplementationGuide/markdown/DocumentReference_Interaktionen.md}}
+Im Rahmen der ISiK-Spezifikation müssen mindestens die im Kapitel {{pagelink:ImplementationGuide/markdown/Datenobjekte/DocumentReference/DocumentReference_Interaktionen.md}}
 mit `MUSS` gekennzeichneten Suchparameter unterstützt werden. Einzelnen Systemen steht es frei, darüber hinaus weitere FHIR-konforme bzw in IHE MHD geforderte Suchparameter zu implementieren.
 
 Die in IHE bestehende Verpflichtung für Clients, bei jeder Query mindestens einen der Parameter `patient` oder `patient.identifier` verwenden zu müssen, besteht im ISiK-Kontext nicht. Patientenübergreifende Suchanfragen sind zulässig. 
@@ -58,7 +58,7 @@ Die Vereinbarungen gelten uneingeschränkt.
 
 #### [2:3.67.4.4 CapabilityStatement Resource](https://profiles.ihe.net/ITI/MHD/ITI-67.html#236744-capabilitystatement-resource)
 
-Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}
+Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/Datenobjekte/CapabilityStatement.md}}
 
 #### [2:3.67.5 Security Considerations](https://profiles.ihe.net/ITI/MHD/ITI-67.html#23675-security-considerations)
 Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe [Modul ISiK-Sicherheit](https://simplifier.net/isik-sicherheit-v3).
@@ -100,7 +100,7 @@ Die Vereinbarungen gelten uneingeschränkt.
 Die Vereinbarungen gelten uneingeschränkt.
 
 ##### [2:3.68.4.4 CapabilityStatement Resource](https://profiles.ihe.net/ITI/MHD/ITI-67.html#236843-capabilitystatement-resource)
-Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}
+Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/Datenobjekte/CapabilityStatement.md}}
 
 #### [2:3.68.5 Security Considerations](https://profiles.ihe.net/ITI/MHD/ITI-68.html#23685-security-considerations)
 Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe [Modul ISiK-Sicherheit](https://simplifier.net/isik-sicherheit-v3)
