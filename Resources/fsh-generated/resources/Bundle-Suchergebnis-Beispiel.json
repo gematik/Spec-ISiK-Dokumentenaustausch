@@ -38,7 +38,7 @@
             },
             {
               "code": "PATH",
-              "system": "http://ihe-d.de/CodeSystem/IHEXDStypeCode",
+              "system": "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
               "display": "Pathologiebefundberichte"
             }
           ]
