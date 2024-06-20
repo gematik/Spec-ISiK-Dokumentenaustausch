@@ -1,11 +1,11 @@
 ### Interaktionen
 
-Für die Ressource DocumentReference MUSS die REST-Interaktion "CREATE" implementiert werden, siehe {{pagelink:ImplementationGuide/markdown/AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung.md}}.
-Für die Ressource DocumentReference MUSS die REST-Interaktion "READ" implementiert werden, siehe {{pagelink:ImplementationGuide/markdown/AkteureUndInteraktionen-Dokumentenabfrage.md}}.
+Für die Ressource DocumentReference MUSS die REST-Interaktion "CREATE" implementiert werden, siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/AkteureUndInteraktionen/AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung.md}}.
+Für die Ressource DocumentReference MUSS die REST-Interaktion "READ" implementiert werden, siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/AkteureUndInteraktionen/AkteureUndInteraktionen-Dokumentenabfrage.md}}.
 
 Folgende Suchparameter sind für das Bestätigungsverfahren relevant, auch in Kombination:
 
-Die in IHE-MHD geltende Einschränkung, dass Clients bei allen Suchen mindestens die Parameter `patient` oder `patient.identifier` sowie `status` verwenden müssen, gilt nicht. Siehe dazu Kapitel {{pagelink:ImplementationGuide/markdown/Kompatibilitaet.md}}
+Die in IHE-MHD geltende Einschränkung, dass Clients bei allen Suchen mindestens die Parameter `patient` oder `patient.identifier` sowie `status` verwenden müssen, gilt nicht. Siehe dazu Kapitel {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md}}
 
 1. Der Suchparameter "_id" MUSS unterstützt werden:
 
