@@ -197,7 +197,7 @@
             }
           ],
           "name": "update-metadata",
-          "definition": "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/OperationDefinition/UpdateMetadata"
+          "definition": "https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata"
         },
         {
           "extension": [
