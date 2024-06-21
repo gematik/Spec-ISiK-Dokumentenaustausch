@@ -15,7 +15,7 @@ Daher spezifiziert ISiK eine geeignete Operation, die das gezielte Ändern des D
 
 ### OperationDefinition `$update-metadata`
 
-{{render:https://gematik.de/fhir/isik/v3/Dokumentenaustausch/OperationDefinition/UpdateMetadata}}
+{{render:https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata}}
 
 ### Beispiel 
 

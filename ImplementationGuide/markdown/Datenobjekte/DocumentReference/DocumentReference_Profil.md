@@ -1,9 +1,9 @@
 ### FHIR-Profil
 
 #### DocumentReference
-**Canonical URL**: https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten
+**Canonical URL**: https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten
 
-{{tree:https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten, hybrid}}
+{{tree:https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten, hybrid}}
 
 [Link Simplifier Profil Übersicht](https://simplifier.net/spec-isik-dokumentenaustausch/isikdokumentenmetadaten)
 

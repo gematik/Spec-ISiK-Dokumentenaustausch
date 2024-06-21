@@ -5,7 +5,7 @@ Dokumente können anhand ihrer Metadaten gesucht werden. Im Rahmen der ISiK-Spez
 mit `MUSS` gekennzeichneten Suchparameter unterstützt werden. Einzelnen Systemen steht es frei, darüber hinaus weitere FHIR-konforme Suchparameter zu implementieren.
 
 Die Ergebnisse einer Suchanfrage werden in Form eines Bundles zurückgegeben:
-{{tree:https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenSuchergebnisse, hybrid}}
+{{tree:https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenSuchergebnisse, hybrid}}
 
 Suchergebnisse können zahlreich sein. Server MÜSSEN daher [FHIR-konformes Paging](https://hl7.org/fhir/R4/http.html#paging) unterstützen. Server KÖNNEN im SearchSet-Bundle auch Ressourcen vom Typ [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) mit Informationen über die Suchergebnisse zurückgeben. Diese müssen in `Bundle.entry.search.mode` mit dem Wert `outcome` gekennzeichnet sein. Die Issues im OperationOutcome dürfen nur dem Schweregrad `information` oder `warning` entsprechen.
 Issues vom Schweregrad `error` oder `fatal` sind unzulässig.
@@ -43,7 +43,7 @@ Die Implementierung der "XDS on FHIR"-Option ist im ISiK-Kontext nicht gefordert
 Die Vereinbarungen gelten uneingeschränkt.
 ##### [2:3.67.4.2.2 Message Semantics](https://profiles.ihe.net/ITI/MHD/ITI-67.html#2367422-message-semantics)
 * Suchergebnisse können zahlreich sein. Server MÜSSEN daher [FHIR-konformes Paging](https://hl7.org/fhir/R4/http.html#paging) unterstützen. Server KÖNNEN im * SearchSet-Bundle auch Ressourcen vom Typ [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) mit Informationen über die Suchergebnisse zurückgeben. Diese müssen in `Bundle.entry.search.mode` mit dem Wert `outcome` gekennzeichnet sein. Die Issues im OperationOutcome dürfen nur dem Schweregrad `information` oder `warning` entsprechen. Issues vom Schweregrad `error` oder `fatal` sind unzulässig.
-* Das Ergebnis-Bundle der Suche muss konform sein zum Profil "ISiKDokumentenSuchergebnisse"{{tree:https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenSuchergebnisse, hybrid}}
+* Das Ergebnis-Bundle der Suche muss konform sein zum Profil "ISiKDokumentenSuchergebnisse"{{tree:https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenSuchergebnisse, hybrid}}
 
 ##### [2:3.67.4.2.2.1 DocumentReference Resource Contents](https://profiles.ihe.net/ITI/MHD/ITI-67.html#23674221-documentreference-resource-contents)
 * Die DocumentReference-Ressoucen müssen im ISiK-Kontext auf Basis des Profils "ISiKDokumentenMetadaten" und den dort vereinbarten Kardinalitäten bzw. MustSupport-Flags erstellt werden.
