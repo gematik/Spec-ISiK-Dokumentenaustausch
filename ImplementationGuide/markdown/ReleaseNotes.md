@@ -6,7 +6,13 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Offene Punkte und bekannte Probleme siehe [GitHub Issues](https://github.com/gematik/ISiK-Dokumentenaustausch/issues?q=is%3Aissue+is%3Aopen+label%3A%22offene+Punkte+Ballot%22)
 
+Version: 4.0.0-rc2
 
+Datum: tbd.
+
+* fix IHEXDStypeCode Canonical-URL (entspricht TC 3.0.3) https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/198
+* add patternCoding by @f-peverali (entspricht TC 3.0.3) https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/198
+* Fix der XDS Slices für .type und .category (entspricht TC 3.0.3) https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/198
 
 Version: 4.0.0-rc
 
@@ -17,6 +23,12 @@ Datum: 03.04.2024
 * Erweiterung um Use Case Zusammenhänge von verketteten Suchparametern
 
 **Full Changelog**: https://github.com/gematik/spec-ISiK-Dokumentenaustausch/compare/v.3.0.2...rc/main-stufe-4
+
+----
+
+Version: 3.0.3
+
+Diese Technical Correction entfällt für Stufe 4, da die Änderungen direkt in Stufe 4 (4.0.0-rc2) eingebracht sind.
 
 ----
 
