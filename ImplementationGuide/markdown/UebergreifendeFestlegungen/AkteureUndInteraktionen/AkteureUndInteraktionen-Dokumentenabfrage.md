@@ -1,11 +1,11 @@
 ## Dokumentenabfrage und -zugriff
 
 ### Dokumentenabfrage (IHE MHD ITI-67 (Find DocumentReferences))
-Dokumente können anhand ihrer Metadaten gesucht werden. Im Rahmen der ISiK-Spezifikation müssen mindestens die im Kapitel {{pagelink:ImplementationGuide/markdown/DocumentReference_Interaktionen.md}}
+Dokumente können anhand ihrer Metadaten gesucht werden. Im Rahmen der ISiK-Spezifikation müssen mindestens die im Kapitel {{pagelink:ImplementationGuide/markdown/Datenobjekte/DocumentReference/DocumentReference_Interaktionen.md}}
 mit `MUSS` gekennzeichneten Suchparameter unterstützt werden. Einzelnen Systemen steht es frei, darüber hinaus weitere FHIR-konforme Suchparameter zu implementieren.
 
 Die Ergebnisse einer Suchanfrage werden in Form eines Bundles zurückgegeben:
-{{tree:https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenSuchergebnisse, hybrid}}
+{{tree:https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenSuchergebnisse, hybrid}}
 
 Suchergebnisse können zahlreich sein. Server MÜSSEN daher [FHIR-konformes Paging](https://hl7.org/fhir/R4/http.html#paging) unterstützen. Server KÖNNEN im SearchSet-Bundle auch Ressourcen vom Typ [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) mit Informationen über die Suchergebnisse zurückgeben. Diese müssen in `Bundle.entry.search.mode` mit dem Wert `outcome` gekennzeichnet sein. Die Issues im OperationOutcome dürfen nur dem Schweregrad `information` oder `warning` entsprechen.
 Issues vom Schweregrad `error` oder `fatal` sind unzulässig.
@@ -23,7 +23,7 @@ Die Vereinbarungen gelten uneingeschränkt.
 Es gelten darüber hinaus die allgemeinen Festlegungen zu Suchparametern gemäß [ISiK Basisprofil Stufe 4](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen-UebergreifendeFestlegungen-Suchparameter?version=current)
 
 ##### [2:3.67.4.1.2.1 Query Search Parameters](https://profiles.ihe.net/ITI/MHD/ITI-67.html#23674121-query-search-parameters)
-Im Rahmen der ISiK-Spezifikation müssen mindestens die im Kapitel {{pagelink:ImplementationGuide/markdown/DocumentReference_Interaktionen.md}}
+Im Rahmen der ISiK-Spezifikation müssen mindestens die im Kapitel {{pagelink:ImplementationGuide/markdown/Datenobjekte/DocumentReference/DocumentReference_Interaktionen.md}}
 mit `MUSS` gekennzeichneten Suchparameter unterstützt werden. Einzelnen Systemen steht es frei, darüber hinaus weitere FHIR-konforme bzw in IHE MHD geforderte Suchparameter zu implementieren.
 
 Die in IHE bestehende Verpflichtung für Clients, bei jeder Query mindestens einen der Parameter `patient` oder `patient.identifier` verwenden zu müssen, besteht im ISiK-Kontext nicht. Patientenübergreifende Suchanfragen sind zulässig. 
@@ -43,7 +43,7 @@ Die Implementierung der "XDS on FHIR"-Option ist im ISiK-Kontext nicht gefordert
 Die Vereinbarungen gelten uneingeschränkt.
 ##### [2:3.67.4.2.2 Message Semantics](https://profiles.ihe.net/ITI/MHD/ITI-67.html#2367422-message-semantics)
 * Suchergebnisse können zahlreich sein. Server MÜSSEN daher [FHIR-konformes Paging](https://hl7.org/fhir/R4/http.html#paging) unterstützen. Server KÖNNEN im * SearchSet-Bundle auch Ressourcen vom Typ [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) mit Informationen über die Suchergebnisse zurückgeben. Diese müssen in `Bundle.entry.search.mode` mit dem Wert `outcome` gekennzeichnet sein. Die Issues im OperationOutcome dürfen nur dem Schweregrad `information` oder `warning` entsprechen. Issues vom Schweregrad `error` oder `fatal` sind unzulässig.
-* Das Ergebnis-Bundle der Suche muss konform sein zum Profil "ISiKDokumentenSuchergebnisse"{{tree:https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenSuchergebnisse, hybrid}}
+* Das Ergebnis-Bundle der Suche muss konform sein zum Profil "ISiKDokumentenSuchergebnisse"{{tree:https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenSuchergebnisse, hybrid}}
 
 ##### [2:3.67.4.2.2.1 DocumentReference Resource Contents](https://profiles.ihe.net/ITI/MHD/ITI-67.html#23674221-documentreference-resource-contents)
 * Die DocumentReference-Ressoucen müssen im ISiK-Kontext auf Basis des Profils "ISiKDokumentenMetadaten" und den dort vereinbarten Kardinalitäten bzw. MustSupport-Flags erstellt werden.
@@ -58,7 +58,7 @@ Die Vereinbarungen gelten uneingeschränkt.
 
 #### [2:3.67.4.4 CapabilityStatement Resource](https://profiles.ihe.net/ITI/MHD/ITI-67.html#236744-capabilitystatement-resource)
 
-Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}
+Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/Datenobjekte/CapabilityStatement.md}}
 
 #### [2:3.67.5 Security Considerations](https://profiles.ihe.net/ITI/MHD/ITI-67.html#23675-security-considerations)
 Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe [Modul ISiK-Sicherheit](https://simplifier.net/isik-sicherheit-v3).
@@ -100,7 +100,7 @@ Die Vereinbarungen gelten uneingeschränkt.
 Die Vereinbarungen gelten uneingeschränkt.
 
 ##### [2:3.68.4.4 CapabilityStatement Resource](https://profiles.ihe.net/ITI/MHD/ITI-67.html#236843-capabilitystatement-resource)
-Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}
+Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/Datenobjekte/CapabilityStatement.md}}
 
 #### [2:3.68.5 Security Considerations](https://profiles.ihe.net/ITI/MHD/ITI-68.html#23685-security-considerations)
 Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe [Modul ISiK-Sicherheit](https://simplifier.net/isik-sicherheit-v3)

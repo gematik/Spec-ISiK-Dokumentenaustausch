@@ -1,6 +1,6 @@
 ## ISiKBinary [(Binary)](https://hl7.org/fhir/R4/binary.html)
 
-ISiKBinary dient im Kontext des Dokumentenaustauschs dazu entsprechende Binärdateien über einen Dokumentenserver bereitzustellen (siehe {{pagelink:ImplementationGuide/markdown/AkteureUndInteraktionen-Dokumentenabfrage.md, text:Akteure und Interaktionen}}).
+ISiKBinary dient im Kontext des Dokumentenaustauschs dazu entsprechende Binärdateien über einen Dokumentenserver bereitzustellen (siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/AkteureUndInteraktionen/AkteureUndInteraktionen-Dokumentenabfrage.md, text:Akteure und Interaktionen}}).
 
 ### FHIR-Profil
 

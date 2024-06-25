@@ -1,7 +1,7 @@
 ### Bundle-Profil für Suchergebnisse
-**Canonical URL**: https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenSuchergebnisse
+**Canonical URL**: https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenSuchergebnisse
 
-{{tree:https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenSuchergebnisse, hybrid}}
+{{tree:https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenSuchergebnisse, hybrid}}
 
 [Link Simplifier Profil Übersicht](https://simplifier.net/spec-isik-dokumentenaustausch/isikdokumentensuchergebnisse)
 

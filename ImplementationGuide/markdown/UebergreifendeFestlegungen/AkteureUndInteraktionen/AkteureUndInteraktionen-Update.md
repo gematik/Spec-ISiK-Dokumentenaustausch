@@ -3,7 +3,7 @@
 ## Interaktion: Update von Metadaten
 
 ### Herstellung von Dokumentenkontext
-Der Client muss zunächst die URL der DocumentReference ermitteln, auf die das Update angewendet werden soll. Hierzu kann die Interaktion {{pagelink:ImplementationGuide/markdown/AkteureUndInteraktionen-Dokumentenabfrage.md, text:Dokumentenabfrage}} verwendet werden.
+Der Client muss zunächst die URL der DocumentReference ermitteln, auf die das Update angewendet werden soll. Hierzu kann die Interaktion {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/AkteureUndInteraktionen/AkteureUndInteraktionen-Dokumentenabfrage.md, text:Dokumentenabfrage}} verwendet werden.
 
 ### Metadatenupdate
 Das Update der Metadaten erfolgt mittels der `$update-metadata` Operation.
@@ -15,7 +15,7 @@ Daher spezifiziert ISiK eine geeignete Operation, die das gezielte Ändern des D
 
 ### OperationDefinition `$update-metadata`
 
-{{render:https://gematik.de/fhir/isik/v3/Dokumentenaustausch/OperationDefinition/UpdateMetadata}}
+{{render:https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata}}
 
 ### Beispiel 
 

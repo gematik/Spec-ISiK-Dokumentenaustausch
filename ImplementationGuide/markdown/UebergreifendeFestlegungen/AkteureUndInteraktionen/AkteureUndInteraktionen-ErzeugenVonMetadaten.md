@@ -32,7 +32,7 @@ Die Vereinbarungen gelten uneingeschränkt.
 Die Vereinbarungen gelten uneingeschränkt.
 
 #### [2:3.106.4.3 CapabilityStatement Resource](https://profiles.ihe.net/ITI/MHD/ITI-106.html#2310643-capabilitystatement-resource)
-Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}
+Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/Datenobjekte/CapabilityStatement.md}}
 
 #### [2:3.106.5 Security Considerations](https://profiles.ihe.net/ITI/MHD/ITI-106.html#231065-security-considerations)
 Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe [Modul ISiK-Sicherheit](https://simplifier.net/isik-sicherheit-v3)
@@ -41,7 +41,7 @@ Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-
 ### ISiK-Spezifisches Mapping Composition -> DocumentReference
  @```
       from StructureDefinition
-      where url = 'https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten'
+      where url = 'https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten'
       for differential.element
       select
         Path: id,
@@ -67,7 +67,7 @@ Der Empfänger eines Subsystem-Berichtes gem. Modul "Basis" möchte vor der Vera
 
 Empfohlenes Vorgehen:
 1. Erzeugen einer DocumentReference-Ressource (siehe dazu $generate-metadata) 
-2. Übermittlung der DocumentReference sowie des Base64-codierten Bundles gemäß {{pagelink:ImplementationGuide/markdown/AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung.md, text:Interaktion ISiK Modul Dokumentenaustausch Stufe 2: Dokumentenbereitstellung}}
+2. Übermittlung der DocumentReference sowie des Base64-codierten Bundles gemäß {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/AkteureUndInteraktionen/AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung.md, text:Interaktion ISiK Modul Dokumentenaustausch Stufe 2: Dokumentenbereitstellung}}
 3. Extraktion der verarbeitbaren Ressourcen aus dem Bundle
 4. Verlinkung zwischen den extrahierten Ressourcen und dem Original-Dokument mittels einer [`Provenance`-Ressource](https://hl7.org/fhir/R4/provenance.html).
 
@@ -75,14 +75,14 @@ Der Sender eines Subsystem-Berichtes gem. Modul "Basis" möchte parallel zur Üb
 
 Empfohlenes Vorgehen:
 1. Erzeugen einer DocumentReference-Ressource (siehe dazu $generate-metadata) 
-2. Übermittlung der DocumentReference sowie des Base64-codierten Bundles gemäß {{pagelink:ImplementationGuide/markdown/AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung.md, text:Interaktion ISiK Modul Dokumentenaustausch Stufe 2: Dokumentenbereitstellung}}
+2. Übermittlung der DocumentReference sowie des Base64-codierten Bundles gemäß {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/AkteureUndInteraktionen/AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung.md, text:Interaktion ISiK Modul Dokumentenaustausch Stufe 2: Dokumentenbereitstellung}}
 3. Übermittlung des Dokumentes zur Verarbeitung gemäß [Interaktion ISiK Modul Basis Stufe 4: Bericht aus Subsystem](https://simplifier.net/guide/isik-basis-v4jek/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_BerichtSubsystem?version=current)
 
 
 Der Empfänger eines Dokumentes gem. Modul "Dokumentenaustausch" möchte neben der Archivierung des Dokumentes auch dessen Inhalte weiterverarbeiten.
 
 Empfohlenes Vorgehen:
-1. Entgegennahme und Persistierung des Original-Dokumentes gemäß {{pagelink:ImplementationGuide/markdown/AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung.md, text:Interaktion ISiK Modul Dokumentenaustausch Stufe 2: Dokumentenbereitstellung}}
+1. Entgegennahme und Persistierung des Original-Dokumentes gemäß {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/AkteureUndInteraktionen/AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung.md, text:Interaktion ISiK Modul Dokumentenaustausch Stufe 2: Dokumentenbereitstellung}}
 1. Extraktion des Bundles aus den eingebetten Binärdaten
 2. Extraktion der verarbeitbaren Ressourcen aus dem Bundle
 3. Verlinkung zwischen den extrahierten Ressourcen und dem Original-Dokument mittels einer [`Provenance`-Ressource](https://hl7.org/fhir/R4/provenance.html).
