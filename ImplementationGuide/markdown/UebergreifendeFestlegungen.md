@@ -4,7 +4,7 @@ Folgende Festlegungen aus dem Modul [ISiK Basis Stufe 4](https://simplifier.net/
 * [Methodik der Schlüsselworte MUSS, SOLL, KANN](https://simplifier.net/guide/isik-basis-v4/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Methodik?version=current)
 * [Bestätigungsrelevante Systeme](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme?version=current)
 * [Bedeutung der Must-Support-Flags](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen-UebergreifendeFestlegungen_Must-Support-Flags?version=current)
-* [Zu implementierende Repräsentationsformate](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen-Repraesentationsformate?version=current)
+* [Zu implementierende Repräsentationsformate](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen_Repraesentationsformate?version=current)
 * [Allgemeine Hinweise zu Suchparametern](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen-UebergreifendeFestlegungen_Suchparameter?version=current)
 * [Allgemeine Hinweise zur REST API](https://simplifier.net/guide/isik-basis-v4/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Rest?version=current)
 
