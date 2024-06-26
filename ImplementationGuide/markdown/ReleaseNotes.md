@@ -8,7 +8,7 @@ Offene Punkte und bekannte Probleme siehe [GitHub Issues](https://github.com/gem
 
 Version: 4.0.0-rc2
 
-Datum: tbd.
+Datum: 26.06.2024
 
 * fix IHEXDStypeCode Canonical-URL (entspricht TC 3.0.3) https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/198
 * add patternCoding by @f-peverali (entspricht TC 3.0.3) https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/198
