@@ -24,24 +24,24 @@
         "display": "Molekularpathologiebefund"
       },
       {
-        "code": "PATH",
         "system": "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
+        "code": "PATH",
         "display": "Pathologiebefundberichte"
       }
     ]
   },
-  "status": "current",
   "category": [
     {
       "coding": [
         {
-          "code": "BEF",
           "system": "http://ihe-d.de/CodeSystems/IHEXDSclassCode",
+          "code": "BEF",
           "display": "Befundbericht"
         }
       ]
     }
   ],
+  "status": "current",
   "description": "Molekularpathologiebefund vom 31.12.21",
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
