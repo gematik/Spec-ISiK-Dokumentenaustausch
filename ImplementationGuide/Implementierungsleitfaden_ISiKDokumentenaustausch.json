@@ -3,7 +3,7 @@
   "url": "https://gematik.de/fhir/isik/v4/Dokumentenaustausch/ImplementationGuide/ISiK-Dokumentenaustausch",
   "name": "Implementierungsleitfaden ISiK-Dokumentenaustausch",
   "status": "draft",
-  "version": "4.0.0-rc",
+  "version": "4.0.0-rc2",
   "fhirVersion": [
     "4.0.1"
   ],
