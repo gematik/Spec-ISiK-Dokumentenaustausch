@@ -14,6 +14,8 @@ Datum: 26.06.2024
 * add patternCoding by @f-peverali (entspricht TC 3.0.3) https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/198
 * Fix der XDS Slices für .type und .category (entspricht TC 3.0.3) https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/198
 
+----
+
 Version: 4.0.0-rc
 
 Datum: 03.04.2024
