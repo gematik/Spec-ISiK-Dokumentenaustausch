@@ -5,7 +5,7 @@ Da es sich um eine Zusammenfassung handelt, werden nur folgende Use Case und daf
   * Kombinationen und weitere Details sind möglich.
   * Übergreifende Use Cases und und ihre Sub Use Cases können in einem separaten Diagram auf den entsprechenden Seiten gefunden werden.
 * Allgemeine und intuitiv Adverse Use Cases (diese gilt es zu vermeiden)
-* In den Funktionen werde triviale Suchen einer Ressource anhand ihrer eigenen Properties nicht dargestellt, z.B. Suche einer Ressource anhand der ID, Name, Code usw.
+* In den Funktionen werden triviale Suchen einer Ressource anhand ihrer eigenen Properties nicht dargestellt, z.B. Suche einer Ressource anhand der ID, Name, Code usw.
 
 **Use Case Digramm**
 
