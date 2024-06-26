@@ -76,7 +76,7 @@ Zur Herstellung des Kontextes sind folgende Verfahren möglich:
 
 | Hinweis | Breaking Change!|
 |---------|---------------------|
-| {{render:Material/images/ig_bilder_Warning.jpg}} |  Die in dieser Version erfolgte Umstellung der Interaktion von der $submit-document-Operation auf eine REST-basierte CREATE-Interaktion ist nicht kompatibel zu den Festlegungen dieses Moduls in Stufe 2! Die Änderung dient dem Zweck der Harmonisierung mit der IHE-MHD-Interaktion ITI-105 (Simplified Publish), die zum Zeitpunkt des Releases von Stufe 2 noch nicht zur Verfügung stand.  |
+| {{render:Material/images/ig_bilder_Warning.jpg}} |  Die in der Stufe 3 erfolgte Umstellung der Interaktion von der $submit-document-Operation auf eine REST-basierte CREATE-Interaktion ist nicht kompatibel zu den Festlegungen dieses Moduls in Stufe 2! Die Änderung dient dem Zweck der Harmonisierung mit der IHE-MHD-Interaktion ITI-105 (Simplified Publish), die zum Zeitpunkt des Releases von Stufe 2 noch nicht zur Verfügung stand.  |
 
 #### Maßgebliche Änderungen gegenüber Stufe 2 für den Client
 * Der Client muss das eigentliche Dokument (PDF, JPEG o.ä.) base64-codiert in `DocumentReference.content.attachment.data` einbetten und den Mime-Type des Dokumentes in `DocumentReference.content.attachment.contentType` adäquat setzen
