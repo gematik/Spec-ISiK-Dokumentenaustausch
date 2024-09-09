@@ -6,7 +6,7 @@ canonical: https://gematik.de/fhir/isik
 fhirVersion: 4.0.1
 dependencies:
     ihe.iti.mhd: 4.2.0
-    de.gematik.isik-basismodul: 4.0.0-rc3
+    de.gematik.isik-basismodul: 4.0.0
     de.ihe-d.terminology: 3.0.0
     dvmd.kdl.r4.2022: 2022.1.2
     ihe.formatcode.fhir: 1.2.0

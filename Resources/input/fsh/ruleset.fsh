@@ -1,5 +1,5 @@
 RuleSet: Meta
-* ^version = "4.0.0-rc2"
+* ^version = "4.0.0"
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "gematik GmbH"
@@ -13,7 +13,7 @@ RuleSet: Meta-Inst
 RuleSet: Meta-CapabilityStatement
 * status = #draft
 * experimental = false
-* version = "4.0.0-rc2"
+* version = "4.0.0"
 * publisher = "gematik GmbH"
 * date = "2024-06-26"
 * implementationGuide = "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Dokumentenaustausch"

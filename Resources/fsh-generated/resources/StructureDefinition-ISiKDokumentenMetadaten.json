@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKDokumentenMetadaten",
   "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten",
-  "version": "4.0.0-rc2",
+  "version": "4.0.0",
   "name": "ISiKDokumentenMetadaten",
   "title": "Erforderliche Metadaten für Dokumentenaustausch in ISiK",
   "status": "draft",
