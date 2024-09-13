@@ -5,7 +5,6 @@ Title: "update-metadata"
 * insert Meta-Inst
 * url = "https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata"
 * title = "Update document metadata"
-//* status = #draft
 * kind = #operation
 * name = "update-metadata"
 * description = "Update selected, uncritical document metadata in a safe and controlled manner without having to replace the whole document"
