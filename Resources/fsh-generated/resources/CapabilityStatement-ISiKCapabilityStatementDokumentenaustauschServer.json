@@ -2,6 +2,7 @@
   "resourceType": "CapabilityStatement",
   "id": "ISiKCapabilityStatementDokumentenaustauschServer",
   "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementDokumentenaustauschServer",
+  "description": "Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine CapabilityStatement-Ressource bereitstellen.\r\nHierzu MUSS die [capabilities-Interaktion gemäß FHIR-Kernspezifikation](https://hl7.org/fhir/R4/http.html#capabilities) unterstützt werden. \r\nDer `MODE`-Parameter kann ignoriert werden.  \r\nDas CapabilityStatement in dieser Spezifikation stellt die Anforderungen seitens der gematik dar (`kind = requirements`). \r\nZur Unterscheidung von Anforderungen, die erfüllt werden MÜSSEN gegenüber jenen, die erfüllt werden KÖNNEN, \r\nwird die [CapabilityStatement-Expectation-Extension](https://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html) mit den möglichen Werten `SHALL` (=MUSS) und `MAY` (=KANN) verwendet.  \r\n\r\nEine Server-Instanz MUSS ihrerseits ein CapabilityStatement vom `kind = instance` liefern und im Element `software` den Namen \r\nund die Versionsnummer angeben. \r\nDarüber hinaus MUSS in `CapabilityStatement.instantiates` die Canonical URL des nachfolgenden CapabilityStatements angegeben werden.  \r\n\r\nDas CapabilityStatement der Instanz MUSS alle Funktionalitäten auflisten, die im folgenden CapabilityStatement mit `SHALL` gekennzeichnet sind. \r\nDas CapabilityStatement KANN darüber hinaus die mit `MAY` gekennzeichneten Funktionalitäten, sowie weitere Funktionalitäten auflisten, \r\nsofern diese in der Instanz implementiert wurden.  \r\n\r\nDie Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich.",
   "status": "active",
   "publisher": "gematik GmbH",
   "date": "2024-09-09",
@@ -22,7 +23,6 @@
       ]
     }
   ],
-  "description": "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes System unterstützen muss um das Bestätigungsverfahren des Moduls &quot;Dokumentenaustausch&quot; zu bestehen.",
   "jurisdiction": [
     {
       "coding": [
@@ -52,8 +52,19 @@
             }
           ],
           "type": "DocumentReference",
+          "documentation": "Für die Ressource DocumentReference MUSS die REST-Interaktion \r\n  `CREATE` implementiert werden, siehe Interaktion: Dokumentenbereitstellung. \r\n  Für die Ressource DocumentReference MUSS die REST-Interaktion `READ` implementiert werden, \r\n  siehe Interaktion: Dokumentenabfrage und -Zugriff.   \r\n  Die in IHE-MHD geltende Einschränkung, dass Clients bei allen Suchen mindestens \r\n  die Parameter patient oder patient.identifier sowie status verwenden müssen, gilt nicht. \r\n  Siehe dazu Kapitel {{pagelink:Kompatibilitaet}}.  \r\n  Folgende Suchparameter sind für das Bestätigungsverfahren relevant, auch in Kombination: ",
           "supportedProfile": [
             "https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
           ],
           "interaction": [
             {
@@ -94,7 +105,8 @@
               ],
               "name": "_id",
               "definition": "http://hl7.org/fhir/SearchParameter/Resource-id",
-              "type": "token"
+              "type": "token",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/DocumentReference?_id=103270`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#all).  "
             },
             {
               "extension": [
@@ -105,7 +117,8 @@
               ],
               "name": "status",
               "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-status",
-              "type": "token"
+              "type": "token",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/DocumentReference?status=final`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#token).  \r\n        Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Clients und Server verpflichend."
             },
             {
               "extension": [
@@ -116,7 +129,8 @@
               ],
               "name": "patient",
               "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-patient",
-              "type": "reference"
+              "type": "reference",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/DocumentReference?patient=Patient/123`\r\n        `GET [base]/DocumentReference?patient.identifier=http://mein-krankenhaus.example/fhir/sid/patienten|1032702` \r\n        `GET [base]/DocumentReference?patient.identifier=1032702`  \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  \r\n        Weitere Informationen zur Suche nach verketteten Parametern finden sich in der FHIR-Kernspezifikation - Abschnitt [Chained Parameters](https://hl7.org/fhir/R4/search.html#chaining).\r\n        Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Clients und Server verpflichend."
             },
             {
               "extension": [
@@ -127,7 +141,8 @@
               ],
               "name": "type",
               "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-type",
-              "type": "token"
+              "type": "token",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/DocumentReference?type=http://dvmd.de/fhir/CodeSystem/kdl|AD010101`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#token).  \r\n        Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Server verpflichtend."
             },
             {
               "extension": [
@@ -138,7 +153,8 @@
               ],
               "name": "category",
               "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-category",
-              "type": "token"
+              "type": "token",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/DocumentReference?category=http://ihe-d.de/CodeSystem/IHEXDSclassCode|BEF`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#token).  \r\n        Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Server verpflichtend."
             },
             {
               "extension": [
@@ -149,7 +165,8 @@
               ],
               "name": "creation",
               "definition": "http://profiles.ihe.net/ITI/MHD/SearchParameter/DocumentReference-Creation",
-              "type": "date"
+              "type": "date",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/DocumentReference?creation=2021-11-05`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#date).  \r\n        Dieser Suchparameter ist Teil der IHE-MHD-Spezifikation und für die Umsetzung des IHE MHD Profils für Server verpflichtend."
             },
             {
               "extension": [
@@ -160,7 +177,8 @@
               ],
               "name": "encounter",
               "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-encounter",
-              "type": "reference"
+              "type": "reference",
+              "documentation": "**Beispiel:**    \r\n        `GET [base]/DocumentReference?encounter=Encounter/123`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
             }
           ]
         },
@@ -174,6 +192,16 @@
           "type": "Binary",
           "supportedProfile": [
             "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKBinary"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
           ],
           "interaction": [
             {

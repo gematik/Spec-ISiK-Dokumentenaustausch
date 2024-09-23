@@ -2,6 +2,22 @@ Profile: ISiKDokumentenMetadaten
 Parent: DocumentReference
 Id: ISiKDokumentenMetadaten
 Title: "Erforderliche Metadaten für Dokumentenaustausch in ISiK"
+Description: 
+  "Die nachfolgenden Festlegungen spezifizieren die Minimalanforderungen für die Bereitstellung von Dokumentenmetadaten im Rahmen des Bestätigungsverfahrens der gematik.  
+
+  ### Motivation
+Die Ressource DocumentReference enthält die Metadaten, die für die Verwaltung von und die Suche nach Dokumenten benötigt werden. Der Inhalt des Dokumentes wird über DocumentReference.content beschrieben und über DocumentReference.content.attachment referenziert. Die Trennung von Dokument und Metadaten ermöglicht Clients die effiziente Suche und Auflistung von verfügbaren Dokumenten, ohne dass diese vollständig vom Server geladen werden müssen. Servern ermöglicht dieser Ansatz die Trennung zwischen den Metadaten in einer Datenbank und der Dokumentenablage in z.B. einem Dateisystem.
+
+  ### Kompatibilität
+Dieses Profil basiert auf dem Profil [MHD DocumentReference Comprehensive UnContained References Option](https://profiles.ihe.net/ITI/MHD/StructureDefinition-IHE.MHD.UnContained.Comprehensive.DocumentReference.html) (Version 4.2.0) von IHE International.
+
+  #### Abweichungen vom IHE-Profil
+Die Verwendung von `DocumentReference.docStatus` ist im ISiK-Kontext gestattet.
+`DocumentReference.category` muss vom Client bei Vorhandensein eines KDL-Codes in `DocumentReference.type` nicht gefüllt werden. Bei der Verarbeitung auf dem Server im Rahmen der Interaktion {{pagelink: AkteureUndInteraktionen-Interaktion-Dokumentenbereitstellung}} wird `DocumentReference.category` anhand der [KDL-Mappings](https://simplifier.net/kdl/%7Eresources?category=ConceptMap&sortBy=RankScore_desc) ergänzt und damit die IHE-Kompatibilität hergestellt.
+`DocumentReference.sourcePatientInfo` muss im Rahmen von ISiK nicht gefüllt werden
+
+#### Einschränkungen des IHE-Profils
+Elemente mit ValueSet-Bindings ohne verbindliche Vorgabe seitens IHE wurden auf die in Deutschland gebräuchlichen Terminologien (gemäß der Festlegungen von IHE Deutschland e.V.) eingeschränkt."
 * insert Meta
 * masterIdentifier 1.. MS
   * ^short = "Versionsspezifische OID des Dokumentes"
@@ -178,8 +194,7 @@ Ressource ausgelagert und über Attachment.url referenziert werden."
     &quot;urn:ihe:iti:xds:2017:mimeTypeSufficient&quot;"
 * context 1.. MS
   * encounter ..1 MS
-    * ^comment = "Abweichend zu MHD V4.0.1 ist die Verwendung der Encounter-Referenz im ISiK-Kontext erlaubt.
-
+    * ^comment = "Abweichend zu MHD V4.0.1 ist die Verwendung der Encounter-Referenz im ISiK-Kontext erlaubt.  
     Wird ein Encounter im ISIK-Kontext referenziert, so MUSS dieser konform zum Profil [ISIKKontaktGesundheitseinrichtung](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKKontaktGesundheitseinrichtung) aus dem Basismodul sein. 
 Update für Stufe 3: 
 In MHD 4.2.0 wurde das Verbot der Angabe einer Encounter-Referenz gelockert, das ISiK-Profil ist damit in diesem Punkt wieder kompatibel zu IHE MHD.

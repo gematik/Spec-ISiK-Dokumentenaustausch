@@ -18,3 +18,7 @@ RuleSet: Meta-CapabilityStatement
 * date = "2024-09-09"
 * implementationGuide = "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Dokumentenaustausch"
 * url = "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementDokumentenaustauschServer"
+
+RuleSet: Expectation (expectation)
+* extension.url = $capabilitystatement-expectation
+* extension.valueCode = {expectation}
