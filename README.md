@@ -31,6 +31,10 @@ Dies ist eine neue Version des Modul Dokumentenaustausch, die sich an ITI MHD 4.
 ### Release Notes
 See [ReleaseNotes.md](/ImplementationGuide/markdown/ReleaseNotes.md) for all information regarding the (newest) releases.
 
+### Versionen
+
+Zu einer Übersicht der Versionen des ISiK Moduls Dokumentenaustausch siehe [github Archiv](https://gematik.github.io/spec-ISiK-Dokumentenaustausch/index.html).
+
 ## License
  
 Copyright 2024 gematik GmbH
