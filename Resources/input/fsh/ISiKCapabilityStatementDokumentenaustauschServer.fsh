@@ -132,21 +132,22 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         `GET [base]/DocumentReference?encounter=Encounter/123`    
         **Anwendungshinweis:**   
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
+  * operation[+]
+    * insert Expectation (#MAY)
+    * name = #update-metadata
+    * definition = Canonical(UpdateMetadata)
+  * operation[+]
+    * insert Expectation (#MAY)
+    * name = #generate-metadata
+    * definition = "https://profiles.ihe.net/ITI/MHD/OperationDefinition/generate-metadata"
 
 
 * rest.resource[+]
   * insert Expectation (#SHALL)
   * type = #Binary
-  * supportedProfile = "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKBinary"
+  * supportedProfile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKBinary"
     * insert Expectation (#SHALL)
   * interaction[+]
     * insert Expectation (#SHALL)
     * code = #read
-* rest.operation[+]
-  * insert Expectation (#MAY)
-  * name = #update-metadata
-  * definition = Canonical(UpdateMetadata)
-* rest.operation[+]
-  * insert Expectation (#MAY)
-  * name = #generate-metadata
-  * definition = "https://profiles.ihe.net/ITI/MHD/OperationDefinition/generate-metadata"
+
