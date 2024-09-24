@@ -5,7 +5,7 @@
   "description": "Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine CapabilityStatement-Ressource bereitstellen.\r\nHierzu MUSS die [capabilities-Interaktion gemäß FHIR-Kernspezifikation](https://hl7.org/fhir/R4/http.html#capabilities) unterstützt werden. \r\nDer `MODE`-Parameter kann ignoriert werden.  \r\nDas CapabilityStatement in dieser Spezifikation stellt die Anforderungen seitens der gematik dar (`kind = requirements`). \r\nZur Unterscheidung von Anforderungen, die erfüllt werden MÜSSEN gegenüber jenen, die erfüllt werden KÖNNEN, \r\nwird die [CapabilityStatement-Expectation-Extension](https://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html) mit den möglichen Werten `SHALL` (=MUSS) und `MAY` (=KANN) verwendet.  \r\n\r\nEine Server-Instanz MUSS ihrerseits ein CapabilityStatement vom `kind = instance` liefern und im Element `software` den Namen \r\nund die Versionsnummer angeben. \r\nDarüber hinaus MUSS in `CapabilityStatement.instantiates` die Canonical URL des nachfolgenden CapabilityStatements angegeben werden.  \r\n\r\nDas CapabilityStatement der Instanz MUSS alle Funktionalitäten auflisten, die im folgenden CapabilityStatement mit `SHALL` gekennzeichnet sind. \r\nDas CapabilityStatement KANN darüber hinaus die mit `MAY` gekennzeichneten Funktionalitäten, sowie weitere Funktionalitäten auflisten, \r\nsofern diese in der Instanz implementiert wurden.  \r\n\r\nDie Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich.",
   "status": "active",
   "publisher": "gematik GmbH",
-  "date": "2024-09-23",
+  "date": "2024-09-24",
   "experimental": false,
   "version": "4.0.1",
   "implementationGuide": [
@@ -180,6 +180,28 @@
               "type": "reference",
               "documentation": "**Beispiel:**    \r\n        `GET [base]/DocumentReference?encounter=Encounter/123`    \r\n        **Anwendungshinweis:**   \r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
             }
+          ],
+          "operation": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "update-metadata",
+              "definition": "https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "generate-metadata",
+              "definition": "https://profiles.ihe.net/ITI/MHD/OperationDefinition/generate-metadata"
+            }
           ]
         },
         {
@@ -191,7 +213,7 @@
           ],
           "type": "Binary",
           "supportedProfile": [
-            "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKBinary"
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKBinary"
           ],
           "_supportedProfile": [
             {
@@ -214,28 +236,6 @@
               "code": "read"
             }
           ]
-        }
-      ],
-      "operation": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "MAY"
-            }
-          ],
-          "name": "update-metadata",
-          "definition": "https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata"
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "MAY"
-            }
-          ],
-          "name": "generate-metadata",
-          "definition": "https://profiles.ihe.net/ITI/MHD/OperationDefinition/generate-metadata"
         }
       ]
     }
