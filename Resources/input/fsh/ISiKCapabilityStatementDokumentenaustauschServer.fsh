@@ -35,9 +35,9 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
   * insert Expectation (#SHALL)
   * type = #DocumentReference
   * documentation = "Für die Ressource DocumentReference MUSS die REST-Interaktion 
-  `CREATE` implementiert werden, siehe Interaktion: Dokumentenbereitstellung. 
+  `CREATE` implementiert werden, siehe {{pagelink:Dokumentenbereitstellung}}. 
   Für die Ressource DocumentReference MUSS die REST-Interaktion `READ` implementiert werden, 
-  siehe Interaktion: Dokumentenabfrage und -Zugriff.   
+  siehe {{pagelink:Dokumentenabfrage}}.   
   Die in IHE-MHD geltende Einschränkung, dass Clients bei allen Suchen mindestens 
   die Parameter patient oder patient.identifier sowie status verwenden müssen, gilt nicht. 
   Siehe dazu Kapitel {{pagelink:Kompatibilitaet}}.  
