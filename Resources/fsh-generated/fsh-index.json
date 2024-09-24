@@ -4,8 +4,8 @@
     "fshName": "Suchergebnis-Beispiel",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenSuchergebnisse.fsh",
-    "startLine": 18,
-    "endLine": 24
+    "startLine": 29,
+    "endLine": 35
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementDokumentenaustauschServer.json",
@@ -20,40 +20,40 @@
     "fshName": "dok-beispiel-client-with-binary-jpeg-example-short",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
-    "startLine": 262,
-    "endLine": 281
+    "startLine": 269,
+    "endLine": 288
   },
   {
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-jpeg-example.json",
     "fshName": "dok-beispiel-client-with-binary-jpeg-example",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
-    "startLine": 283,
-    "endLine": 302
+    "startLine": 290,
+    "endLine": 309
   },
   {
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-pdf-example-short.json",
     "fshName": "dok-beispiel-client-with-binary-pdf-example-short",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
-    "startLine": 241,
-    "endLine": 260
+    "startLine": 248,
+    "endLine": 267
   },
   {
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-pdf-example.json",
     "fshName": "dok-beispiel-client-with-binary-pdf-example",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
-    "startLine": 304,
-    "endLine": 323
+    "startLine": 311,
+    "endLine": 330
   },
   {
     "outputFile": "DocumentReference-dok-beispiel-server.json",
     "fshName": "dok-beispiel-server",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
-    "startLine": 218,
-    "endLine": 239
+    "startLine": 225,
+    "endLine": 246
   },
   {
     "outputFile": "Encounter-BeispielBesuch.json",
@@ -85,7 +85,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
     "startLine": 1,
-    "endLine": 214
+    "endLine": 221
   },
   {
     "outputFile": "StructureDefinition-ISiKDokumentenSuchergebnisse.json",
@@ -93,7 +93,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKDokumentenSuchergebnisse.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 27
   },
   {
     "outputFile": "ValueSet-ISiKConfidentialityCodes.json",
