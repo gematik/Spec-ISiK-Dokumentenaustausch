@@ -5,7 +5,7 @@ Usage: #definition
   "Dieses CapabilityStatement beschreibt alle Interaktionen 
   die ein ISiK-konformes System unterstützen MUSS bzw. KANN,
   um das Bestätigungsverfahren für dieses Modul zu bestehen.  
-  
+
   Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine CapabilityStatement-Ressource bereitstellen.
 Hierzu MUSS die [capabilities-Interaktion gemäß FHIR-Kernspezifikation](https://hl7.org/fhir/R4/http.html#capabilities) unterstützt werden. 
 Der `MODE`-Parameter kann ignoriert werden.  
@@ -57,16 +57,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
   * interaction[+]
     * insert Expectation (#SHALL)
     * code = #search-type
-  * searchParam[+]
-    * insert Expectation (#SHALL)
-    * name = "_id"
-    * definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
-    * type = #token
-    * documentation = 
-        "**Beispiel:**    
-        `GET [base]/DocumentReference?_id=103270`    
-        **Anwendungshinweis:**   
-        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#all).  "
+  * insert CommonSearchParameters
     
   * searchParam[+]
     * insert Expectation (#SHALL)
