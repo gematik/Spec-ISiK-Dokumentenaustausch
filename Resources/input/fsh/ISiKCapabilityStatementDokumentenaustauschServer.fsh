@@ -127,6 +127,11 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         `GET [base]/DocumentReference?encounter=Encounter/123`    
         **Anwendungshinweis:**   
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
+  * searchInclude[+] = "DocumentReference:patient" 
+    * insert Expectation(#SHALL)
+  * searchInclude[+] = "DocumentReference:encounter"
+    * insert Expectation(#SHALL)
+  
   * operation[+]
     * insert Expectation (#MAY)
     * name = #update-metadata
