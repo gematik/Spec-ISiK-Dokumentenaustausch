@@ -2,7 +2,11 @@ Instance: ISiKCapabilityStatementDokumentenaustauschServer
 InstanceOf: CapabilityStatement
 Usage: #definition
 * description = 
-  "Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine CapabilityStatement-Ressource bereitstellen.
+  "Dieses CapabilityStatement beschreibt alle Interaktionen 
+  die ein ISiK-konformes System unterstützen MUSS bzw. KANN,
+  um das Bestätigungsverfahren für dieses Modul zu bestehen.  
+  
+  Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine CapabilityStatement-Ressource bereitstellen.
 Hierzu MUSS die [capabilities-Interaktion gemäß FHIR-Kernspezifikation](https://hl7.org/fhir/R4/http.html#capabilities) unterstützt werden. 
 Der `MODE`-Parameter kann ignoriert werden.  
 Das CapabilityStatement in dieser Spezifikation stellt die Anforderungen seitens der gematik dar (`kind = requirements`). 
