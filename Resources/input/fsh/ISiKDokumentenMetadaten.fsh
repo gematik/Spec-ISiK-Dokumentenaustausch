@@ -18,13 +18,6 @@ Die Verwendung von `DocumentReference.docStatus` ist im ISiK-Kontext gestattet.
 
 #### Einschränkungen des IHE-Profils
 Elemente mit ValueSet-Bindings ohne verbindliche Vorgabe seitens IHE wurden auf die in Deutschland gebräuchlichen Terminologien (gemäß der Festlegungen von IHE Deutschland e.V.) eingeschränkt."
-* ^purpose =
-  "Die Ressource [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) enthält die Metadaten, 
-die für die Verwaltung von und die Suche nach Dokumenten benötigt werden. 
-Der Inhalt des Dokumentes wird über `DocumentReference.content` beschrieben und über `DocumentReference.content.attachment` referenziert. 
-Die Trennung von Dokument und Metadaten ermöglicht Clients die effiziente Suche und Auflistung von verfügbaren Dokumenten, ohne dass diese vollständig vom Server geladen werden müssen. 
-Servern ermöglicht dieser Ansatz die Trennung zwischen den Metadaten in einer Datenbank und der Dokumentenablage in z.B. einem Dateisystem."
-
 * insert Meta
 * masterIdentifier 1.. MS
   * ^short = "Versionsspezifische OID des Dokumentes"

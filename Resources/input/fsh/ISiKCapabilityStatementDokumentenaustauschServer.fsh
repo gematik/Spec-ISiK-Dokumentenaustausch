@@ -38,22 +38,16 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
 * rest.resource[+]
   * insert Expectation (#SHALL)
   * type = #DocumentReference
-  * documentation = "Für die Ressource DocumentReference MUSS die REST-Interaktion 
-  `CREATE` implementiert werden, siehe {{pagelink:Dokumentenbereitstellung}}. 
-  Für die Ressource DocumentReference MUSS die REST-Interaktion `READ` implementiert werden, 
-  siehe {{pagelink:Dokumentenabfrage}}.   
-  Die in IHE-MHD geltende Einschränkung, dass Clients bei allen Suchen mindestens 
-  die Parameter patient oder patient.identifier sowie status verwenden müssen, gilt nicht. 
-  Siehe dazu Kapitel {{pagelink:Kompatibilitaet}}.  
-  Folgende Suchparameter sind für das Bestätigungsverfahren relevant, auch in Kombination: "
   * supportedProfile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten"
     * insert Expectation (#SHALL)
   * interaction[+]
     * insert Expectation (#SHALL)
     * code = #create
+    * documentation = "siehe {{pagelink:Dokumentenbereitstellung}}"
   * interaction[+]
     * insert Expectation (#SHALL)
     * code = #read
+    * documentation = "siehe {{pagelink:Dokumentenabfrage}}"
   * interaction[+]
     * insert Expectation (#SHALL)
     * code = #search-type
