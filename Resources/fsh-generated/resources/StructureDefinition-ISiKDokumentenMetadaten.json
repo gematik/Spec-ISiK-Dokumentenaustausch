@@ -481,7 +481,7 @@
       {
         "id": "DocumentReference.context.encounter",
         "path": "DocumentReference.context.encounter",
-        "comment": "Abweichend zu MHD V4.0.1 ist die Verwendung der Encounter-Referenz im ISiK-Kontext erlaubt.  \n    Wird ein Encounter im ISIK-Kontext referenziert, so MUSS dieser konform zum Profil [ISIKKontaktGesundheitseinrichtung](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKKontaktGesundheitseinrichtung) aus dem Basismodul sein. \nUpdate für Stufe 3: \nIn MHD 4.2.0 wurde das Verbot der Angabe einer Encounter-Referenz gelockert, das ISiK-Profil ist damit in diesem Punkt wieder kompatibel zu IHE MHD.\n    ",
+        "short": "Aufenthaltsbezug",
         "max": "1",
         "mustSupport": true,
         "mapping": [
@@ -491,6 +491,14 @@
             "comment": "Ermittlung des korrekten Encounters auf dem Server anhand des Identifiers(Fallnummer) und/oder weiterer Kriterien erforderlich"
           }
         ]
+      },
+      {
+        "id": "DocumentReference.context.encounter.reference",
+        "path": "DocumentReference.context.encounter.reference",
+        "short": "Encounter-Link",
+        "comment": "**Begründung Pflichtfeld:** Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.  **Hinweis Kompatibilität:** In MHD 4.2.0 wurde das Verbot der Angabe einer Encounter-Referenz gelockert, das ISiK-Profil ist damit in diesem Punkt wieder kompatibel zu IHE MHD.",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "DocumentReference.context.event",
