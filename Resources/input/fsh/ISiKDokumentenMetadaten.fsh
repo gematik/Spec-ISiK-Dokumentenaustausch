@@ -106,16 +106,11 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe eines Identifiers gelockert, das
   * display 1..1 MS
     * ^short = "Anzeigetext"
     * ^comment = "Der Anzeigetext zum XDS-Class-Code"
-* subject only Reference(Patient)
 * subject 1..1 MS
-  * ^short = "Patientenbezug des Dokumentes"
-  * ^comment = "Im ISiK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient) des Basismoduls sein.
-  
-  Für sonstige Kontexte siehe [FHIR Kernspezifikation](http://hl7.org/fhir/documentreference-definitions.html#DocumentReference.subject)"
-  * reference 1..1 MS
-  * reference 1..1 MS
-    * ^short = "Absolute oder relative URL des Patienten auf dem Server"
-    * ^comment = "Absolute oder relative URL des Patienten auf dem Server"
+  * ^short = "Patientenbezug"
+  * reference 1.. MS
+    * ^short = "Patienten-Link"
+    * ^comment = "**Begründung Pflichtfeld:** Die Verlinkung auf eine Patienten-Ressource dient der technischen Zuordnung der Dokumentation zu einem Patienten und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc."
 * date
   * ^comment = "Abweichend zu MHD V4.0.1 ist die Verwendung von date im ISiK-Kontext nicht verpflichtend.
 Die Motivation für die verbindliche Verwendung von `date` seitens IHE ist nicht nachvollziehbar.
