@@ -189,11 +189,10 @@ Ressource ausgelagert und über Attachment.url referenziert werden."
     &quot;urn:ihe:iti:xds:2017:mimeTypeSufficient&quot;"
 * context 1.. MS
   * encounter ..1 MS
-    * ^comment = "Abweichend zu MHD V4.0.1 ist die Verwendung der Encounter-Referenz im ISiK-Kontext erlaubt.  
-    Wird ein Encounter im ISIK-Kontext referenziert, so MUSS dieser konform zum Profil [ISIKKontaktGesundheitseinrichtung](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKKontaktGesundheitseinrichtung) aus dem Basismodul sein. 
-Update für Stufe 3: 
-In MHD 4.2.0 wurde das Verbot der Angabe einer Encounter-Referenz gelockert, das ISiK-Profil ist damit in diesem Punkt wieder kompatibel zu IHE MHD.
-    "
+    * ^short = "Aufenthaltsbezug"
+    * reference 1.. MS
+      * ^short = "Encounter-Link"
+      * ^comment = "**Begründung Pflichtfeld:** Die Verlinkung auf eine Encounter-Ressource dient der technischen Zuordnung der Dokumentation zu einem Aufenthalt und ermöglicht wichtige API-Funktionen wie verkettete Suche, (Reverse-)Include etc.  **Hinweis Kompatibilität:** In MHD 4.2.0 wurde das Verbot der Angabe einer Encounter-Referenz gelockert, das ISiK-Profil ist damit in diesem Punkt wieder kompatibel zu IHE MHD."
   * event from http://ihe-d.de/ValueSets/IHEXDSeventCodeList (required)
     * ^comment = "Binding auf IHE-DE Terminologie hinzugefügt"
     * coding 1..1
