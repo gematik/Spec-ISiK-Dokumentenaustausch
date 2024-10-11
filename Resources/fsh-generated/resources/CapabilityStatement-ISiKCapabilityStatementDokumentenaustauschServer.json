@@ -52,7 +52,6 @@
             }
           ],
           "type": "DocumentReference",
-          "documentation": "Für die Ressource DocumentReference MUSS die REST-Interaktion \r\n  `CREATE` implementiert werden, siehe {{pagelink:Dokumentenbereitstellung}}. \r\n  Für die Ressource DocumentReference MUSS die REST-Interaktion `READ` implementiert werden, \r\n  siehe {{pagelink:Dokumentenabfrage}}.   \r\n  Die in IHE-MHD geltende Einschränkung, dass Clients bei allen Suchen mindestens \r\n  die Parameter patient oder patient.identifier sowie status verwenden müssen, gilt nicht. \r\n  Siehe dazu Kapitel {{pagelink:Kompatibilitaet}}.  \r\n  Folgende Suchparameter sind für das Bestätigungsverfahren relevant, auch in Kombination: ",
           "supportedProfile": [
             "https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten"
           ],
@@ -74,7 +73,8 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "code": "create"
+              "code": "create",
+              "documentation": "siehe {{pagelink:Dokumentenbereitstellung}}"
             },
             {
               "extension": [
@@ -83,7 +83,8 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "code": "read"
+              "code": "read",
+              "documentation": "siehe {{pagelink:Dokumentenabfrage}}"
             },
             {
               "extension": [
