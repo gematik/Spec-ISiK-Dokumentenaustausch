@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Bestätigungsrelevante Systeme
+  filename: BestaetigungsrelevanteSysteme.page.md
+- name: Kompatibilität
+  filename: Kompatibilitaet.page.md
+- name: Anmerkungen zu Must-Support Feldern
+  filename: AnmerkungenzuMust-Support-Feldern.page.md
+- name: Akteure und Interaktionen
+  filename: AkteureUndInteraktionen
