@@ -13,47 +13,47 @@
     "fshType": "Instance",
     "fshFile": "ISiKCapabilityStatementDokumentenaustauschServer.fsh",
     "startLine": 1,
-    "endLine": 152
+    "endLine": 147
   },
   {
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-jpeg-example-short.json",
     "fshName": "dok-beispiel-client-with-binary-jpeg-example-short",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
-    "startLine": 269,
-    "endLine": 288
+    "startLine": 256,
+    "endLine": 275
   },
   {
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-jpeg-example.json",
     "fshName": "dok-beispiel-client-with-binary-jpeg-example",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
-    "startLine": 290,
-    "endLine": 309
+    "startLine": 277,
+    "endLine": 296
   },
   {
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-pdf-example-short.json",
     "fshName": "dok-beispiel-client-with-binary-pdf-example-short",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
-    "startLine": 248,
-    "endLine": 267
+    "startLine": 235,
+    "endLine": 254
   },
   {
     "outputFile": "DocumentReference-dok-beispiel-client-with-binary-pdf-example.json",
     "fshName": "dok-beispiel-client-with-binary-pdf-example",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
-    "startLine": 311,
-    "endLine": 330
+    "startLine": 298,
+    "endLine": 317
   },
   {
     "outputFile": "DocumentReference-dok-beispiel-server.json",
     "fshName": "dok-beispiel-server",
     "fshType": "Instance",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
-    "startLine": 225,
-    "endLine": 246
+    "startLine": 212,
+    "endLine": 233
   },
   {
     "outputFile": "Encounter-BeispielBesuch.json",
@@ -85,7 +85,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKDokumentenMetadaten.fsh",
     "startLine": 1,
-    "endLine": 221
+    "endLine": 208
   },
   {
     "outputFile": "StructureDefinition-ISiKDokumentenSuchergebnisse.json",
