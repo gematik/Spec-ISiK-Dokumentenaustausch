@@ -10,7 +10,8 @@ Version: 3.0.4
 
 Datum: tbd.
 
-* Hinzufügen von Dependencies für IHE ValueSets https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/193
+* Achtung: Einige IHE ValueSets sind sowohl in der referenzierten Version des de.basisprofil.r4 packages, als auch in de.ihe-d.terminology enthalten. Hier gelten immer die ValueSets aus dem IHE package.
+* Hinzufügen von Dependencies für IHE ValueSets https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/193 & https://github.com/gematik/spec-ISiK-Dokumentenaustausch/commit/8d89dd1000e5cada0451b31eb93116835499f1c3
 
 
 Version: 3.0.3
