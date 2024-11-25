@@ -1,0 +1,71 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKDokumentenSuchergebnisse",
+  "url": "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenSuchergebnisse",
+  "version": "3.0.4",
+  "name": "ISiKDokumentenSuchergebnisse",
+  "title": "Suchergebnisse einer Dokumentensuche",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-25",
+  "publisher": "gematik GmbH",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "searchset"
+      },
+      {
+        "id": "Bundle.total",
+        "path": "Bundle.total",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resource"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Bundle.entry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry:DocumentReference",
+        "path": "Bundle.entry",
+        "sliceName": "DocumentReference",
+        "short": "DocumentReference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Bundle.entry:DocumentReference.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "DocumentReference",
+            "profile": [
+              "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
