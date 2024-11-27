@@ -19,7 +19,7 @@ https://github.com/gematik/spec-ISiK-Dokumentenaustausch/issues/210
 https://github.com/gematik/spec-ISiK-Dokumentenaustausch/issues/205
 * `fixed`: Operations hängen im CapabilityStatement am falschen Branch
 https://github.com/gematik/spec-ISiK-Dokumentenaustausch/issues/204
-* `fixed`: Falscher Satz über keine notwendige Verbindlichkeit entfernt  
+* `fixed`: Falscher Satz über keine notwendige Verbindlichkeit entfernt https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/213
 
 
 Version: 4.0.0
