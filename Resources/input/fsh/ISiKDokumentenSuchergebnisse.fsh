@@ -31,5 +31,8 @@ InstanceOf: ISiKDokumentenSuchergebnisse
 Usage: #example
 Title: "Suchergebnis-Beispiel"
 * total = 1
-* entry.fullUrl = "http://meinfhirserver.de/DocumentReference/dok-beispiel"
+* link 
+  * relation = #self
+  * url = "http://meinfhirserver.de/DocumentReference?patient.identifier=A123456789"
+* entry.fullUrl = "http://meinfhirserver.de/DocumentReference/dok-beispiel-server"
 * entry.resource = dok-beispiel-server

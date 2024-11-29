@@ -1,5 +1,5 @@
 Output File                                                                Name                                                Type      FSH File                                              Lines
-Bundle-Suchergebnis-Beispiel.json                                          Suchergebnis-Beispiel                               Instance  ISiKDokumentenSuchergebnisse.fsh                      29 - 35
+Bundle-Suchergebnis-Beispiel.json                                          Suchergebnis-Beispiel                               Instance  ISiKDokumentenSuchergebnisse.fsh                      29 - 38
 CapabilityStatement-ISiKCapabilityStatementDokumentenaustauschServer.json  ISiKCapabilityStatementDokumentenaustauschServer    Instance  ISiKCapabilityStatementDokumentenaustauschServer.fsh  1 - 147
 DocumentReference-dok-beispiel-client-with-binary-jpeg-example-short.json  dok-beispiel-client-with-binary-jpeg-example-short  Instance  ISiKDokumentenMetadaten.fsh                           256 - 275
 DocumentReference-dok-beispiel-client-with-binary-jpeg-example.json        dok-beispiel-client-with-binary-jpeg-example        Instance  ISiKDokumentenMetadaten.fsh                           277 - 296
