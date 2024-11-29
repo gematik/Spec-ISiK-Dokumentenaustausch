@@ -6,7 +6,7 @@ Title: "update-metadata"
 * url = "https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata"
 * title = "Update document metadata"
 * kind = #operation
-* name = "update-metadata"
+* name = "Update-metadata"
 * description = "Update selected, uncritical document metadata in a safe and controlled manner without having to replace the whole document"
 * code = #update-metadata
 * comment = "
