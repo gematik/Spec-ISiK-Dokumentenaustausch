@@ -163,7 +163,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference",
               "documentation": "**Beispiel:**\r\n        `GET [base]/DocumentReference?patient=Patient/123`\r\n        `GET [base]/DocumentReference?patient.identifier=http://mein-krankenhaus.example/fhir/sid/patienten|1032702`\r\n        `GET [base]/DocumentReference?patient.identifier=1032702`\r\n        **Anwendungshinweis:**\r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).\r\n        Weitere Informationen zur Suche nach verketteten Parametern finden sich in der FHIR-Kernspezifikation - Abschnitt [Chained Parameters](https://hl7.org/fhir/R4/search.html#chaining).\r\n        Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Clients und Server verpflichend."
             },
@@ -175,7 +175,7 @@
                 }
               ],
               "name": "type",
-              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-type",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-type",
               "type": "token",
               "documentation": "**Beispiel:**\r\n        `GET [base]/DocumentReference?type=http://dvmd.de/fhir/CodeSystem/kdl|AD010101`\r\n        **Anwendungshinweis:**\r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#token).\r\n        Dieser Suchparameter ist für die Umsetzung des IHE MHD Profils für Server verpflichtend."
             },
@@ -211,7 +211,7 @@
                 }
               ],
               "name": "encounter",
-              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-encounter",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
               "type": "reference",
               "documentation": "**Beispiel:**\r\n        `GET [base]/DocumentReference?encounter=Encounter/123`\r\n        **Anwendungshinweis:**\r\n        Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
             }

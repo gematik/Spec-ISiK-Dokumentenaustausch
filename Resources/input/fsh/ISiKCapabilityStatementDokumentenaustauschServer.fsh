@@ -67,7 +67,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
   * searchParam[+]
     * insert Expectation (#SHALL)
     * name = "patient"
-    * definition = "http://hl7.org/fhir/SearchParameter/DocumentReference-patient"
+    * definition = "http://hl7.org/fhir/SearchParameter/clinical-patient"
     * type = #reference
     * documentation =
         "**Beispiel:**
@@ -81,7 +81,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
   * searchParam[+]
     * insert Expectation (#SHALL)
     * name = "type"
-    * definition = "http://hl7.org/fhir/SearchParameter/DocumentReference-type"
+    * definition = "http://hl7.org/fhir/SearchParameter/clinical-type"
     * type = #token
     * documentation =
         "**Beispiel:**
@@ -114,7 +114,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
   * searchParam[+]
     * insert Expectation (#SHALL)
     * name = "encounter"
-    * definition = "http://hl7.org/fhir/SearchParameter/DocumentReference-encounter"
+    * definition = "http://hl7.org/fhir/SearchParameter/clinical-encounter"
     * type = #reference
     * documentation =
         "**Beispiel:**
