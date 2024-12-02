@@ -3,19 +3,19 @@ RuleSet: Meta
 * ^status = #active
 * ^experimental = false
 * ^publisher = "gematik GmbH"
-* ^date = "2024-11-29"
+* ^date = "2024-12-02"
 
 RuleSet: Meta-Inst
 * status = #active
 * publisher = "gematik GmbH"
-* date = "2024-11-29"
+* date = "2024-12-02"
 
 RuleSet: Meta-CapabilityStatement
 * status = #active
 * experimental = false
 * version = "4.0.1"
 * publisher = "gematik GmbH"
-* date = "2024-11-29"
+* date = "2024-12-02"
 * implementationGuide = "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Dokumentenaustausch"
 * url = "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementDokumentenaustauschServer"
 
