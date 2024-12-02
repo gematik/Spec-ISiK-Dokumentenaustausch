@@ -9,7 +9,7 @@
   "url": "https://gematik.de/fhir/isik/ValueSet/ISiKConfidentialityCodes",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-11-29",
+  "date": "2024-12-02",
   "compose": {
     "include": [
       {
