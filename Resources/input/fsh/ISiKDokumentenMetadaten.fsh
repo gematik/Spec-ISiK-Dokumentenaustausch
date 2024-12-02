@@ -122,7 +122,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe von date gelockert, das ISiK-Pro
 * author MS
   * ^short = "Autor des Dokumentes"
   * ^comment = "In dieser Ausbaustufe ist die Nennung des Namens oder Kürzels des Autors ausreichend.
-  Eine darüber hinaus gehende Verlinkung auf einen Pracitioner (auflösbar auf dem Server) ist möglich aber nicht erforderlich."
+  Eine darüber hinaus gehende Verlinkung auf einen Practitioner (auflösbar auf dem Server) ist möglich aber nicht erforderlich."
   * display MS
 * custodian ..0
   * ^comment = "Einschränkung der Kardinalität analog MHD V4.0.1"
@@ -133,7 +133,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe von date gelockert, das ISiK-Pro
 * securityLabel 1.. MS
 * securityLabel from ISiKConfidentialityCodes (required)
   * ^short = "Vertraulichkeit"
-  * ^comment = "Die Bereitstellung des Vertraulichkeitsinformation durch den Ersteller des Dokumentes ist verpflichtend.
+  * ^comment = "Die Bereitstellung der Vertraulichkeitsinformation durch den Ersteller des Dokumentes ist verpflichtend.
 Ebenso sind Dokumentenserver verpflichtet, diese Information zu persistieren und bei der Dokumentenabfrage zu reproduzieren.
 Die ISiK-Spezifikation trifft jedoch keine Annahmen darüber, wie sich einzelne Vertraulichkeitsstufen auf die Zugriffsberechtigungen
 verschiedener benutzer auf ein Dokument auswirken. Im ISiK-Kontext ist die Angabe einer der drei Vertraulichkeitsstufen
