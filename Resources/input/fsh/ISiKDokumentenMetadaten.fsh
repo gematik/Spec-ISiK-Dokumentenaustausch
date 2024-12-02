@@ -41,7 +41,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe eines Identifiers gelockert, das
   * ^comment = "Der Status des Dokumentes wird in DocumentReference.docStatus gesetzt!"
 * docStatus 0..1 MS
   * ^short = "Bearbeitungsstatus des Dokumentes"
-  * ^comment = "Abweichend zu MHD V4.0.1 ist die Verwendung von docStatus im ISiK-Kontext erlaubt. Doe Verwendung von docStatus bleibt jedoch optional,
+  * ^comment = "Abweichend zu MHD V4.0.1 ist die Verwendung von docStatus im ISiK-Kontext erlaubt. Die Verwendung von docStatus bleibt jedoch optional,
   da nicht alle Dokumentenerzeugende Systeme einen expliziten Freigabe-Workflow haben. Dokumentenserver müssen jedoch in der Lage sein, den Dokumentenstatus
  (sofern vorhanden) zu persistieren, anzuzeigen und zu reproduzieren.
   &#13;[Konsens der Arbeitsgruppe vom 10.12.2021]"
