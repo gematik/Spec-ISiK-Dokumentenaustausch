@@ -38,7 +38,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe eines Identifiers gelockert, das
 "
 * status MS
   * ^short = "Status des Dokumentenmetadatensatzes"
-  * ^comment = "Der Status des Dokumentes wird in DocumentReference.docStatus gesetzt!"
+  * ^comment = "Der Status des Dokumentes wird in DocumentReference.docStatus gesetzt."
 * docStatus 0..1 MS
   * ^short = "Bearbeitungsstatus des Dokumentes"
   * ^comment = "Abweichend zu MHD V4.0.1 ist die Verwendung von docStatus im ISiK-Kontext erlaubt. Doe Verwendung von docStatus bleibt jedoch optional,
