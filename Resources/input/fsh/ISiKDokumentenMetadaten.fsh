@@ -41,7 +41,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe eines Identifiers gelockert, das
   * ^comment = "Der Status des Dokumentes wird in DocumentReference.docStatus gesetzt."
 * docStatus 0..1 MS
   * ^short = "Bearbeitungsstatus des Dokumentes"
-  * ^comment = "Abweichend zu MHD V4.0.1 ist die Verwendung von docStatus im ISiK-Kontext erlaubt. Doe Verwendung von docStatus bleibt jedoch optional,
+  * ^comment = "Abweichend zu MHD V4.0.1 ist die Verwendung von docStatus im ISiK-Kontext erlaubt. Die Verwendung von docStatus bleibt jedoch optional,
   da nicht alle Dokumentenerzeugende Systeme einen expliziten Freigabe-Workflow haben. Dokumentenserver müssen jedoch in der Lage sein, den Dokumentenstatus
  (sofern vorhanden) zu persistieren, anzuzeigen und zu reproduzieren.
   &#13;[Konsens der Arbeitsgruppe vom 10.12.2021]"
@@ -51,7 +51,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe eines Identifiers gelockert, das
   Während KDL-Codes eine feingranulare Dokumentenklassifikation für die gezielte Suche nach medizinischen und Administrativen Dokumenten ermöglichen,
   sind IHE-XDS-Type-Codes für den einrichtungsübergreifenden Dokumentenaustausch maßgeblich.
   Der XDS-Type-Code kann mit Hilfe der bereitgestellten [ConceptMaps](https://simplifier.net/kdl/~resources?category=ConceptMap)
-  aus dem KDL-Code ermittelt werden. Weitere Typisierungen (z.B. nach SNOMED oder LOINC) sind uneingeschränkt erlaubt. [Konsens der Arbeitgruppe vom 18.02.2022]. Im Falle, dass der Code 'UNK' entsprechend der ConceptMap verwendet werden soll, MUSS das System 'http://terminology.hl7.org/CodeSystem/v3-NullFlavor' verwendet werden."
+  aus dem KDL-Code ermittelt werden. Weitere Typisierungen (z.B. nach SNOMED oder LOINC) sind uneingeschränkt erlaubt. [Konsens der Arbeitsgruppe vom 18.02.2022]. Im Falle, dass der Code 'UNK' entsprechend der ConceptMap verwendet werden soll, MUSS das System 'http://terminology.hl7.org/CodeSystem/v3-NullFlavor' verwendet werden."
 * type.coding 1..
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
@@ -122,7 +122,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe von date gelockert, das ISiK-Pro
 * author MS
   * ^short = "Autor des Dokumentes"
   * ^comment = "In dieser Ausbaustufe ist die Nennung des Namens oder Kürzels des Autors ausreichend.
-  Eine darüber hinaus gehende Verlinkung auf einen Pracitioner (auflösbar auf dem Server) ist möglich aber nicht erforderlich."
+  Eine darüber hinaus gehende Verlinkung auf einen Practitioner (auflösbar auf dem Server) ist möglich aber nicht erforderlich."
   * display MS
 * custodian ..0
   * ^comment = "Einschränkung der Kardinalität analog MHD V4.0.1"
@@ -133,7 +133,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe von date gelockert, das ISiK-Pro
 * securityLabel 1.. MS
 * securityLabel from ISiKConfidentialityCodes (required)
   * ^short = "Vertraulichkeit"
-  * ^comment = "Die Bereitstellung des Vertraulichkeitsinformation durch den Ersteller des Dokumentes ist verpflichtend.
+  * ^comment = "Die Bereitstellung der Vertraulichkeitsinformation durch den Ersteller des Dokumentes ist verpflichtend.
 Ebenso sind Dokumentenserver verpflichtet, diese Information zu persistieren und bei der Dokumentenabfrage zu reproduzieren.
 Die ISiK-Spezifikation trifft jedoch keine Annahmen darüber, wie sich einzelne Vertraulichkeitsstufen auf die Zugriffsberechtigungen
 verschiedener benutzer auf ein Dokument auswirken. Im ISiK-Kontext ist die Angabe einer der drei Vertraulichkeitsstufen
