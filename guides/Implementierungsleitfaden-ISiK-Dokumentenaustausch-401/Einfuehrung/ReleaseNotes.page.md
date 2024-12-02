@@ -13,6 +13,7 @@ Version: 4.0.1
 Datum: tbd.
 
 * `improved`: Übertragung der Dokumentation in die FHIR-Resourcen, Refactoring des ImplementationGuides
+* `fixed`: Update der der dependency de.ihe-d.terminology von 3.0.0 -> 3.0.1 https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/212 - Begründung: de.ihe-d.terminology#3.0.0 war defekt: ValueSets in XML abgelegt. Inhaltlich keine Änderung
 * `fixed`: Fehlende Kennzeichnung von MS-Elementen im Bundle-Profil
 https://github.com/gematik/spec-ISiK-Dokumentenaustausch/issues/210
 * `fixed`: Binary-URL zeigt noch auf Basis V3
