@@ -71,7 +71,7 @@
         "id": "DocumentReference.status",
         "path": "DocumentReference.status",
         "short": "Status des Dokumentenmetadatensatzes",
-        "comment": "Der Status des Dokumentes wird in DocumentReference.docStatus gesetzt!",
+        "comment": "Der Status des Dokumentes wird in DocumentReference.docStatus gesetzt.",
         "mustSupport": true,
         "mapping": [
           {
