@@ -2,8 +2,7 @@ Instance: ISiKCapabilityStatementDokumentenaustauschServer
 InstanceOf: CapabilityStatement
 Usage: #definition
 * description =
-  "Dieses CapabilityStatement beschreibt alle Interaktionen
-  die ein ISiK-konformes System unterstützen MUSS bzw. KANN,
+  "Dieses CapabilityStatement beschreibt alle Interaktionen, die ein ISiK-konformes System unterstützen MUSS bzw. KANN,
   um das Bestätigungsverfahren für dieses Modul zu bestehen.
 
   Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine CapabilityStatement-Ressource bereitstellen.
