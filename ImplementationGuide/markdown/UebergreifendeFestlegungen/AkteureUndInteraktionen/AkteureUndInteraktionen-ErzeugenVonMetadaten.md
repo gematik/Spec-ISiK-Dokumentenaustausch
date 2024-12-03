@@ -51,13 +51,13 @@ Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-
 
 ## Abgrenzung zu ISiK Stufe 2 (Basis) bei der Kommunikation *strukturierter* Dokumente (FHIR-Document-Bundle)
 ### Interaktion ISiK Modul Basis Stufe 2: Bericht aus Subsystem
-* UseCase: Client übermittelt diverse strukturierte Informationen in Form eines Dokumentes an einen Empfänger. Der Empfänger (oder ggf. dessen Benutzer) kann selbst entscheiden, welche Informationen übernommen und ggf. weiterverarbeitet werden können/sollen. Als Minimum muss die Narrative (die HTML-Repräsentation des gesamten Dokumentes) übernommen werden.
+* Use Case: Client übermittelt diverse strukturierte Informationen in Form eines Dokumentes an einen Empfänger. Der Empfänger (oder ggf. dessen Benutzer) kann selbst entscheiden, welche Informationen übernommen und ggf. weiterverarbeitet werden können/sollen. Als Minimum muss die Narrative (die HTML-Repräsentation des gesamten Dokumentes) übernommen werden.
 * HTTP-verb: POST auf [base]
 * Content: Bundle vom Typ `document`
 * erforderliches Verhalten: der Empfänger verarbeitet den Inhalt des Dokumentes (HTML + Ressourcen soweit möglich), das Original muss nicht zwingend persistiert werden. Es besteht kein zwingendes Erfordernis, dass das Dokument oder seine Inhalte über die API wieder bereitgestellt werden können. 
 
 ### Interaktion ISiK Modul Dokumentenaustausch Stufe 2: Dokumentenbereitstellung
-* UseCase: Client übermittelt ein strukturiertes Dokument zur inhaltsagnostischen, dauerhaften, ggf. rechtssicheren Archivierung
+* Use Case: Client übermittelt ein strukturiertes Dokument zur inhaltsagnostischen, dauerhaften, ggf. rechtssicheren Archivierung
 * HTTP-verb: POST auf [base]/DocumentReference
 * Content: DocumentReference mit Base64-codiertem Bundle vom Typ `document` eingebettet in DocumentReference.content.attachment.data)
 * erforderliches Verhalten: das Dokument sowie seine Metadaten werden persistiert und über die API mittels der Interaktionen "Dokumentenabfrage" und "Dokumentenzugriff" bereitgestellt.

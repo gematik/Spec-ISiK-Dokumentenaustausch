@@ -8,10 +8,10 @@
 * Schaffung der Grundlagen  für eine kontinuierliche Weiterentwicklung (vom Erstellen und Abfragen strukturierter Metadaten zu unstrukturierten Dokumenten hin zu vollständiger Durchsuchbarkeit von strukturierten Daten in Dokumenten, gezielte Weiterverarbeitung strukturierter Daten aus Dokumenten mit Nachverfolgbarkeit der Herkunft, Erzeugung von strukturierten ad hoc Dokumenten.
 #### Use Case a) Abfrage von Dokumenten
 Ein Subsystem möchte eine Übersicht aller Dokumente zum einem Besuch anzeigen.
-Für die Unterstützung dieses UseCases definiert dieses Modul die zu unterstützenden Suchparameter für die FHIR-Ressource DocumentReference 
+Für die Unterstützung dieses Use Cases definiert dieses Modul die zu unterstützenden Suchparameter für die FHIR-Ressource DocumentReference 
 #### Use Case b) Einstellen eines Dokumentes
 Ein Subsystem möchte einen Befund/Bericht in Form eines vorformatierten Dokumentes (z.B. Mikrobiologiebefund) an das Primärsystem übermitteln.
-Für die Unterstützung dieses UseCases wird die Datenrückübermittlung der IsiK Stufe 1 in diesem Modul auf unstrukturierte Dokumente (PDF, DOC, JPEG) ausgeweitet.
+Für die Unterstützung dieses Use Cases wird die Datenrückübermittlung der IsiK Stufe 1 in diesem Modul auf unstrukturierte Dokumente (PDF, DOC, JPEG) ausgeweitet.
 #### Use Case c) Weiterverarbeitung strukturierter Daten aus FHIR-basierten Dokumenten,
 z.B. 
 * Rückübermittlung aus Subsystemen gem. Isik Basis Stufe 1
@@ -23,9 +23,9 @@ Ein Primärsystem möchte die in einem strukturierten Dokument enthaltenen Daten
 Beispiel: Ein Primärsystem verfügt über einen Ablagebereich für Dokumente sowie Datenbankstrukturen zur Speicherung von Blutdruckmesswerten. Aus den strukturierten Messwerten dieser Tabelle kann eine Verlaufskurve erzeugt und dem Benutzer dargestellt werden. 
 ##### Variante 1: Vom Primärsystem verarbeitbare Daten aus Dokumenten (aus Fremdsystemen) werden automatisch in die Blutdrucktabelle übernommen und in der Verlaufskurve angezeigt, sofern das Dokument aus einer vertrauenswürdiger Quelle stammt und die Blutdruck-Ressource valide ist.
 ##### Variante 2: Bei der Entgegennahme von Dokumenten (aus unbekannten oder weniger vertrauenswürdigen Quellen) analysiert das Primärsystem deren Inhalt und bietet dem Anwender die validen Blutdruckmesswerte zur Übernahme in die Kurve an. Die Entscheidung obliegt dem Anwender, ob die Daten übernommen werden sollen.
-Für die Unterstützung dieses UseCases beschreibt dieses Modul den Umgang mit strukturierten FHIR-basierten Dokumenten und der Extraktion der darin enthaltenen Ressourcen unter Beibehaltung des unveränderten Originaldokumentes und Kenntlichmachung der Herkunft der übernommenen Daten.
+Für die Unterstützung dieses Use Cases beschreibt dieses Modul den Umgang mit strukturierten FHIR-basierten Dokumenten und der Extraktion der darin enthaltenen Ressourcen unter Beibehaltung des unveränderten Originaldokumentes und Kenntlichmachung der Herkunft der übernommenen Daten.
 
-#### relevante UseCases aus KHZG
+#### relevante Use Cases aus KHZG
 FTB 2.A:
 
 \[...\]es den Patientinnen und Patienten ermöglichen, ihre Behandlungsunterlagen sowie weitere zur Aufnahme und Behandlung relevante Daten und Unterlagen, insbesondere den bundeseinheitlichen Medikationsplan (Barcode-Scan zur strukturieten Weiterverarbeitung), vorab online hochzuladen, oder dem Leistungserbringer im Rahmen einer vom Patienten oder der Patientin digital erteilten temporären Berechtigung (Consent) den Zugriff auf diese Daten (z. B. in einer existierenden elektronischen Akte) zu ermöglichen,
@@ -90,6 +90,6 @@ Kann mittels Bridge angebunden werden:
 ![Quelle: https://wiki.ihe.net/index.php/Mobile_access_to_Health_Documents_(MHD)](https://wiki.ihe.net/images/e/e9/Slide1.PNG)
 * DiGa-Export-Format (noch) nicht spezifiziert (Work in Progress bei BfArm/Gematik/KBV)
 * inkompatibel mit derzeit genutzen (strukturierten) Formaten für den bundeseinheitlichen Medikationsplan (xml zu FHIR-Komvertierung im Rahmen des MPP Projektes basiert noch auf FHIR STU3)
-* KIS-Systeme verlangen stets(?) den Fallbezug klinischer Dokumente. Dieser ist jedoch bei IHE-MHD nicht berücksichtigt und insbesondere bei den Dokumenten in der ePA nicht enthalten. Bei den UseCases des KHZG (Portale, Terminplanung) könnten sogar Dokumente entstehen, die sich auf im KIS noch nicht angelegte Patienten beziehen. Diese Konstellationen sollten berücksichtigt werden.
+* KIS-Systeme verlangen stets(?) den Fallbezug klinischer Dokumente. Dieser ist jedoch bei IHE-MHD nicht berücksichtigt und insbesondere bei den Dokumenten in der ePA nicht enthalten. Bei den Use Cases des KHZG (Portale, Terminplanung) könnten sogar Dokumente entstehen, die sich auf im KIS noch nicht angelegte Patienten beziehen. Diese Konstellationen sollten berücksichtigt werden.
 
 
