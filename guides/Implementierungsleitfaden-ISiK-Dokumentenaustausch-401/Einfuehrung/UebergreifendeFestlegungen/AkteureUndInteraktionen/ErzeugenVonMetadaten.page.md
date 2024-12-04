@@ -85,7 +85,7 @@ Empfohlenes Vorgehen:
 Der Empfänger eines Dokumentes gem. Modul "Dokumentenaustausch" möchte neben der Archivierung des Dokumentes auch dessen Inhalte weiterverarbeiten.
 
 Empfohlenes Vorgehen:
-1. Entgegennahme und Persistierung des Original-Dokumentes gemäß {{pagelink:pagelink:Dokumentenbereitstellung, text:Interaktion ISiK Modul Dokumentenaustausch: Dokumentenbereitstellung}}
+1. Entgegennahme und Persistierung des Original-Dokumentes gemäß {{pagelink:Dokumentenbereitstellung, text:Interaktion ISiK Modul Dokumentenaustausch: Dokumentenbereitstellung}}
 1. Extraktion des Bundles aus den eingebetteten Binärdaten
 2. Extraktion der verarbeitbaren Ressourcen aus dem Bundle
 3. Verlinkung zwischen den extrahierten Ressourcen und dem Original-Dokument mittels einer [`Provenance`-Ressource](https://hl7.org/fhir/R4/provenance.html).
