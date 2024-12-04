@@ -32,7 +32,7 @@ Sobald ein Server jedoch weitere Transaktionen implementieren möchte, kommt es 
 
 Die Problematik wird in der internationalen FHIR-Community diskutiert und [IHE prüft derzeit](https://github.com/IHE/ITI.MHD/issues/100), ob eine Anpassung der Spezifikation verfolgt werden soll.
 
-##### Update für ISiK Stufe 3
+##### Update für ISiK Stufe 3 und folgende Stufen 
 In ISiK Stufe 2 kam aufgrund der beschriebenen Problematik anstelle der Transaktion die im Rahmen von ISiK spezifizierte Operation "$submit-document" zum Einsatz. 
 Zwischenzeitlich ist IHE der oben genannten Argumentation gefolgt und lässt als Alternative zur Transaction die Übermittlung von Dokumenten als einfache CREATE-Interaktion zu (IHE MHD ITI-105 "Simplified Publish").
 
@@ -46,7 +46,7 @@ In IHE-MHD bzw. XDS ist kein Fallkontext für Dokumente vorgesehen. Bestenfalls 
 In dieser ISiK-Spezifikation kommt ebenfalls die Verlinkung zum Einsatz, da der Wunsch nach einer Harmonisierung mit der FHIR-Kernspezifikation und allen anderen ISiK-Modulen dem Wunsch nach Harmonisierung mit IHE-XDS überwiegt.
 Um die technische Kompatibilität mit dem DocumentReference-Profil von IHE-MHD zu wahren [wurde der Änderungswunsch an IHE herangetragen](https://github.com/IHE/ITI.MHD/issues/88), den Constraint, der die Encounter-Verlinkung verbietet, zu lockern.
 
-##### Update für ISiK Stufe 3
+##### Update für ISiK Stufe 3 und folgende Stufen
 Der Change-Request wurde seitens IHE angenommen und in IHE-MHD Version 4.2.0 angewendet. Die Inkompatibilität wurde damit beseitigt!
 
 #### Dokumentenstatus
@@ -57,7 +57,7 @@ Um die technische Kompatibilität mit dem DocumentReference-Profil von IHE-MHD z
 
 Im Kontext von ISiK muss es auch möglich sein, den Status eines Dokumentes ändern zu können, ohne dabei das Dokument vollständig ersetzen zu müssen, wie es im IHE-MHD-Kontext der Fall ist. In ISiK wurde hierfür die Interaktion "Update von Dokumentenmetadaten" definiert.
 
-##### Update für ISiK Stufe 3
+##### Update für ISiK Stufe 3 und folgende Stufen
 Der Change-Request wurde seitens IHE abgelehnt. Hier besteht weiterhin eine Inkompatibilität zwischen ISiK und IHE-MHD. Die Empfehlung an Implementierer lautet, bei der ISiK-konformen, einrichtung*internen* Dokumentenaustausch, den Status mitzuführen, ihn jedoch bei der Überführung des Dokumentes in den einrichtungs*übergreifenden* Dokumentenaustausch zu entfernen. Weiterhin sollte sichergestellt werden, dass nur Dokumente mit dem docStatus "final" in den einreichtungsübergreifenden Kontext überführt werden.
 
 Für die Interaktion "Update von Dokumentenmetadaten" gibt es in IHE MHD weiterhin keine Entsprechung.
@@ -71,6 +71,6 @@ Für das automatische Erzeugen von IHE MHD-konformen Metadaten auf Basis von exi
 
 Die Operation `$generate-metadata` wurde spezifiziert in Anlehnung an die Operation [`$generate` im current build der FHIR-Kernspezifikation](https://build.fhir.org/documentreference-operation-generate.html), die jedoch noch nicht in implementierbarem Zustand ist. Die hier getroffenen Änderungen werden parallel als Feedback zur Verbesserung der Kernspezifikation als [ChangeRequest](https://jira.hl7.org/browse/FHIR-34043) eingereicht.
 
-#### Update für ISiK Stufe 3
+#### Update für ISiK Stufe 3 und folgende Stufen
 Seitens IHE wurde die Interaktion [Generate Metadata [ITI-106]](https://profiles.ihe.net/ITI/MHD/ITI-106.html) basierend auf der ISiK-Spezifikation (mit leichten Änderungen) in MHD Version 4.2.0. hinzugefügt.
 Die für ISiK spezifizierte Operation wird daher zurückgezogen und statt dessen die in IHE MHD definierte Operation genutzt. Die Inkompatibilität wurde damit beseitigt!
