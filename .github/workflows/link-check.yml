@@ -19,7 +19,7 @@ jobs:
           fail: true
           args: >
             . 
-            --exclude 403
+            --skip https://jira.hl7.org
             --exclude-path ImplementationGuide/style
             --exclude-path Material
             
