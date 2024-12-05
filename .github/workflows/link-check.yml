@@ -19,5 +19,5 @@ jobs:
           fail: true
           args: >
             . # Prüft alle Dateien im Repository
-            --exclude ImplementationGuide/style
-            --exclude Material
+            --exclude-path ImplementationGuide/style
+            --exclude-path Material
