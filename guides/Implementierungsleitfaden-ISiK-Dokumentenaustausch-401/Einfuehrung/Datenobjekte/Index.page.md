@@ -9,7 +9,7 @@ Folgende Datenobjekte aus dem Modul [ISiK Basis Stufe 4](https://simplifier.net/
 * [Binary](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Binary?version=current)
 
 Die Verwendung der genannten Ressourcen in diesem Modul bedeutet:
-Wenn dieses Modul auf Datenobjekte aus dem Basismodul referenziert, dann MÜSSEN die referenzierten FHIR-Ressourcen konform zu den Vorgaben aus dem Basismodul sein.
+Wenn ein Profil aus diesem Modul auf die genannten Datenobjekte aus dem Basismodul referenziert, dann MÜSSEN die referenzierten FHIR-Ressourcen im ISiK-Kontext konform zu Vorgaben an diese Ressourcen aus dem Basismodul sein (Profilkonformität). Die konkreten Vorgaben zu Interaktionen und Abhängigkeiten zwischen Modulen werden noch präzisiert.
 
 Darüber hinaus gelten in diesem Modul folgende Datenobjekt-spezifische Festlegungen:
 
