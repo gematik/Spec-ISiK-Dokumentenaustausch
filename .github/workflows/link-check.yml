@@ -17,5 +17,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
             fail: true
-
+            args: >
+                --exclude ImplementationGuide/style
+                --exclude Material
        
