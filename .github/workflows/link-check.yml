@@ -18,8 +18,8 @@ jobs:
         with:  
           fail: true
           args: >
-            . 
-            --skip https://jira.hl7.org
+            .
+            --exclude '^https://jira\.hl7\.org'
             --exclude-path ImplementationGuide/style
             --exclude-path Material
             
