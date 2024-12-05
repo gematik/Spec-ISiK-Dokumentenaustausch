@@ -15,5 +15,4 @@ jobs:
 
       - name: Run Link Checker
         uses: lycheeverse/lychee-action@v1.6.0
-        with:
-          args: --exclude mailto: --retry-count 3
+       
