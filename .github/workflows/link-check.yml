@@ -16,6 +16,6 @@ jobs:
       - name: Run Link Checker
         uses: lycheeverse/lychee-action@v2
         with:
-            fail: false
+            fail: true
 
        
