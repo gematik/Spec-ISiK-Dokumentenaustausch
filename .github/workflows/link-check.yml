@@ -1,9 +1,9 @@
 name: Check Links
 
 on:
-    push:
-        branches:
-            - '**'
+  push:
+    branches:
+      - '**'
 
 jobs:
   link_checker:
@@ -16,8 +16,8 @@ jobs:
       - name: Run Link Checker
         uses: lycheeverse/lychee-action@v2
         with:
-            fail: true
-            args: >
-                --exclude ImplementationGuide/style
-              
-       
+          fail: true
+          args: >
+            . # Prüft alle Dateien im Repository
+            --exclude ImplementationGuide/style
+            --exclude Material
