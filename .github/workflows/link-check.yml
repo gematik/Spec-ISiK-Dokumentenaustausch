@@ -27,13 +27,13 @@ jobs:
         with:  
           fail: true
           # Configure the workflow to fail if broken links are found.
-
+          # Run the link checker on the current directory and all its contents.
+          # Exclude links matching the pattern for Jira links (e.g., HL7 Jira).
+          # Exclude all links in the "ImplementationGuide/style" directory.
+          # Exclude all links in the "Material" directory.
           args: >
             .
-            # Run the link checker on the current directory and all its contents.
             --exclude '^https://jira\.hl7\.org'
-            # Exclude links matching the pattern for Jira links (e.g., HL7 Jira).
             --exclude-path ImplementationGuide/style
-            # Exclude all links in the "ImplementationGuide/style" directory.
             --exclude-path Material
-            # Exclude all links in the "Material" directory.
+            
