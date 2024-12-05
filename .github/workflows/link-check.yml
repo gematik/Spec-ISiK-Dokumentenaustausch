@@ -19,7 +19,7 @@ jobs:
           fail: true
           args: >
             . 
-            --exclude-status 403
+            --exclude 403
             --exclude-path ImplementationGuide/style
             --exclude-path Material
             
