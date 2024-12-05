@@ -1,0 +1,25 @@
+name: Check Links
+
+on:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  link_checker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:  
+          fail: true
+          args: >
+            .
+            --exclude '^https://jira\.hl7\.org'
+            --exclude-path ImplementationGuide/style
+            --exclude-path Material
+            
