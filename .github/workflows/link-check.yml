@@ -18,6 +18,6 @@ jobs:
         with:
           fail: true
           args: >
-            . # Prüft alle Dateien im Repository
+            . 
             --exclude-path ImplementationGuide/style
             --exclude-path Material
