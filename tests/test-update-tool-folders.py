@@ -10,6 +10,7 @@ class TestUpdateToolFolders(unittest.TestCase):
 
     @patch('update_tool_folders.subprocess.run')
     def test_run_command_success(self, mock_run):
+        # Test that run_command works correctly when the command succeeds
         mock_run.return_value.returncode = 0
         mock_run.return_value.stdout = "success"
         result = update_tool_folders.run_command("echo success")
@@ -19,6 +20,7 @@ class TestUpdateToolFolders(unittest.TestCase):
 
     @patch('update_tool_folders.subprocess.run')
     def test_run_command_failure(self, mock_run):
+        # Test that run_command handles errors correctly when the command fails
         mock_run.return_value.returncode = 1
         mock_run.return_value.stderr = "error"
         result = update_tool_folders.run_command("echo error")
@@ -28,6 +30,7 @@ class TestUpdateToolFolders(unittest.TestCase):
 
     @patch('update_tool_folders.run_command')
     def test_get_current_branch(self, mock_run_command):
+        # Test that get_current_branch returns the correct branch name
         mock_run_command.return_value.stdout = "main"
         current_branch = update_tool_folders.get_current_branch()
         self.assertEqual(current_branch, "main")
@@ -35,6 +38,7 @@ class TestUpdateToolFolders(unittest.TestCase):
 
     @patch('update_tool_folders.run_command')
     def test_update_folders(self, mock_run_command):
+        # Test that update_folders calls the correct git commands
         folders = ["folder1", "folder2"]
         current_branch = "main"
         update_tool_folders.update_folders(folders, current_branch)
