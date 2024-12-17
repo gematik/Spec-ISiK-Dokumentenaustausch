@@ -4,6 +4,8 @@ import os
 import shutil
 import tempfile
 import subprocess
+import sys
+sys.path.append('C:/Users/nils.kohl/Documents/spec-ISiK-Dokumentenaustausch')
 import update_tool_folders
 
 class TestUpdateToolFolders(unittest.TestCase):
