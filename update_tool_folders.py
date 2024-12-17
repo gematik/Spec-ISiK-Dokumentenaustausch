@@ -11,7 +11,7 @@ SOURCE_BRANCH = "main-isik-stufe-4"
 FOLDERS = [".github", "scripts"]
 
 # Define the list of files to exclude from updating
-EXCLUDE_FILES = ["./scripts/config.yaml", ".github/workflows/ToolUpdate.yml"]
+EXCLUDE_FILES = ["config.yaml", "ToolUpdate.yml"]
 
 def run_command(command, cwd=None):
     result = subprocess.run(command, shell=True, cwd=cwd, capture_output=True, text=True)
