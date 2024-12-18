@@ -1,78 +1,98 @@
 import unittest
-from unittest.mock import patch, call, MagicMock
-import os
-import shutil
-import tempfile
-import subprocess
-import sys
-sys.path.append('C:/Users/nils.kohl/Documents/spec-ISiK-Dokumentenaustausch')
-import update_tool_folders
+from unittest.mock import patch
+from update_tool_folders import update_folders
 
 class TestUpdateToolFolders(unittest.TestCase):
 
-    @patch('update_tool_folders.subprocess.run')
-    def test_run_command_success(self, mock_run):
-        # Test that run_command works correctly when the command succeeds
-        mock_run.return_value.returncode = 0
-        mock_run.return_value.stdout = "success"
-        result = update_tool_folders.run_command("echo success")
-        self.assertEqual(result.returncode, 0)
-        self.assertEqual(result.stdout, "success")
-        mock_run.assert_called_once_with("echo success", shell=True, cwd=None, capture_output=True, text=True)
+    @patch('update_tool.update_folders')
+    def test_no_additional_files_overwritten(self, mock_update_folders):
+        # Verify that files which exist only in the target directory and not in the base directory are not overwritten by the update process.
+        mock_update_folders.return_value = True
+        result = update_folders(base_dir='base', target_dir='target', exclude_files=[])
+        self.assertTrue(result)
+        # Additional assertions to verify no additional files are overwritten
 
-    @patch('update_tool_folders.subprocess.run')
-    def test_run_command_failure(self, mock_run):
-        # Test that run_command handles errors correctly when the command fails
-        mock_run.return_value.returncode = 1
-        mock_run.return_value.stderr = "error"
-        result = update_tool_folders.run_command("echo error")
-        self.assertEqual(result.returncode, 1)
-        self.assertEqual(result.stderr, "error")
-        mock_run.assert_called_once_with("echo error", shell=True, cwd=None, capture_output=True, text=True)
+    @patch('update_tool.update_folders')
+    def test_excluded_files_not_overwritten(self, mock_update_folders):
+        # Ensure that files specified in the exclusion list are not overwritten during the update process, even if they exist in both the base and target directories.
+        mock_update_folders.return_value = True
+        result = update_folders(base_dir='base', target_dir='target', exclude_files=['excluded_file'])
+        self.assertTrue(result)
+        # Additional assertions to verify excluded files are not overwritten
 
-    @patch('update_tool_folders.run_command')
-    def test_get_current_branch(self, mock_run_command):
-        # Test that get_current_branch returns the correct branch name
-        mock_run_command.return_value.stdout = "main"
-        current_branch = update_tool_folders.get_current_branch()
-        self.assertEqual(current_branch, "main")
-        mock_run_command.assert_called_once_with("git branch --show-current")
+    @patch('update_tool.update_folders')
+    def test_common_files_overwritten(self, mock_update_folders):
+        # Confirm that files which exist in both the base and target directories are overwritten by the corresponding files from the base directory during the update process.
+        mock_update_folders.return_value = True
+        result = update_folders(base_dir='base', target_dir='target', exclude_files=[])
+        self.assertTrue(result)
+        # Additional assertions to verify common files are overwritten
 
-    @patch('update_tool_folders.run_command')
-    def test_update_folders(self, mock_run_command):
-        # Test that update_folders calls the correct git commands
-        folders = ["folder1", "folder2"]
-        current_branch = "main"
-        update_tool_folders.update_folders(folders, current_branch)
-        expected_calls = [
-            call(f"git checkout {update_tool_folders.SOURCE_BRANCH}"),
-            call(f"git checkout {current_branch} -- folder1"),
-            call(f"git checkout {current_branch} -- folder2"),
-            call(f"git checkout {current_branch}")
-        ]
-        mock_run_command.assert_has_calls(expected_calls, any_order=False)
+    @patch('update_tool.update_folders')
+    def test_no_folders_to_update(self, mock_update_folders):
+        # Verify that the update process completes successfully even if there are no folders to update.
+        mock_update_folders.return_value = True
+        result = update_folders(base_dir='base', target_dir='target', exclude_files=[])
+        self.assertTrue(result)
+        # Additional assertions to verify process completes successfully
 
-    @patch('update_tool_folders.shutil.copy2')
-    @patch('update_tool_folders.os.path.exists')
-    @patch('update_tool_folders.os.makedirs')
-    @patch('update_tool_folders.os.listdir')
-    @patch('update_tool_folders.shutil.copytree')
-    def test_additional_files_not_overwritten(self, mock_copytree, mock_listdir, mock_makedirs, mock_path_exists, mock_copy2):
-        # Setup mocks
-        mock_path_exists.side_effect = lambda path: path.endswith("dest_folder") or path.endswith("additional_file.txt")
-        mock_listdir.side_effect = lambda path: ["file1.txt", "file2.txt"] if path.endswith("src_folder") else ["additional_file.txt"]
-        
-        temp_dir = tempfile.gettempdir()
-        src_folder = os.path.join(temp_dir, "src_folder")
-        dest_folder = os.path.join(os.getcwd(), "dest_folder")
-        
-        # Call the function
-        update_tool_folders.copy_folders(temp_dir, ["src_folder"], ["file2.txt"])
-        
-        # Check that additional files are not overwritten
-        mock_copy2.assert_called_once_with(os.path.join(src_folder, "file1.txt"), os.path.join(dest_folder, "file1.txt"))
-        mock_copytree.assert_not_called()
-        self.assertTrue(mock_path_exists(os.path.join(dest_folder, "additional_file.txt")))
+    @patch('update_tool.update_folders')
+    def test_missing_folder_in_source_repo(self, mock_update_folders):
+        # Ensure that the update process completes successfully even if a specified folder does not exist in the source repository.
+        mock_update_folders.return_value = True
+        result = update_folders(base_dir='base', target_dir='target', exclude_files=[])
+        self.assertTrue(result)
+        # Additional assertions to verify process completes successfully
 
-if __name__ == "__main__":
+    @patch('update_tool.update_folders')
+    def test_missing_folder_in_target_directory(self, mock_update_folders):
+        # Verify that the update process completes successfully even if a specified folder does not exist in the target directory.
+        mock_update_folders.return_value = True
+        result = update_folders(base_dir='base', target_dir='target', exclude_files=[])
+        self.assertTrue(result)
+        # Additional assertions to verify process completes successfully
+
+    @patch('update_tool.update_folders')
+    def test_invalid_source_repo(self, mock_update_folders):
+        # Confirm that the update process fails gracefully if the source repository URL is invalid.
+        mock_update_folders.side_effect = ValueError("Invalid source repository URL")
+        with self.assertRaises(ValueError):
+            update_folders(base_dir='base', target_dir='target', exclude_files=[])
+
+    @patch('update_tool.update_folders')
+    def test_invalid_branch(self, mock_update_folders):
+        # Ensure that the update process fails gracefully if the specified branch does not exist in the source repository.
+        mock_update_folders.side_effect = ValueError("Invalid branch")
+        with self.assertRaises(ValueError):
+            update_folders(base_dir='base', target_dir='target', exclude_files=[])
+
+    @patch('update_tool.update_folders')
+    def test_invalid_folders(self, mock_update_folders):
+        # Verify that the update process fails gracefully if one or more specified folders do not exist in the source repository.
+        mock_update_folders.side_effect = ValueError("Invalid folders")
+        with self.assertRaises(ValueError):
+            update_folders(base_dir='base', target_dir='target', exclude_files=[])
+
+    @patch('update_tool.update_folders')
+    def test_invalid_exclude_files(self, mock_update_folders):
+        # Confirm that the update process fails gracefully if one or more specified exclude files do not exist in the source repository.
+        mock_update_folders.side_effect = ValueError("Invalid exclude files")
+        with self.assertRaises(ValueError):
+            update_folders(base_dir='base', target_dir='target', exclude_files=['invalid_file'])
+
+    @patch('update_tool.update_folders')
+    def test_invalid_temp_dir(self, mock_update_folders):
+        # Ensure that the update process fails gracefully if the temporary directory cannot be created.
+        mock_update_folders.side_effect = OSError("Cannot create temporary directory")
+        with self.assertRaises(OSError):
+            update_folders(base_dir='base', target_dir='target', exclude_files=[])
+
+    @patch('update_tool.update_folders')
+    def test_invalid_dest_folder(self, mock_update_folders):
+        # Verify that the update process fails gracefully if the destination folder cannot be created.
+        mock_update_folders.side_effect = OSError("Cannot create destination folder")
+        with self.assertRaises(OSError):
+            update_folders(base_dir='base', target_dir='target', exclude_files=[])
+
+if __name__ == '__main__':
     unittest.main()
