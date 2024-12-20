@@ -5,7 +5,7 @@
 
 {{tree:https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten, hybrid}}
 
-[Link Simplifier Profil Übersicht](https://simplifier.net/spec-isik-dokumentenaustausch-v4/isikdokumentenmetadaten)
+[Link Simplifier Profil Übersicht](https://simplifier.net/guide/isik-dokumentenaustausch-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_DocumentReference?version=current)
 
 <!--
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
