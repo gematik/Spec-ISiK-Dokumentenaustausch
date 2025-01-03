@@ -61,8 +61,16 @@ Die Vereinbarungen gelten uneingeschränkt.
 Es gelten die Vereinbarungen gemäß {{pagelink:ImplementationGuide/markdown/CapabilityStatement.md}}
 
 #### [2:3.67.5 Security Considerations](https://profiles.ihe.net/ITI/MHD/ITI-67.html#23675-security-considerations)
-Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe [Modul ISiK-Sicherheit](https://simplifier.net/isik-sicherheit-v3).
+Für Hinweise zur Implementierung von Autorisation und Authentifikation im ISiK-Kontext, siehe [Modul ISiK-Sicherheit](https://simplifier.net/isik-sicherheit-v3)
 
+
+#### Beispiele
+* Suche anhand von Patientenkontext (PID) und Dokumentendatum:
+  `[base]/DocumentReference?patient.identifier=1234&creation=gt2021-10-06`
+* Suche nach vorläufigen Endoskopiebefunden (anhand KDL-Dokumenttyp und `docStatus`):
+  `[base]/DocumentReference?type=http://dvmd.de/fhir/CodeSystem/kdl|DG02010&doc-status=preliminary`
+* Suche von Dokumenten anhand der Nummer des Abrechnungsfalles:
+  `[base]/DocumentReference?encounter.account:identifier=56789`
 
 ### Dokumentenzugriff (IHE MHD ITI-68 (Retrieve Document))
 
