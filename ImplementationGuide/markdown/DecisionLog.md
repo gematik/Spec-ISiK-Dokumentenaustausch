@@ -1,5 +1,10 @@
 # Decision Log
 
+Version: 3.0.5
+
+* Problem: Durch die Entfernung von Anforderungen die Abfragen von Patienten- und Encounter-Ressourcen betreffend, sind wäre die Herstellung von Dokumentenkontexten zu besagten Ressourcen in der Regel nicht mehr möglich.
+* Lösung: Rollback der Änderung - wodurch die entsprechenden Suchparameter wieder in die Spezifikation aufgenommen werden.
+
 ----
 Version: 3.0.1
 
