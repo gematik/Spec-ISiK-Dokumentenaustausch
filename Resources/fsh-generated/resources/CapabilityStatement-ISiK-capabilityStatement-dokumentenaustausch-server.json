@@ -4,11 +4,11 @@
   "url": "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/CapabilityStatement/dokumentenaustausch-server",
   "status": "active",
   "experimental": false,
-  "version": "3.0.4",
+  "version": "3.0.5",
   "publisher": "gematik GmbH",
-  "date": "2024-11-25",
+  "date": "2025-01-03",
   "implementationGuide": [
-    "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/ImplementationGuide|3.0.4"
+    "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/ImplementationGuide|3.0.5"
   ],
   "name": "ISiKCapabilityStatementDokumentenaustauschServer",
   "title": "ISiK CapabilityStatement Dokumentenaustausch Server",
