@@ -124,6 +124,15 @@ Usage: #definition
 * rest.resource[+]
   * extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
   * extension.valueCode = #SHALL
+  * type = #Encounter
+  * supportedProfile = "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKKontaktGesundheitseinrichtung"
+  * interaction[+]
+    * extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * extension.valueCode = #SHALL
+    * code = #read
+* rest.resource[+]
+  * extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+  * extension.valueCode = #SHALL
   * type = #DocumentReference
   * supportedProfile = "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten"
   * interaction[+]
