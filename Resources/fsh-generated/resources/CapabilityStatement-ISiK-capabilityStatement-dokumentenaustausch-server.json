@@ -263,29 +263,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "type": "Encounter",
-          "supportedProfile": [
-            "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKKontaktGesundheitseinrichtung"
-          ],
-          "interaction": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "read"
-            }
-          ]
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "SHALL"
-            }
-          ],
           "type": "DocumentReference",
           "supportedProfile": [
             "https://gematik.de/fhir/isik/v3/Dokumentenaustausch/StructureDefinition/ISiKDokumentenMetadaten"
