@@ -3,7 +3,7 @@
   "id": "UpdateMetadata",
   "status": "active",
   "publisher": "gematik GmbH",
-  "date": "2024-12-04",
+  "date": "2024-12-05",
   "url": "https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata",
   "title": "Update document metadata",
   "kind": "operation",
