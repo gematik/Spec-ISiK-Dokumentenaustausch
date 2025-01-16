@@ -10,6 +10,7 @@
     "Terminology_TX_NoValid_3_CC@Bundle.entry[0].resource/*DocumentReference/dok-beispiel-server*/.type",
     "Terminology_TX_NoValid_14@DocumentReference.content.format",
     "Terminology_TX_NoValid_14@Bundle.entry[0].resource/*DocumentReference/dok-beispiel-server*/.content[0].format",
-    "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE@CapabilityStatement.implementationGuide"
+    "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE@CapabilityStatement.implementationGuide",
+    "MSG_DRAFT@Encounter.location[0].physicalType"
   ]
 }
