@@ -1,0 +1,15 @@
+{ 
+  "suppress" : [
+    "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
+    "SD_PATH_SLICING_DEPRECATED",
+    "Terminology_TX_NoValid_2_CC@Patient.identifier.type",
+    "Terminology_TX_NoValid_2_CC@Encounter.identifier.type",
+    "Terminology_TX_NoValid_3_CC@Schedule.specialty",
+    "Terminology_TX_NoValid_3_CC@Encounter.hospitalization.admitSource",
+    "Terminology_TX_NoValid_3_CC@DocumentReference.type",
+    "Terminology_TX_NoValid_3_CC@Bundle.entry[0].resource/*DocumentReference/dok-beispiel-server*/.type",
+    "Terminology_TX_NoValid_14@DocumentReference.content.format",
+    "Terminology_TX_NoValid_14@Bundle.entry[0].resource/*DocumentReference/dok-beispiel-server*/.content[0].format",
+    "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE@CapabilityStatement.implementationGuide"
+  ]
+}
