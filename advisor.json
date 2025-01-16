@@ -7,6 +7,9 @@
     "Terminology_TX_NoValid_3_CC@Schedule.specialty",
     "Terminology_TX_NoValid_3_CC@Encounter.hospitalization.admitSource",
     "Terminology_TX_NoValid_3_CC@DocumentReference.type",
-    "Terminology_TX_NoValid_14@DocumentReference.content.format"
+    "Terminology_TX_NoValid_3_CC@Bundle.entry[0].resource/*DocumentReference/dok-beispiel-server*/.type",
+    "Terminology_TX_NoValid_14@DocumentReference.content.format",
+    "Terminology_TX_NoValid_14@Bundle.entry[0].resource/*DocumentReference/dok-beispiel-server*/.content[0].format",
+    "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE@CapabilityStatement.implementationGuide"
   ]
 }
