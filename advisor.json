@@ -1,5 +1,7 @@
 { 
   "suppress" : [
-    "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+    "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
+    "SD_PATH_SLICING_DEPRECATED",
+    "Terminology_TX_NoValid_2_CC@Patient.identifier.type"
   ]
 }
