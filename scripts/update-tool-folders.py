@@ -3,6 +3,9 @@ import shutil
 import tempfile
 import subprocess
 
+# This script updates the specified folders in the current repository with the contents of the specified source repository and branch. 
+# It is intended for local use and the files must be added and committed manually after running the script. 
+
 # Define the source repository and branch
 SOURCE_REPO = "https://github.com/gematik/spec-ISiK-Basismodul"
 SOURCE_BRANCH = "main-isik-stufe-4"
@@ -21,6 +24,7 @@ def run_command(command, cwd=None):
 
 def clone_source_repo(temp_dir):
     run_command(f"git clone --branch {SOURCE_BRANCH} {SOURCE_REPO} {temp_dir}")
+#TODO get the folder directly, since git command has low performance 
 
 def copy_folders(temp_dir, folders, exclude_files):
     for folder in folders:
