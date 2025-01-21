@@ -21,6 +21,7 @@ def run_command(command, cwd=None):
 
 def clone_source_repo(temp_dir):
     run_command(f"git clone --branch {SOURCE_BRANCH} {SOURCE_REPO} {temp_dir}")
+#TODO improve performance, since the whole repository is cloned instead instead of just the folders that are needed  
 
 def copy_folders(temp_dir, folders, exclude_files):
     for folder in folders:
