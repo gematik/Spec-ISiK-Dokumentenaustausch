@@ -111,7 +111,7 @@ Usage: #definition
   * searchParam[+]
     * extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
     * extension.valueCode = #MAY
-
+     // Kommentar zur Festlegung mit MAY: Da die Implementierung von subject als Suchparameter vom Typ Reference komplex ist, wird hier im Sinne der Übergreifenden Festlegung eine Umsetzung nicht zwingend erfordert.
     * name = "subject"
     * definition = "http://hl7.org/fhir/SearchParameter/Encounter-subject"
     * type = #reference
