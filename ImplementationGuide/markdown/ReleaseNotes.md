@@ -6,6 +6,13 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Offene Punkte und bekannte Probleme siehe [GitHub Issues](https://github.com/gematik/ISiK-Dokumentenaustausch/issues?q=is%3Aissue+is%3Aopen+label%3A%22offene+Punkte+Ballot%22)
 
+Version: 4.0.1
+
+Datum: tbd
+
+* fix: Update der der dependency de.ihe-d.terminology von 3.0.0 -> 3.0.1 https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/212  
+Grund: de.ihe-d.terminology#3.0.0 war defekt: ValueSets in XML abgelegt. Inhaltlich keine Änderung
+---
 Version: 4.0.0
 
 Datum: 24.09.2024
@@ -31,7 +38,6 @@ Datum: 03.04.2024
 * Erweiterung um Use Case Diagramm, Resourcen Diagramm und Informationsmodell
 * Erweiterung um Use Case Zusammenhänge von verketteten Suchparametern
 
-**Full Changelog**: https://github.com/gematik/spec-ISiK-Dokumentenaustausch/compare/v.3.0.2...rc/main-stufe-4
 
 ----
 

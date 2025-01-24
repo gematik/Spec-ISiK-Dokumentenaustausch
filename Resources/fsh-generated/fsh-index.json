@@ -1,0 +1,106 @@
+[
+  {
+    "outputFile": "Bundle-Suchergebnis-Beispiel.json",
+    "fshName": "Suchergebnis-Beispiel",
+    "fshType": "Instance",
+    "fshFile": "ISiKDokumentenSuchergebnisse.fsh",
+    "startLine": 29,
+    "endLine": 38
+  },
+  {
+    "outputFile": "CapabilityStatement-ISiKCapabilityStatementDokumentenaustauschServer.json",
+    "fshName": "ISiKCapabilityStatementDokumentenaustauschServer",
+    "fshType": "Instance",
+    "fshFile": "ISiKCapabilityStatementDokumentenaustauschServer.fsh",
+    "startLine": 1,
+    "endLine": 147
+  },
+  {
+    "outputFile": "DocumentReference-dok-beispiel-client-with-binary-jpeg-example-short.json",
+    "fshName": "dok-beispiel-client-with-binary-jpeg-example-short",
+    "fshType": "Instance",
+    "fshFile": "ISiKDokumentenMetadaten.fsh",
+    "startLine": 256,
+    "endLine": 275
+  },
+  {
+    "outputFile": "DocumentReference-dok-beispiel-client-with-binary-jpeg-example.json",
+    "fshName": "dok-beispiel-client-with-binary-jpeg-example",
+    "fshType": "Instance",
+    "fshFile": "ISiKDokumentenMetadaten.fsh",
+    "startLine": 277,
+    "endLine": 296
+  },
+  {
+    "outputFile": "DocumentReference-dok-beispiel-client-with-binary-pdf-example-short.json",
+    "fshName": "dok-beispiel-client-with-binary-pdf-example-short",
+    "fshType": "Instance",
+    "fshFile": "ISiKDokumentenMetadaten.fsh",
+    "startLine": 235,
+    "endLine": 254
+  },
+  {
+    "outputFile": "DocumentReference-dok-beispiel-client-with-binary-pdf-example.json",
+    "fshName": "dok-beispiel-client-with-binary-pdf-example",
+    "fshType": "Instance",
+    "fshFile": "ISiKDokumentenMetadaten.fsh",
+    "startLine": 298,
+    "endLine": 317
+  },
+  {
+    "outputFile": "DocumentReference-dok-beispiel-server.json",
+    "fshName": "dok-beispiel-server",
+    "fshType": "Instance",
+    "fshFile": "ISiKDokumentenMetadaten.fsh",
+    "startLine": 212,
+    "endLine": 233
+  },
+  {
+    "outputFile": "Encounter-BeispielBesuch.json",
+    "fshName": "BeispielBesuch",
+    "fshType": "Instance",
+    "fshFile": "referencedExamples.fsh",
+    "startLine": 53,
+    "endLine": 88
+  },
+  {
+    "outputFile": "OperationDefinition-UpdateMetadata.json",
+    "fshName": "UpdateMetadata",
+    "fshType": "Instance",
+    "fshFile": "OperationUpdateMetadata.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Patient-PatientinMusterfrau.json",
+    "fshName": "PatientinMusterfrau",
+    "fshType": "Instance",
+    "fshFile": "referencedExamples.fsh",
+    "startLine": 1,
+    "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-ISiKDokumentenMetadaten.json",
+    "fshName": "ISiKDokumentenMetadaten",
+    "fshType": "Profile",
+    "fshFile": "ISiKDokumentenMetadaten.fsh",
+    "startLine": 1,
+    "endLine": 208
+  },
+  {
+    "outputFile": "StructureDefinition-ISiKDokumentenSuchergebnisse.json",
+    "fshName": "ISiKDokumentenSuchergebnisse",
+    "fshType": "Profile",
+    "fshFile": "ISiKDokumentenSuchergebnisse.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "ValueSet-ISiKConfidentialityCodes.json",
+    "fshName": "ISiKConfidentialityCodes",
+    "fshType": "ValueSet",
+    "fshFile": "terminologies.fsh",
+    "startLine": 1,
+    "endLine": 8
+  }
+]

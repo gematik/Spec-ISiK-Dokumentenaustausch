@@ -8,9 +8,15 @@
   },
   "type": "searchset",
   "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://meinfhirserver.de/DocumentReference?patient.identifier=A123456789"
+    }
+  ],
   "entry": [
     {
-      "fullUrl": "http://meinfhirserver.de/DocumentReference/dok-beispiel",
+      "fullUrl": "http://meinfhirserver.de/DocumentReference/dok-beispiel-server",
       "resource": {
         "resourceType": "DocumentReference",
         "id": "dok-beispiel-server",

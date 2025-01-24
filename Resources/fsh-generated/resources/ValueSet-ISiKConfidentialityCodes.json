@@ -5,11 +5,11 @@
   "id": "ISiKConfidentialityCodes",
   "title": "ISiKConfidentialityCodes",
   "description": "Vertraulichkeitsstufen",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "url": "https://gematik.de/fhir/isik/ValueSet/ISiKConfidentialityCodes",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-09-24",
+  "date": "2025-01-24",
   "compose": {
     "include": [
       {
