@@ -11,7 +11,7 @@ Offene Punkte und bekannte Probleme siehe [GitHub Issues](https://github.com/gem
 
 Version: 4.0.1
 
-Datum: 23.01.2025.
+Datum: 24.01.2025.
 
 * `improved`: Übertragung der Dokumentation in die FHIR-Resourcen, Refactoring des ImplementationGuides https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/211
 * `fixed`: Update der der dependency de.ihe-d.terminology von 3.0.0 -> 3.0.1 https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/212 - Begründung: de.ihe-d.terminology#3.0.0 war defekt: ValueSets in XML abgelegt. Inhaltlich keine Änderung
