@@ -12,7 +12,7 @@ Version: 3.0.5
 
 Datum: tbd
 
-* `fix` `test modifying` Rollback der Entfernung von Patienten- und Encounter-Interaktionen (veranlasste Änderung in TC 3.0.1) https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/226
+* `fix` `test modifying` Rollback der Entfernung von Patienten- und Encounter-Interaktionen (veranlasste Änderung in TC 3.0.1) - in diesem Zusammenhang wird auch der Suchparameter "subject" von SHALL auf MAY gesetzt https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/226
 
 ----
 
