@@ -38,7 +38,6 @@ Datum: 03.04.2024
 * Erweiterung um Use Case Diagramm, Resourcen Diagramm und Informationsmodell
 * Erweiterung um Use Case Zusammenhänge von verketteten Suchparametern
 
-**Full Changelog**: https://github.com/gematik/spec-ISiK-Dokumentenaustausch/compare/v.3.0.2...rc/main-stufe-4
 
 ----
 
