@@ -6,6 +6,16 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Offene Punkte und bekannte Probleme siehe [GitHub Issues](https://github.com/gematik/ISiK-Dokumentenaustausch/issues?q=is%3Aissue+is%3Aopen+label%3A%22offene+Punkte+Ballot%22)
 
+
+
+Version: 3.0.5
+
+Datum: tbd
+
+* `fix` `test modifying` Rollback der Entfernung von Patienten- und Encounter-Interaktionen (veranlasste Änderung in TC 3.0.1) - in diesem Zusammenhang wird auch der Suchparameter "subject" von SHALL auf MAY gesetzt https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/226
+
+----
+
 Version: 3.0.4
 
 Datum: 25.11.2024
@@ -13,6 +23,7 @@ Datum: 25.11.2024
 * Achtung: Einige IHE ValueSets sind sowohl in der referenzierten Version des de.basisprofil.r4 packages, als auch in de.ihe-d.terminology enthalten. Hier gelten immer die ValueSets aus dem IHE package.
 * Hinzufügen von Dependencies für IHE ValueSets https://github.com/gematik/spec-ISiK-Dokumentenaustausch/pull/193 & https://github.com/gematik/spec-ISiK-Dokumentenaustausch/commit/8d89dd1000e5cada0451b31eb93116835499f1c3
 
+---
 
 Version: 3.0.3
 

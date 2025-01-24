@@ -93,3 +93,14 @@ Die in IHE-MHD geltende Einschränkung, dass Clients bei allen Suchen mindestens
     Anwendungshinweise: Weitere Informationen zur Suche nach Reference-type Parametern finden sich in der [FHIR-Basisspezifikation - Abschnitt "Reference Search"](https://www.hl7.org/fhir/R4/search.html#reference).
 
 
+1. Der verkettete Suchparameter "encounter.account:identifier" (zur Suche anhand der Abrechnungsfallnummer) MUSS unterstützt werden:
+
+   Beispiele:
+
+    ```GET [base]/DocumentReference?encounter.account:identifier=http://mein-krankenhaus.example/fhir/sid/fallnummern|7567867```
+	
+	```GET [base]/DocumentReference?encounter.account:identifier=7567867```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach Reference-type Parametern, insbesondere in Verbindung mit dem `:identifier`-Modifier finden sich in der [FHIR-Basisspezifikation - Abschnitt "Reference Search"](https://www.hl7.org/fhir/R4/search.html#reference).
+	
+	Weitere Informationen zur Suche nach verketteten Parametern finden sich in der [FHIR-Basisspezifikation - Abschnitt "Chained Parameters"](https://hl7.org/fhir/R4/search.html#chaining).

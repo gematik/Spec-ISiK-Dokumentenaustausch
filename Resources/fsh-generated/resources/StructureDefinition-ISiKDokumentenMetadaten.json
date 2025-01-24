@@ -278,7 +278,7 @@
         "id": "DocumentReference.subject",
         "path": "DocumentReference.subject",
         "short": "Patientenbezug des Dokumentes",
-        "comment": "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein.\n  \n  Für sonstige Kontexte siehe [FHIR Kernspezifikation](http://hl7.org/fhir/documentreference-definitions.html#DocumentReference.subject)",
+        "comment": "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein.\n\n  Für sonstige Kontexte siehe [FHIR Kernspezifikation](http://hl7.org/fhir/documentreference-definitions.html#DocumentReference.subject)",
         "min": 1,
         "type": [
           {

@@ -1,5 +1,18 @@
 # Decision Log
 
+Version: 3.0.5
+
+* Problem: Durch die Entfernung von Anforderungen die Abfragen von Patienten- und Encounter-Ressourcen betreffend wäre die Herstellung von Dokumentenkontexten zu besagten Ressourcen in der Regel nicht mehr möglich.
+* Lösung: Rollback der Änderung - wodurch die entsprechenden Suchparameter wieder in die Spezifikation aufgenommen werden.
+* **Hintergrund**: 
+Während der Überlegung zum Entfernen der Suchparamter waren zwei Architekturen angenommen worden:
+- Architektur A - Integrierte Umgebung: Wir haben ein patientenführendes System (Basis -Server), das alleinig ISiK-Patienteninstanzen (und Encounter) verwaltet
+- Architektur B  - geteilte Patienten (und -Encounter) Verwaltung: Basis-Server und DMS persistieren voneinander unabhängig ISiK-Patienten-Instanzen
+
+Nachträglich erscheint Architektur A als nicht der Realität in KH-Umgebungen entsprechend - womöglich auch nicht als wünschenswert da eine Autonomie der Datenhaltung der verschiedenen Systeme auch bei Ausfällen ein Sicherheits-Feature darstellt.
+
+Es stimmt daher NICHT, dass das DMS selbst keine Abfrage auf eine Patienten-Instanz erfüllen muss - sondern lediglich in der Lage sein SOLL/MUSS (dies nicht geprüft) die "referentielle Integrität" zu prüfen (ggf. noch zu forwarden) durch eine Anfrage an den Basis-Server.
+Es muss dagegen angenommen werden, dass ein DMS auch immer Patienter- und Encounter-Abfragen (zumindest zur Herstellung der Ressourcen-Kontexte) ermöglichen muss. 
 ----
 Version: 3.0.1
 

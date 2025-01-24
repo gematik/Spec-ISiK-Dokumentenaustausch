@@ -5,9 +5,8 @@ Folgende Datenobjekte aus dem Modul [ISiK Basis Stufe 3](https://simplifier.net/
 * [Kontakt/Fall (Encounter)](https://simplifier.net/guide/isik-basis-v3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Kontakt?version=current)
 * [Binary](https://simplifier.net/guide/isik-basis-v3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Binary?version=current)
 
-Die Verwendung in diesem Modul bedeutet:
-Wenn dieses Modul auf Datenobjekte aus dem Basismodul referenziert, dann MÜSSEN die referenzierten FHIR-Ressourcen konform zu den Vorgaben aus dem Basismodul sein. 
-Die Referenzierung von im Basismodul spezifizierten Datenobjekten, bedeutet nicht, dass die Interaktionen für die entsprechenden Datenobjekte aus dem Basismodul auch im Modul Dokumentenaustausch bestätigungsrelevant sind.
+Die Verwendung der genannten Ressourcen in diesem Modul bedeutet:
+Wenn ein Profil aus diesem Modul auf die genannten Datenobjekte aus dem Basismodul referenziert, dann MÜSSEN die referenzierten FHIR-Ressourcen im ISiK-Kontext konform zu Vorgaben an diese Ressourcen aus dem Basismodul sein (Profilkonformität). Die konkreten Vorgaben zu Interaktionen und Abhängigkeiten zwischen Modulen werden noch präzisiert.
 
 Darüber hinaus gelten in diesem Modul folgende Datenobjekt-spezifische Festlegungen:
 

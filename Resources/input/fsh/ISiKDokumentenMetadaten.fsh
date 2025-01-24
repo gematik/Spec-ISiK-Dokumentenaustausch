@@ -93,7 +93,7 @@ In MHD 4.2.0 wurde die Verpflichtung zur Angabe eines Identifiers gelockert, das
 * subject 1..1 MS
   * ^short = "Patientenbezug des Dokumentes"
   * ^comment = "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein.
-  
+
   Für sonstige Kontexte siehe [FHIR Kernspezifikation](http://hl7.org/fhir/documentreference-definitions.html#DocumentReference.subject)"
   * reference 1..1 MS
   * reference 1..1 MS
