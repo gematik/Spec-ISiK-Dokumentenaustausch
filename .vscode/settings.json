@@ -1,2 +1,14 @@
 {
+    "python.testing.unittestArgs": [
+      "-v",
+      "-s",
+      "C:/Users/nils.kohl/Documents/spec-ISiK-Dokumentenaustausch/tests",
+      "-p",
+      "test*.py"
+    ],
+    "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.autoTestDiscoverOnSaveEnabled": true
+   
 }
