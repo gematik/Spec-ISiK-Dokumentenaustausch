@@ -110,7 +110,8 @@ Usage: #definition
     * type = #reference
   * searchParam[+]
     * extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * extension.valueCode = #SHALL
+    * extension.valueCode = #MAY
+
     * name = "subject"
     * definition = "http://hl7.org/fhir/SearchParameter/Encounter-subject"
     * type = #reference
