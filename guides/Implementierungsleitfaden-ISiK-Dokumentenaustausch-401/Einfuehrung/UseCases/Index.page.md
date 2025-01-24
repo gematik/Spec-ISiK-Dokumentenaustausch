@@ -1,6 +1,6 @@
 ---
 topic: ImplementationGuide-markdown-UseCases
 ---
-# Use Cases Übersicht
+# Use Cases
 
 {{index:current}}
